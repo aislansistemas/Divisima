@@ -10,5 +10,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Hosting.Abstractions" Version="*"/>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="*"/>
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="*"/>
+    <PackageReference Include="ReflectionIT.Mvc.Paging" Version="*"/>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="*"/>
   </ItemGroup>
 </Project>

@@ -12422,6 +12422,38 @@
         }
       },
       {
+        "HashCode": 304453417,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__PagerViewComponentTagHelper",
+        "AssemblyName": "ReflectionIT.Mvc.Paging",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:pager",
+            "Attributes": [
+              {
+                "Name": "paging-list"
+              }
+            ]
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "MVC.ViewComponent",
+            "Name": "paging-list",
+            "TypeName": "ReflectionIT.Mvc.Paging.IPagingList",
+            "Metadata": {
+              "Common.PropertyName": "pagingList"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__PagerViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Pager"
+        }
+      },
+      {
         "HashCode": 899238057,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14399,6 +14431,11 @@
     {
       "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/_ViewStart.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/Categoria/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Categoria\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
