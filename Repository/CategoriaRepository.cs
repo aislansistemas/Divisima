@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using divisima.Context;
 using divisima.Enums.CategoriaEnums;
@@ -27,7 +28,7 @@ namespace divisima.Repository
 
         public async Task<List<Categoria>> GetAll()
         {
-            return await _dbContext.Categorias.ToListAsync();
+            return await _dbContext.Categorias.OrderByDescending(x => x.CategoriaId).ToListAsync();
         }
 
         public async Task<Categoria> GetById(int id)
@@ -38,6 +39,37 @@ namespace divisima.Repository
                 
             } catch(Exception e){
                 throw new Exception("Erro na operação", e);
+            }
+        }
+
+        public async Task Editar(Categoria categoria){
+            try{
+                _dbContext.Categorias.Update(categoria);
+                await _dbContext.SaveChangesAsync();
+            } catch(DbUpdateConcurrencyException e) {
+                throw new DbUpdateConcurrencyException("Erro na operação", e);
+            }
+        }
+
+        public async Task Inativar(Categoria categoria)
+        {
+            try{
+                categoria.Ativo = CategoriaAtivoEnum.Inativo;
+                _dbContext.Update(categoria);
+                await _dbContext.SaveChangesAsync();
+            } catch(DbUpdateConcurrencyException e) {
+                throw new DbUpdateConcurrencyException("Erro na operação", e);
+            }
+        }
+
+        public async Task Ativar(Categoria categoria)
+        {
+            try{
+                categoria.Ativo = CategoriaAtivoEnum.Ativo;
+                _dbContext.Update(categoria);
+                await _dbContext.SaveChangesAsync();
+            } catch(DbUpdateConcurrencyException e) {
+                throw new DbUpdateConcurrencyException("Erro na operação", e);
             }
         }
     }

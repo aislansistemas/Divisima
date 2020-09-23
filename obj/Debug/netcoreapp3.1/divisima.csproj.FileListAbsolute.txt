@@ -107,3 +107,4 @@
 /home/moobi/workshop/c#/divisima/obj/Debug/netcoreapp3.1/divisima.MvcApplicationPartsAssemblyInfo.cs
 /home/moobi/workshop/c#/divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Categoria/Index.cshtml.g.cs
 /home/moobi/workshop/c#/divisima/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/home/moobi/workshop/c#/divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Produto/Index.cshtml.g.cs
