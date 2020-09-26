@@ -28,10 +28,6 @@ namespace divisima.Areas.Admin.Controllers
             return Json(categorias);
         }
 
-        public IActionResult Cadastrar(){
-            return View();
-        }
-
         [HttpPost,ActionName("Cadastrar")]
         public async Task<IActionResult> CadastrarConfirme(Categoria categoria){
             try{

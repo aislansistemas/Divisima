@@ -12,5 +12,6 @@
     <PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="*"/>
     <PackageReference Include="ReflectionIT.Mvc.Paging" Version="*"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="*"/>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="*"/>
   </ItemGroup>
 </Project>

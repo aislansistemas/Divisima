@@ -16,7 +16,8 @@ namespace divisima.Models
         public decimal Valor { get; set; }
         [Required(ErrorMessage="Quantidade deve ser preenchido*")]
         public int Quantidade { get; set; }
-        [Required(ErrorMessage="Foto deve ser inserida")]
+        [Required(ErrorMessage="Tamanho deve ser preenchido*")]
+        public int Tamanho { get; set; }
         public string Foto { get; set; }
     }
 }

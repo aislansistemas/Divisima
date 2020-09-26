@@ -6,7 +6,7 @@
       </div>
       <div class="card-body">
         <!-- Botão para acionar modal -->
-        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ExemploModalCentralizado">
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-cadastrar">
           <i class="tim-icons icon-simple-add"></i> Novo 
         </button>
         <!-- Fim Botão para acionar modal -->
@@ -15,17 +15,16 @@
           <table class="table" id="">
             <thead class="text-primary">
               <tr>
-                <th>
-                  Nome
-                </th>
-                <th>
-                  Status
-                </th>
-                <th></th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Valor</th>
+                <th>Tamanho</th>
+                <th>Categoria</th>
                 <th></th>
               </tr>
             </thead>
-            <tbody id="tabela-list-categoria">
+            <tbody id="tabela-list-produto">
              
             </tbody>
           </table>
@@ -33,26 +32,77 @@
       </div>
     </div>
 </div>
-
+    
 <!-- Modal cadastrar -->
-<div style="margin-top: -400px" class="modal fade" id="ExemploModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" id="modal-cadastrar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="TituloModalCentralizado">Cadastrar nova Categoria</h4>
+        <h5 class="modal-title" id="exampleModalLabel">Cadastrar Produto</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <input type="hidden" name="categoriaId" id="id-categoria">
-        <label for="nome-categoria">Nome da Categoria</label>
-        <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
-        <span class="text-danger validate-nome"></span>
+        <form id="form-cadastro-produto">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="nome-produto">Nome do Produto<span class="text-danger">*</span></label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div> 
+            <div class="col-md-6">   
+              <div class="form-group">
+                <label for="descricao-produto">Descrição</label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Descricao" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="form-group">
+                <label for="descricao-produto">Valor</label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Valor" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <div class="form-group">
+                <label for="descricao-produto">Quantidade</label>
+                <input class="form-control text-dark nome-categoria" type="number" name="Quantidade" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div> 
+            <div class="col-md-2"> 
+              <div class="form-group">
+                <label for="descricao-produto">Tamanho</label>
+                <select class="form-control text-dark" name="Tamanho">
+                  <option value="0" class="text-dark">PP</option>
+                  <option value="1"class="text-dark">P</option>
+                  <option value="2"class="text-dark">M</option>
+                  <option value="3"class="text-dark">G</option>
+                  <option value="4"class="text-dark">GG</option>
+                  <option value="5"class="text-dark">Extra G</option>
+                </select>
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>
+            <div class="col-md-3"> 
+              <label>Categoria</label>
+              <select class="form-control text-dark" id="select-categorias" name="CategoriaId">
+              </select>
+            </div>
+            <div class="col-md-3"> 
+              <label>Foto</label>
+              <input class="form-control" type="file" id="foto" name="Foto">
+            </div>
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary" id="btn-cad-categoria">Salvar mudanças</button>
+        <button type="button" class="btn btn-primary" onclick="cadastrarProduto()">Cadastrar</button>
       </div>
     </div>
   </div>
@@ -60,70 +110,68 @@
 <!-- Fim Modal cadastrar -->
 
 <!-- Modal editar-->
-<div style="margin-top: -400px" class="modal fade" id="ModalCentralizadoEditar" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title" id="TituloModalCentralizado">Editar</h4>
+        <h5 class="modal-title" id="exampleModalLabel">Editar</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <input type="hidden" class="id-categoria" name="categoriaId">
-        <label for="nome-categoria">Nome da Categoria</label>
-        <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
-        <span class="text-danger validate-nome"></span>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="nome-produto">Nome do Produto<span class="text-danger">*</span></label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div> 
+            <div class="col-md-6">   
+              <div class="form-group">
+                <label for="descricao-produto">Descrição</label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="descricao-produto">Valor</label>
+                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+                <label for="descricao-produto">Quantidade</label>
+                <input class="form-control text-dark nome-categoria" type="number" name="Nome" autocomplete="false">
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div> 
+            <div class="col-md-4"> 
+              <div class="form-group">
+                <label for="descricao-produto">Tamanho</label>
+                <select class="form-control">
+                  <option class="text-dark">PP</option>
+                  <option class="text-dark">P</option>
+                  <option class="text-dark">M</option>
+                  <option class="text-dark">G</option>
+                  <option class="text-dark">GG</option>
+                  <option class="text-dark">Extra G</option>
+                </select>
+                <span class="text-danger validate-nome"></span>
+              </div>
+            </div>   
+          </div>
+        </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary" id="btn-edit-categoria">Editar</button>
+        <button type="button" class="btn btn-primary">Enviar</button>
       </div>
     </div>
   </div>
 </div>
 <!-- Fim Modal editar -->
-
-<!-- Modal inativar-->
-<div style="margin-top: -400px" class="modal fade" id="ModalCentralizadoInativar" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="TituloModalCentralizado">Tem certeza que deseja inativar essa categoria?</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" class="id-categoria" name="categoriaId">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-success" id="btn-inat-categoria">Confirmar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Fim Modal inativar -->
-
-<!-- Modal Ativar-->
-<div style="margin-top: -400px" class="modal fade" id="ModalCentralizadoAtivar" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title" id="TituloModalCentralizado">Tem certeza que deseja ativar essa categoria?</h4>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <input type="hidden" class="id-categoria" name="categoriaId">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-success" id="btn-ativ-categoria">Confirmar</button>
-      </div>
-    </div>
-  </div>
-</div>
-<!-- Fim Modal Ativar -->

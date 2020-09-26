@@ -72,5 +72,15 @@ namespace divisima.Repository
                 throw new DbUpdateConcurrencyException("Erro na operação", e);
             }
         }
+
+        public async Task<List<Categoria>> GetAllAtiva()
+        {
+            var categoriaAtivas = await _dbContext.Categorias
+            .Where(x => x.Ativo == CategoriaAtivoEnum.Ativo)
+            .OrderByDescending(x => x.CategoriaId)
+            .ToListAsync();
+
+            return categoriaAtivas;
+        }
     }
 }
