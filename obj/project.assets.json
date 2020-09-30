@@ -1002,7 +1002,7 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {}
         }
       },
-      "Pomelo.EntityFrameworkCore.MySql/3.2.1": {
+      "Pomelo.EntityFrameworkCore.MySql/3.2.2": {
         "type": "package",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "[3.1.8, 5.0.0)",
@@ -3552,16 +3552,16 @@
         "newtonsoft.json.bson.nuspec"
       ]
     },
-    "Pomelo.EntityFrameworkCore.MySql/3.2.1": {
-      "sha512": "gM8s6rckXRp3uknTS6WVTYJI4byn+DWc9BsOTN5zTbksw/WB4RFcN+NSlWoTI4/1GGxSy7paoFq/99jq5wUNFQ==",
+    "Pomelo.EntityFrameworkCore.MySql/3.2.2": {
+      "sha512": "reS6wjNMnCjEiYwtLtuyrrfoxAx7ml/d8YWb47x7I9dXuBOvp47Iir03VfFIu+a/FpZDQ3p167n5VInuKERzBQ==",
       "type": "package",
-      "path": "pomelo.entityframeworkcore.mysql/3.2.1",
+      "path": "pomelo.entityframeworkcore.mysql/3.2.2",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "icon.png",
         "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll",
-        "pomelo.entityframeworkcore.mysql.3.2.1.nupkg.sha512",
+        "pomelo.entityframeworkcore.mysql.3.2.2.nupkg.sha512",
         "pomelo.entityframeworkcore.mysql.nuspec"
       ]
     },
@@ -7304,11 +7304,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/moobi/workshop/c#/divisima/divisima.csproj",
+      "projectUniqueName": "/home/moobi/Divisima/divisima.csproj",
       "projectName": "divisima",
-      "projectPath": "/home/moobi/workshop/c#/divisima/divisima.csproj",
+      "projectPath": "/home/moobi/Divisima/divisima.csproj",
       "packagesPath": "/home/moobi/.nuget/packages/",
-      "outputPath": "/home/moobi/workshop/c#/divisima/obj/",
+      "outputPath": "/home/moobi/Divisima/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/moobi/.nuget/NuGet/NuGet.Config"

@@ -8,12 +8,16 @@ function montaTabelaProduto(dados){
         let valorFormatado = getValorFormatado(produtos.valor);
         let tdValor = setElement('td', 'td-valor', valorFormatado);
         let tdBtnDetalhe = setElement('td', 'td-btn-detalhe');
-        let BtnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
-        tdBtnDetalhe.append(BtnDetalhes);
+        let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
+        let tdBtnDelete = setElement('td', 'td-btn-delete');
+        let btnDelete = getElementButtonProducts('delete', produtos.produtoId);
+        tdBtnDelete.append(btnDelete);
+        tdBtnDetalhe.append(btnDetalhes);
         tr.append(tdNome);
         tr.append(tdQuantidade);
         tr.append(tdValor);
         tr.append(tdBtnDetalhe);
+        tr.append(tdBtnDelete);
         $('#tabela-list-produto').append(tr);
 
     }
@@ -53,11 +57,11 @@ function getElementButtonProducts(
         case "delete" :
             return btn.attr('data-id', id)
             .attr('data-toggle', 'modal')
-            .attr('data-target', '#DeleteModal')
+            .attr('data-target', '#modalDelete')
             .addClass('btn btn-danger btn-sm btn-delete')
             .text('Deletar')
             .on('click', () => {   
-                console.log('aaa');
+                $('.id-produto').val(id);
             });        
     }
 }

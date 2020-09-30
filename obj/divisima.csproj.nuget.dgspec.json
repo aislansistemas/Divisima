@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/moobi/workshop/c#/divisima/divisima.csproj": {}
+    "/home/moobi/Divisima/divisima.csproj": {}
   },
   "projects": {
-    "/home/moobi/workshop/c#/divisima/divisima.csproj": {
+    "/home/moobi/Divisima/divisima.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/moobi/workshop/c#/divisima/divisima.csproj",
+        "projectUniqueName": "/home/moobi/Divisima/divisima.csproj",
         "projectName": "divisima",
-        "projectPath": "/home/moobi/workshop/c#/divisima/divisima.csproj",
+        "projectPath": "/home/moobi/Divisima/divisima.csproj",
         "packagesPath": "/home/moobi/.nuget/packages/",
-        "outputPath": "/home/moobi/workshop/c#/divisima/obj/",
+        "outputPath": "/home/moobi/Divisima/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/moobi/.nuget/NuGet/NuGet.Config"

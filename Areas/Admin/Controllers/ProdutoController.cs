@@ -54,12 +54,30 @@ namespace divisima.Areas.Admin.Controllers
                     await _produtoRepository.Cadastrar(produto);
                     var produtoVm = new ProdutoViewModel(){
                         Produtos = await _produtoRepository.GetAll(),
-                        CategoriasAtivas = await _categoriaRepository.GetAllAtiva(),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
                 }
                 var errors = new ErroViewModel(){Erros = ModelState};
+                return Json(errors);
+            } catch(Exception e) {
+                return Json("Erro ao realizar a operação",e);
+            }
+        }
+
+        [HttpPost, ActionName("Deletar")]
+        public async Task<IActionResult> Deletar(int id){
+            try{
+                var produtoResult = await _produtoRepository.GetById(id);
+                if(produtoResult != null){
+                    await _produtoRepository.Deletar(produtoResult);
+                    var produtoVm = new ProdutoViewModel(){
+                        Produtos = await _produtoRepository.GetAll(),
+                        Mensagem = "Produto Cadastrado com sucesso!"
+                    };
+                    return Json(produtoVm);
+                }
+                var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
                 return Json(errors);
             } catch(Exception e) {
                 return Json("Erro ao realizar a operação",e);

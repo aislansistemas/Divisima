@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/moobi/workshop/c#/divisima/divisima.csproj",
+  "FilePath": "/home/moobi/Divisima/divisima.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14424,68 +14424,68 @@
   "RootNamespace": "divisima",
   "Documents": [
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/Produto/Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Produto\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/_ViewStart.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/Categoria/Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Categoria\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/Shared/Error.cshtml",
+      "FilePath": "/home/moobi/Divisima/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/Admin/Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Areas/Admin/Views/_ViewImports.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+      "FilePath": "/home/moobi/Divisima/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/_ViewStart.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/home/moobi/Divisima/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/_ViewStart.cshtml",
+      "FilePath": "/home/moobi/Divisima/Views/_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/workshop/c#/divisima/Views/Home/Index.cshtml",
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Categoria/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Categoria\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Views/Home/Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Admin/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Produto/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Produto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

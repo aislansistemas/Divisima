@@ -30,6 +30,13 @@ function cadastrarProduto(){
     });
 }
 
+function deletarProduto(){
+    data = {id : $('.id-produto').val()}
+    $.post('/Admin/Produto/Deletar', data, (response) => {
+        procedimentoPadrao(response);
+    })
+}
+
 function procedimentoPadrao(dados) {
     $('#tabela-list-produto').text('');
     montaTabelaProduto(dados.produtos);
