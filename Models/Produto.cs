@@ -12,7 +12,7 @@ namespace divisima.Models
         public string Nome { get; set; }
         public string Descricao { get; set; }
         [Required(ErrorMessage="Valor deve ser preenchido*")]
-        [Column(TypeName = "decimal(18,2)")]
+        [DisplayFormat(DataFormatString ="{0:f2}")]
         public decimal Valor { get; set; }
         [Required(ErrorMessage="Quantidade deve ser preenchido*")]
         public int Quantidade { get; set; }

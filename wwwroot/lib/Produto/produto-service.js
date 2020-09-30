@@ -19,7 +19,7 @@ function getTamanhoFormatado(tamanho){
 }
 
 function getValorFormatado(valor){
-    let valorFormatado = "R$ " + valor.toString().replace(".", ",");
-    return valorFormatado;
+    let valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+    return valorFormatado; 
 }
 

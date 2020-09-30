@@ -4,6 +4,7 @@ function getProdutos(){
     $.get('/Admin/Produto/GetProdutos', (dados) => {
         montaTabelaProduto(dados.produtos);
         montaSelectCategorias(dados.categoriasAtivas);
+        console.log(dados);
     })
 }
 
@@ -17,7 +18,20 @@ function cadastrarProduto(){
         contentType: false,
         processData: false,
         success: function(response){
-            console.log(response);
+            if(response.hasError){
+                console.log(response);
+                validateInputs(response);
+            }
+            procedimentoPadrao(response);
         },
+        error: function(XMLHttpRequest, textStatus, errorThrown){
+            console.log(XMLHttpRequest);
+        }
     });
+}
+
+function procedimentoPadrao(dados) {
+    $('#tabela-list-produto').text('');
+    montaTabelaProduto(dados.produtos);
+    montaSelectCategorias(dados.categoriasAtivas);
 }

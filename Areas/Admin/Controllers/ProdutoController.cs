@@ -47,19 +47,20 @@ namespace divisima.Areas.Admin.Controllers
         [HttpPost, ActionName("Cadastrar")]
         public async Task<IActionResult> Cadastrar(Produto produto){
             try{
-                var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
-                var nomeArquivo = _uploadSystem.Upload(formFile);
-                produto.Foto = nomeArquivo;
-                produto.CategoriaId = 2;
                 if(ModelState.IsValid){
+                    var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
+                    var nomeArquivo = _uploadSystem.Upload(formFile);
+                    produto.Foto = nomeArquivo;
                     await _produtoRepository.Cadastrar(produto);
                     var produtoVm = new ProdutoViewModel(){
                         Produtos = await _produtoRepository.GetAll(),
+                        CategoriasAtivas = await _categoriaRepository.GetAllAtiva(),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
                 }
-                return Json(ModelState/*"Preencha os dados corretamente"*/);
+                var errors = new ErroViewModel(){Erros = ModelState};
+                return Json(errors);
             } catch(Exception e) {
                 return Json("Erro ao realizar a operação",e);
             }
