@@ -37,6 +37,28 @@ function deletarProduto(){
     })
 }
 
+function editarProduto(){
+    $.ajax({
+        url: '/Admin/Produto/Editar',
+        method: 'post',
+        data: new FormData($('#form-edit-produto')[0]),
+        enctype: 'multipart/form-data',
+        cache: false,
+        contentType: false,
+        processData: false,
+        success: function(response){
+            if(response.hasError){
+                console.log(response);
+                validateInputs(response);
+            }
+            procedimentoPadrao(response);
+        },
+        error: function(XMLHttpRequest, textStatus, errorThrown){
+            console.log(XMLHttpRequest);
+        }
+    });
+}
+
 function procedimentoPadrao(dados) {
     $('#tabela-list-produto').text('');
     montaTabelaProduto(dados.produtos);

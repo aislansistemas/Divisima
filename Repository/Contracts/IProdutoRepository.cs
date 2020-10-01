@@ -9,6 +9,7 @@ namespace divisima.Repository.Contracts
          Task<List<Produto>> GetAll();
          Task Cadastrar(Produto produto);
          Task<Produto> GetById(int id);
+         Task Editar(Produto produto);
          Task Deletar(Produto produto);
 
     }

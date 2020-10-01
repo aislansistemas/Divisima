@@ -11,6 +11,9 @@ function montaTabelaProduto(dados){
         let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
         let tdBtnDelete = setElement('td', 'td-btn-delete');
         let btnDelete = getElementButtonProducts('delete', produtos.produtoId);
+        let tdBtnEdit = setElement('td', 'td-btn-edit');
+        let btnEdit = getElementButtonProducts('edit', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, produtos.valor, produtos.tamanho, produtos.categoria);
+        tdBtnEdit.append(btnEdit);
         tdBtnDelete.append(btnDelete);
         tdBtnDetalhe.append(btnDetalhes);
         tr.append(tdNome);
@@ -18,6 +21,7 @@ function montaTabelaProduto(dados){
         tr.append(tdValor);
         tr.append(tdBtnDetalhe);
         tr.append(tdBtnDelete);
+        tr.append(tdBtnEdit);
         $('#tabela-list-produto').append(tr);
 
     }
@@ -48,11 +52,11 @@ function getElementButtonProducts(
         case "edit" :
             return btn.attr('data-id', id)
             .attr('data-toggle', 'modal')
-            .attr('data-target', '#EditModal')
+            .attr('data-target', '#modalEdit')
             .addClass('btn btn-primary btn-sm btn-edit')
             .text('Editar')
             .on('click', () => {   
-                console.log('aaa');
+                setValureForInputs(id, foto, nome, descricao, quantidade, valor, tamanho, categoria);
             });
         case "delete" :
             return btn.attr('data-id', id)
@@ -74,7 +78,7 @@ function montaSelectCategorias(dados){
     for(let i = 0; i < dados.length; i++){
         let categoriaList = dados[i];
         let options = $('<option>').addClass('text-dark').val(categoriaList.categoriaId).text(categoriaList.nome);
-        $('#select-categorias').append(options);
+        $('.categoria-produto').append(options);
     }
 }
 
@@ -95,6 +99,30 @@ function setTextForDatailsProducts(
     $('.text-valor-produto').text(valor);
     $('.text-tamanho-produto').text(tamanhoFormatado);
     $('.text-categoria-produto').text(categoria);
+}
+
+function setValureForInputs(
+    id,
+    foto = null, 
+    nome = null, 
+    descricao = null, 
+    quantidade = null, 
+    valor = null, 
+    tamanho = null, 
+    categoria = null
+){
+    let tamanhoFormatado = getTamanhoFormatado(tamanho);
+    $('.id-produto').val(id);
+    $('.nome-produto').val(nome);
+    $('.descricao-produto').val(descricao);
+    $('.quantidade-produto').val(quantidade);
+    $('.valor-produto').val(valor);
+    let optionTamanho = $('<option>').val(tamanho).text(tamanhoFormatado).attr('selected', true);
+    $('.tamanho-produto').append(optionTamanho);
+    let optionCategoria = $('<option>').val(categoria.categoriaId).text(categoria.nome).attr('selected', true);
+    $('.categoria-produto').append(optionCategoria);
+    $('.foto-produto').attr('filename',foto);
+    console.log(foto);
 }
 
 

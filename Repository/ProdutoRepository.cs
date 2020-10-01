@@ -33,6 +33,16 @@ namespace divisima.Repository
             }
         }
 
+        public async Task Editar(Produto produto)
+        {
+            try{
+                _context.Produtos.Update(produto);
+                await _context.SaveChangesAsync();
+            } catch(DbUpdateConcurrencyException e) {
+                throw new DbUpdateConcurrencyException(e.Message);
+            }
+        }
+
         public async Task<List<Produto>> GetAll()
         {
             var produtos = await _context.Produtos

@@ -65,6 +65,27 @@ namespace divisima.Areas.Admin.Controllers
             }
         }
 
+        [HttpPost, ActionName("Editar")]
+        public async Task<IActionResult> Editar(Produto produto){
+            try{
+                var produtoResult = await _produtoRepository.GetById(produto.ProdutoId);
+                if(produtoResult != null){
+                    var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
+                    produto.Foto = formFile != null ? _uploadSystem.Upload(formFile) : produtoResult.Foto;
+                    await _produtoRepository.Editar(produto);
+                    var produtoVm = new ProdutoViewModel(){
+                        Produtos = await _produtoRepository.GetAll(),
+                        Mensagem = "Produto Cadastrado com sucesso!"
+                    };
+                    return Json(produtoVm);
+                }
+                var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
+                return Json(errors);
+            } catch(Exception e) {
+                return Json("Erro ao realizar a operação",e);
+            }
+        }
+        
         [HttpPost, ActionName("Deletar")]
         public async Task<IActionResult> Deletar(int id){
             try{

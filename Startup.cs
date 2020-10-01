@@ -1,15 +1,12 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using divisima.Context;
 using divisima.Repository;
 using divisima.Repository.Contracts;
 using divisima.Services;
+using Divisima.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -36,6 +33,10 @@ namespace divisima
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
+
+            services.AddIdentity<Usuario, IdentityRole>()
+                 .AddEntityFrameworkStores<AppDbContext>()
+                 .AddDefaultTokenProviders();
             
             services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>
@@ -60,6 +61,8 @@ namespace divisima
             app.UseStaticFiles();
 
             app.UseRouting();
+            
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

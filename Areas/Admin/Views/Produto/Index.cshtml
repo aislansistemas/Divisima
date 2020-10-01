@@ -87,7 +87,7 @@
             <div class="col-md-3"> 
               <label>Categoria<span class="text-danger">*</span></label>
               <span class="text-danger validate-categoria"></span>
-              <select class="form-control text-dark" id="select-categorias" name="CategoriaId">
+              <select class="form-control text-dark categoria-produto" id="select-categorias" name="CategoriaId">
               </select>
             </div>
             <div class="col-md-3"> 
@@ -153,7 +153,7 @@
 <!-- Fim Modal detalhes -->
 
 <!-- Modal editar-->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="modalEdit" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -163,56 +163,68 @@
         </button>
       </div>
       <div class="modal-body">
-        <form>
+        <form id="form-edit-produto">
           <div class="row">
             <div class="col-md-6">
+                <input type="hidden" class="id-produto" name="ProdutoId">
               <div class="form-group">
                 <label for="nome-produto">Nome do Produto<span class="text-danger">*</span></label>
-                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <input class="form-control text-dark nome-produto" type="text" name="Nome" autocomplete="false">
                 <span class="text-danger validate-nome"></span>
               </div>
             </div> 
             <div class="col-md-6">   
               <div class="form-group">
                 <label for="descricao-produto">Descrição</label>
-                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <input class="form-control text-dark descricao-produto" type="text" name="Descricao" autocomplete="false">
                 <span class="text-danger validate-nome"></span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
               <div class="form-group">
                 <label for="descricao-produto">Valor</label>
-                <input class="form-control text-dark nome-categoria" type="text" name="Nome" autocomplete="false">
+                <input class="form-control text-dark valor-produto" type="text" name="Valor" autocomplete="false">
                 <span class="text-danger validate-nome"></span>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-2">
               <div class="form-group">
                 <label for="descricao-produto">Quantidade</label>
-                <input class="form-control text-dark nome-categoria" type="number" name="Nome" autocomplete="false">
+                <input class="form-control text-dark quantidade-produto" type="number" name="Quantidade" autocomplete="false">
                 <span class="text-danger validate-nome"></span>
               </div>
             </div> 
-            <div class="col-md-4"> 
+            <div class="col-md-2"> 
               <div class="form-group">
                 <label for="descricao-produto">Tamanho</label>
-                <select class="form-control">
-                  <option class="text-dark">PP</option>
-                  <option class="text-dark">P</option>
-                  <option class="text-dark">M</option>
-                  <option class="text-dark">G</option>
-                  <option class="text-dark">GG</option>
-                  <option class="text-dark">Extra G</option>
+                <select class="form-control tamanho-produto text-dark" name="Tamanho">
+                  <option value="0" class="text-dark">PP</option>
+                  <option value="1"class="text-dark">P</option>
+                  <option value="2"class="text-dark">M</option>
+                  <option value="3"class="text-dark">G</option>
+                  <option value="4"class="text-dark">GG</option>
+                  <option value="5"class="text-dark">Extra G</option>
                 </select>
                 <span class="text-danger validate-nome"></span>
               </div>
-            </div>   
+            </div> 
+            <div class="col-md-3"> 
+              <label>Categoria<span class="text-danger">*</span></label>
+              <span class="text-danger validate-categoria"></span>
+              <select class="form-control text-dark categoria-produto" name="CategoriaId">
+              </select>
+            </div>
+            <div class="col-md-3"> 
+              <label>Foto<span class="text-danger">*</span></label>
+              <input class="form-control foto-produto" type="file" id="foto" name="Foto">
+               <span class="text-danger validate-foto"></span>
+            </div>  
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-primary" onclick="editarProduto()">Editar</button>
       </div>
     </div>
   </div>
