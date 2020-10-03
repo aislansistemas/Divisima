@@ -224,3 +224,4 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/divisima.dll
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/divisima.pdb
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/divisima.genruntimeconfig.cache
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
