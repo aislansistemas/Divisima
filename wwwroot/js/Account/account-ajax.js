@@ -1,19 +1,36 @@
 
 $('#btn-cadastra-usuario').on('click', (e) => {
     e.preventDefault();
-    $.post('/Account/CadastroAjax', getValueForInputs(), (response) => {
+    let dados = getValueForInputsCadastro()
+    console.log(a);
+    $.post('/Account/CadastroAjax', dados, (response) => {
         console.log(response);
     });
 });
 
-
-function getValueForInputs(){
-    var data = {
-       UserName: $('.UserName').val(),
-       Sobrenome: $('.Sobrenome').val(),
-       Cpf: $('.Cpf').val(),
-       Email: $('.Email').val(),
-       Password: $('.Password').val()
+function getValueForInputsCadastro(){
+    let data = {
+       Nome: $('#Nome').val(),
+       Sobrenome: $('#Sobrenome').val(),
+       Cpf: $('#Cpf').val(),
+       UserName: $('#UserName').val(),
+       Password: $('#Password').val()
     }
+    return data;
+}
+
+$('#btn-login').on('click', (e) => {
+    e.preventDefault();
+    let dados = getValueForInputsLogin();
+    $.post('/Account/LoginAjax', dados, (response) => {
+        console.log(response);
+    });
+});
+
+function getValueForInputsLogin(){
+    let data = {
+        UserName: $('#UserName').val(),
+        Password: $('#Password').val()
+    };
     return data;
 }

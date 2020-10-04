@@ -30,24 +30,24 @@ namespace divisima.Controllers
             return View(new LoginViewModel(){ReturnUrl = returnUrl});
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Login(LoginViewModel loginVM)
+        [HttpPost, ActionName("LoginAjax")]
+        public async Task<IActionResult> LoginAjax(LoginViewModel loginVM)
         {
             if (!ModelState.IsValid)
-                return View(loginVM);
-            var usuario = _userManager.FindByEmailAsync(loginVM.Email).Result;
+                return Json(loginVM);
+            var usuario = _userManager.FindByNameAsync(loginVM.UserName).Result;
             if (_userManager.CheckPasswordAsync(usuario, loginVM.Password).Result) {
                 
                 await _signInManager.SignInAsync(usuario,false);
                 if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                 {
-                    return RedirectToAction("Index", "Home");
+                    return Json("Redirect");
                 }
-                return Redirect(loginVM.ReturnUrl);
+                return Json(loginVM.ReturnUrl);
             }
             
             ModelState.AddModelError("", "Usuário/Senha inválidos ou não localizados!!");
-            return View(loginVM);
+            return Json(ModelState);
         }
 
         public IActionResult Cadastro()
@@ -56,23 +56,27 @@ namespace divisima.Controllers
         }
 
         [HttpPost, ActionName("CadastroAjax")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CadastroAjax(CadastroUsuarioViewModel usuarioVm)
         {
             if (ModelState.IsValid)
-            {
-                var user = new Usuario() { Email = usuarioVm.Email };
-                var result = await _userManager.CreateAsync(user, usuarioVm.Password);
+            {   
+                var usuarioIsExistente = await _userManager.FindByNameAsync(usuarioVm.UserName);
+                if(usuarioIsExistente == null){
+                    var user = new Usuario() { 
+                        UserName = usuarioVm.UserName, 
+                    };
+                    var result = await _userManager.CreateAsync(user, usuarioVm.Password);
 
-                if (result.Succeeded)
-                {
-                    //Adiciona o usuário padrão ao perfil Member
-                    var perfilUsuario = PerfilUsuarioEnum.Comun;
-                    await _userManager.AddToRoleAsync(user, perfilUsuario);
-                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    if (result.Succeeded)
+                    {
+                        var perfilUsuario = PerfilUsuarioEnum.Comun;
+                        await _userManager.AddToRoleAsync(user, perfilUsuario);
+                        await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return Json("Cadastro feito com sucesso!");
+                        return Json("Cadastro feito com sucesso!");
+                    }
                 }
+                return Json("Já existe um usuario com o mesmo E-mail cadastrado");
             }
             return Json(usuarioVm);
         }
