@@ -79,3 +79,18 @@ input, th{
   font-size: 0.8em !important;
 }
 
+#login-icon{
+  transition: color 0.5s, font-size 0.5s;
+}
+#login-icon:hover{
+  color: #50e550 !important;
+  font-size: 1.1em !important;
+}
+
+#cadastro-icon{
+  transition: color 0.5s, font-size 0.5s;
+}
+#cadastro-icon:hover{
+  color: #f51167 !important;
+  font-size: 1.1em !important;
+}

@@ -2,24 +2,42 @@
 	<div class="layer">
 		<div class="content-w3ls">
 			<div class="text-center text-light icon">
-				Login
+				Cadastre-se
 			</div>
 			<div class="content-bottom">
 				<form action="#" method="post">
 					<div class="field-group">
 						<span class="fa fa-user" aria-hidden="true"></span>
 						<div class="wthree-field">
-							<input name="text1" id="text1" type="text" value="" placeholder="Username" required>
+							<input name="UserName" id="UserName" type="text" placeholder="Nome">
+						</div>
+					</div>
+                    <div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="Sobrenome" id="Sobrenome" type="text" placeholder="Sobrenome">
+						</div>
+					</div>
+                    <div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="Cpf" id="Cpf" type="text" placeholder="CPF">
+						</div>
+					</div>
+                    <div class="field-group">
+						<span class="fa fa-user" aria-hidden="true"></span>
+						<div class="wthree-field">
+							<input name="Email" id="Email" type="text" placeholder="Email">
 						</div>
 					</div>
 					<div class="field-group">
 						<span class="fa fa-lock" aria-hidden="true"></span>
 						<div class="wthree-field">
-							<input name="password" id="myInput" type="Password" placeholder="Password">
+							<input name="Password" id="Password" type="Password" placeholder="Senha">
 						</div>
 					</div>
 					<div class="wthree-field">
-						<button type="submit" class="btn">Get Started</button>
+						<button type="submit" class="btn" id="btn-cadastra-usuario">CADASTRAR</button>
 					</div>
 					<ul class="list-login">
 						<li class="switch-agileits">
@@ -36,7 +54,7 @@
 					</ul>
 					<ul class="list-login-bottom">
 						<li class="">
-							<a asp-action="Cadastro" asp-controller="Account" class="">Cadastre-se</a>
+							<a href="#" class="">Create Account</a>
 						</li>
 						<li class="">
 							<a href="#" class="text-right">Need Help?</a>

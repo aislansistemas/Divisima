@@ -14479,6 +14479,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/moobi/Divisima/Views/Account/Cadastro.cshtml",
+      "TargetPath": "Views\\Account\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\_ViewImports.cshtml",
       "FileKind": "mvc"

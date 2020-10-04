@@ -59,7 +59,9 @@
 						<div class="user-panel">
 							<div class="up-item">
 								<i class="flaticon-profile"></i>
-								<a href="#">Sign</a> In or <a href="#">Create Account</a>
+								<a id="login-icon" asp-action="Login" asp-controller="Account">Login</a> 
+								Ou 
+								<a id="cadastro-icon" asp-action="Cadastro" asp-controller="Account">Cadastre-se</a>
 							</div>
 							<div class="up-item">
 								<div class="shopping-card">
@@ -226,6 +228,9 @@
 	<script src="~/js/home/jquery.zoom.min.js"></script>
 	<script src="~/js/home/jquery-ui.min.js"></script>
 	<script src="~/js/home/main.js"></script>
+	<!-------------------------------------->
+	<script src="~/js/Account/account-ajax.js"></script>
+	<!-------------------------------------->
     @RenderSection("Scripts", required: false)
 </body>
 </html>

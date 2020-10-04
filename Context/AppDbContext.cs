@@ -1,10 +1,11 @@
 using divisima.Models;
+using Divisima.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace divisima.Context
 {
-    public class AppDbContext: IdentityDbContext
+    public class AppDbContext: IdentityDbContext<Usuario>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options) {}
 

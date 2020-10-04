@@ -35,7 +35,6 @@ namespace divisima.Controllers
         {
             if (!ModelState.IsValid)
                 return View(loginVM);
-
             var usuario = _userManager.FindByEmailAsync(loginVM.Email).Result;
             if (_userManager.CheckPasswordAsync(usuario, loginVM.Password).Result) {
                 
@@ -45,26 +44,25 @@ namespace divisima.Controllers
                     return RedirectToAction("Index", "Home");
                 }
                 return Redirect(loginVM.ReturnUrl);
-                
             }
             
             ModelState.AddModelError("", "Usuário/Senha inválidos ou não localizados!!");
             return View(loginVM);
         }
 
-        public IActionResult Register()
+        public IActionResult Cadastro()
         {
             return View();
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("CadastroAjax")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Register(LoginViewModel registroVM)
+        public async Task<IActionResult> CadastroAjax(CadastroUsuarioViewModel usuarioVm)
         {
             if (ModelState.IsValid)
             {
-                var user = new Usuario() { Email = registroVM.Email };
-                var result = await _userManager.CreateAsync(user, registroVM.Password);
+                var user = new Usuario() { Email = usuarioVm.Email };
+                var result = await _userManager.CreateAsync(user, usuarioVm.Password);
 
                 if (result.Succeeded)
                 {
@@ -73,10 +71,10 @@ namespace divisima.Controllers
                     await _userManager.AddToRoleAsync(user, perfilUsuario);
                     await _signInManager.SignInAsync(user, isPersistent: false);
 
-                    return RedirectToAction(nameof(Login));
+                    return Json("Cadastro feito com sucesso!");
                 }
             }
-            return View(registroVM);
+            return Json(usuarioVm);
         }
 
         public ViewResult LoggedIn() => View();
