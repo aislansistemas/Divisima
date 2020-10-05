@@ -2,7 +2,9 @@
 using System.Threading.Tasks;
 using Divisima.Enums.PerfilUsuarioEnums;
 using Divisima.Models;
+using Divisima.Repository.Contracts;
 using Divisima.ViewModels;
+using Divisima.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,21 +12,18 @@ namespace divisima.Controllers
 {
     public class AccountController : Controller
     {
-        private readonly UserManager<Usuario> _userManager;
         private readonly SignInManager<Usuario> _signInManager;
         private readonly RoleManager<IdentityRole> _roleManeger;
+        private readonly IAccountRepository _accRepository;
 
         public AccountController(
-            UserManager<Usuario> userManager,
             SignInManager<Usuario> signManager,
-            RoleManager<IdentityRole> roleManeger
+            IAccountRepository accRepository
         ){
-            _userManager = userManager;
             _signInManager = signManager;
-            _roleManeger = roleManeger;
+            _accRepository = accRepository;
         }
 
-        //implementar login, registro e logout
         public IActionResult Login(string returnUrl)
         {
             return View(new LoginViewModel(){ReturnUrl = returnUrl});
@@ -35,8 +34,8 @@ namespace divisima.Controllers
         {
             if (!ModelState.IsValid)
                 return Json(loginVM);
-            var usuario = _userManager.FindByNameAsync(loginVM.UserName).Result;
-            if (_userManager.CheckPasswordAsync(usuario, loginVM.Password).Result) {
+            var usuario = await _accRepository.GetUserByEmail(loginVM.UserName);
+            if (await _accRepository.PasswordIsValid(usuario, loginVM.Password)) {
                 
                 await _signInManager.SignInAsync(usuario,false);
                 if (string.IsNullOrEmpty(loginVM.ReturnUrl))
@@ -60,21 +59,13 @@ namespace divisima.Controllers
         {
             if (ModelState.IsValid)
             {   
-                var usuarioIsExistente = await _userManager.FindByNameAsync(usuarioVm.UserName);
+                var usuarioIsExistente = await _accRepository.GetUserByEmail(usuarioVm.UserName);
                 if(usuarioIsExistente == null){
-                    var user = new Usuario() { 
-                        UserName = usuarioVm.UserName, 
-                    };
-                    var result = await _userManager.CreateAsync(user, usuarioVm.Password);
 
-                    if (result.Succeeded)
-                    {
-                        var perfilUsuario = PerfilUsuarioEnum.Comun;
-                        await _userManager.AddToRoleAsync(user, perfilUsuario);
-                        await _signInManager.SignInAsync(user, isPersistent: false);
+                    var usuarioCadastrado = await _accRepository.CadastraUsuario(usuarioVm);
+                    await _signInManager.SignInAsync(usuarioCadastrado, isPersistent: false);
 
-                        return Json("Cadastro feito com sucesso!");
-                    }
+                    return Json("Cadastro feito com sucesso!");
                 }
                 return Json("Já existe um usuario com o mesmo E-mail cadastrado");
             }
@@ -90,15 +81,5 @@ namespace divisima.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-        [HttpGet]
-        public IActionResult CreateRoles(){
-            return View();
-        }
-
-        [HttpPost, ActionName("CreateRoles")]
-        public async Task<IActionResult> CreateRoles(string role){
-            await _roleManeger.CreateAsync(new IdentityRole(role));
-            return RedirectToAction(nameof(Login));
-        }
     }
 }

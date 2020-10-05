@@ -3,6 +3,8 @@ using divisima.Repository;
 using divisima.Repository.Contracts;
 using divisima.Services;
 using Divisima.Models;
+using Divisima.Repository;
+using Divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,6 +33,7 @@ namespace divisima
 
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
+            services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
 

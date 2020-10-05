@@ -14469,13 +14469,13 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Admin/Index.cshtml",
-      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Usuario/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Usuario\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/Divisima/Views/Account/CreateRoles.cshtml",
-      "TargetPath": "Views\\Account\\CreateRoles.cshtml",
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Admin/Index.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

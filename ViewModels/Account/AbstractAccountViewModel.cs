@@ -1,8 +1,8 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Divisima.ViewModels
+namespace Divisima.ViewModels.Account
 {
-    public class LoginViewModel
+    public abstract class AbstractAccountViewModel
     {
         [Required]
         [Display(Name = "Email")]
@@ -11,6 +11,5 @@ namespace Divisima.ViewModels
         [DataType(DataType.Password)]
         [Display(Name = "Senha")]
         public string Password { get; set; }
-        public string ReturnUrl { get; set; }
     }
 }

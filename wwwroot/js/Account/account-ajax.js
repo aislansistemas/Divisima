@@ -2,7 +2,6 @@
 $('#btn-cadastra-usuario').on('click', (e) => {
     e.preventDefault();
     let dados = getValueForInputsCadastro()
-    console.log(a);
     $.post('/Account/CadastroAjax', dados, (response) => {
         console.log(response);
     });
