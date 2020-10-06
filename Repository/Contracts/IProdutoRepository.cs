@@ -11,6 +11,7 @@ namespace divisima.Repository.Contracts
          Task<Produto> GetById(int id);
          Task Editar(Produto produto);
          Task Deletar(Produto produto);
+         Task<List<Produto>> GetProductosRecentes(int numberResults = 5);
 
     }
 }

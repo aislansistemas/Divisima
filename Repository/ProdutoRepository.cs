@@ -19,6 +19,7 @@ namespace divisima.Repository
 
         public async Task Cadastrar(Produto produto)
         {
+            produto.DataCadastro = DateTime.Now;
             _context.Produtos.Add(produto);
             await _context.SaveChangesAsync();
         }
@@ -61,6 +62,17 @@ namespace divisima.Repository
             } catch(Exception e) {
                 throw new Exception(e.Message);
             }
+        }
+
+        public async Task<List<Produto>> GetProductosRecentes(int numberResults = 5)
+        {
+
+            var lastProducts = await _context.Produtos
+            .AsNoTracking().Take(numberResults)
+            .OrderByDescending(x => x.ProdutoId)
+            .ToListAsync();
+
+            return lastProducts;
         }
     }
 }

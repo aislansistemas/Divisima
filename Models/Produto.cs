@@ -1,3 +1,4 @@
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -19,5 +20,6 @@ namespace divisima.Models
         [Required(ErrorMessage="Tamanho deve ser preenchido*")]
         public int Tamanho { get; set; }
         public string Foto { get; set; }
+        public DateTime DataCadastro { get; set; }
     }
 }
