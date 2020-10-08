@@ -26,8 +26,15 @@ using divisima.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 3 "/home/moobi/Divisima/Views/_ViewImports.cshtml"
+using divisima.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d9d7ec39e8bc9ed22879a7185cf4608fbe440921", @"/Views/Account/Login.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e9d5dd25a71d44686cf6b33b2ba3d3cb59c967a6", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09967dfe9b254561ecab6a27903e8c8e6697c712", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Cadastro", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -62,7 +69,7 @@ using divisima.Models;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<section class=\"main\">\n\t<div class=\"layer\">\n\t\t<div class=\"content-w3ls\">\n\t\t\t<div class=\"text-center text-light icon\">\n\t\t\t\tLogin\n\t\t\t</div>\n\t\t\t<div class=\"content-bottom\">\n\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9d7ec39e8bc9ed22879a7185cf4608fbe4409214984", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9d7ec39e8bc9ed22879a7185cf4608fbe4409215132", async() => {
                 WriteLiteral("\n\t\t\t\t\t<div class=\"field-group\">\n\t\t\t\t\t\t<span class=\"fa fa-user\" aria-hidden=\"true\"></span>\n\t\t\t\t\t\t<div class=\"wthree-field\">\n\t\t\t\t\t\t\t<input name=\"text1\" id=\"UserName\" type=\"text\"");
                 BeginWriteAttribute("value", " value=\"", 380, "\"", 388, 0);
                 EndWriteAttribute();
@@ -83,7 +90,7 @@ using divisima.Models;
                 BeginWriteAttribute("class", " class=\"", 831, "\"", 839, 0);
                 EndWriteAttribute();
                 WriteLiteral(">\n\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9d7ec39e8bc9ed22879a7185cf4608fbe4409216239", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9d7ec39e8bc9ed22879a7185cf4608fbe4409216387", async() => {
                     WriteLiteral("Cadastre-se");
                 }
                 );

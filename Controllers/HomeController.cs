@@ -16,23 +16,28 @@ namespace divisima.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IProdutoRepository _produtoRepository;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(IProdutoRepository produtoRepository, ILogger<HomeController> logger)
         {
-            _logger = logger;
+            _produtoRepository = produtoRepository;
         }
 
-        public IActionResult Index()
-        {   
-            return View();
-        }
-
-        public async Task<IActionResult> ListProducts()
+        public async Task<IActionResult> Index()
         {   
             var produtoVm = new ProdutoViewModel(){
                 LastProducts = await _produtoRepository.GetProductosRecentes(),
                 Produtos = await _produtoRepository.GetAll()
             };
             return View(produtoVm);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> ListProductsJson()
+        {   
+            var produtoVm = new ProdutoViewModel(){
+                LastProducts = await _produtoRepository.GetProductosRecentes(),
+                Produtos = await _produtoRepository.GetAll()
+            };
+            return Json(produtoVm);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

@@ -94,3 +94,16 @@ input, th{
   color: #f51167 !important;
   font-size: 1.1em !important;
 }
+
+.img-list-products{
+  width: 350px;
+  height: 480px;
+}
+
+.icone-ver-detalhes{
+  transition: color 0.4s, font-size 0.4s;
+}
+.icone-ver-detalhes:hover {
+  color: #50e550 !important;
+  font-size: 1.1em !important;
+}
