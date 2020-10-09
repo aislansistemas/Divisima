@@ -96,8 +96,8 @@ input, th{
 }
 
 .img-list-products{
-  width: 350px;
-  height: 480px;
+  width: 330px !important;
+  height: 430px !important;
 }
 
 .icone-ver-detalhes{

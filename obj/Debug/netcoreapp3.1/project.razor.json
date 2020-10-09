@@ -14459,13 +14459,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/moobi/Divisima/Views/Produto/Index.cshtml",
+      "TargetPath": "Views\\Produto\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Categoria/Index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Categoria\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/moobi/Divisima/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/home/moobi/Divisima/Views/Produto/Privacy.cshtml",
+      "TargetPath": "Views\\Produto\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14496,11 +14501,6 @@
     {
       "FilePath": "/home/moobi/Divisima/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/home/moobi/Divisima/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     }
   ],

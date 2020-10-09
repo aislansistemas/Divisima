@@ -208,8 +208,6 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Shared/_Layout.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/_ViewImports.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/_ViewStart.cshtml.g.cs
-/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Home/Index.cshtml.g.cs
-/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_ValidationScriptsPartial.cshtml.g.cs
@@ -227,3 +225,5 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Account/Cadastro.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Areas/Admin/Views/Usuario/Index.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/Index.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/Privacy.cshtml.g.cs

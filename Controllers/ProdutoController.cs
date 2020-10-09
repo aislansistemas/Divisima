@@ -11,21 +11,21 @@ using divisima.ViewModels;
 
 namespace divisima.Controllers
 {
-    public class HomeController : Controller
+    public class ProdutoController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
         private readonly IProdutoRepository _produtoRepository;
+        private string Menssagem;
 
-        public HomeController(IProdutoRepository produtoRepository, ILogger<HomeController> logger)
-        {
+        public ProdutoController(
+            IProdutoRepository produtoRepository
+        ){
             _produtoRepository = produtoRepository;
-        }
+        } 
 
         public async Task<IActionResult> Index()
         {   
             var produtoVm = new ProdutoViewModel(){
-                LastProducts = await _produtoRepository.GetProductosRecentes(),
-                Produtos = await _produtoRepository.GetAll()
+                LastProducts = await _produtoRepository.GetProductosRecentes()
             };
             return View(produtoVm);
         }
@@ -40,10 +40,19 @@ namespace divisima.Controllers
             return Json(produtoVm);
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        [HttpGet]
+        public async Task<IActionResult> Detalhes(int id){
+            if(id <= 0){
+                this.Menssagem = "Produto não encontrado";
+                return View(this.Menssagem);
+            }
+            var produtoResult = await _produtoRepository.GetById(id);
+            if(produtoResult == null){
+                this.Menssagem = "Produto não encontrado";
+                return View(this.Menssagem);
+            }
+            return View(produtoResult);
         }
+
     }
 }
