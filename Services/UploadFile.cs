@@ -7,9 +7,9 @@ namespace divisima.Services
 {
     public class UploadFile: IUploadFile
     {   
-        private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IWebHostEnvironment _hostingEnvironment;
 
-        public UploadFile(IHostingEnvironment hostingEnvironment)
+        public UploadFile(IWebHostEnvironment hostingEnvironment)
         {
             this._hostingEnvironment = hostingEnvironment;
         }

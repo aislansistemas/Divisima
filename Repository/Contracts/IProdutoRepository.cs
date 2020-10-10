@@ -6,7 +6,7 @@ namespace divisima.Repository.Contracts
 {
     public interface IProdutoRepository
     {
-         Task<List<Produto>> GetAll();
+         Task<List<Produto>> GetAll(int numberPage = 0, int limit = 5);
          Task Cadastrar(Produto produto);
          Task<Produto> GetById(int id);
          Task Editar(Produto produto);

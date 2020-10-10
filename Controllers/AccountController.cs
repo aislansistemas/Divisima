@@ -13,7 +13,6 @@ namespace divisima.Controllers
     public class AccountController : Controller
     {
         private readonly SignInManager<Usuario> _signInManager;
-        private readonly RoleManager<IdentityRole> _roleManeger;
         private readonly IAccountRepository _accRepository;
 
         public AccountController(

@@ -107,3 +107,12 @@ input, th{
   color: #50e550 !important;
   font-size: 1.1em !important;
 }
+
+.btn-ver-mais{
+  transition: background-color 0.4s,color 0.4s !important;
+}
+
+.btn-ver-mais:hover{
+  background-color: #f51167 !important;
+  color: #fff !important;
+}

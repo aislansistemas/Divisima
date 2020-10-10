@@ -31,12 +31,16 @@ namespace divisima.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ListProductsJson()
+        public async Task<IActionResult> ListProductsJson(int numberPage, int limit)
         {   
+            for(int i = 0; i < 1000000000; i++){
+            
+            }
             var produtoVm = new ProdutoViewModel(){
                 LastProducts = await _produtoRepository.GetProductosRecentes(),
-                Produtos = await _produtoRepository.GetAll()
+                Produtos = await _produtoRepository.GetAll(numberPage, limit)
             };
+          
             return Json(produtoVm);
         }
 

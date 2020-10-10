@@ -44,13 +44,15 @@ namespace divisima.Repository
             }
         }
 
-        public async Task<List<Produto>> GetAll()
+        public async Task<List<Produto>> GetAll(int numberPage = 0, int limit = 5)
         {
             var produtos = await _context.Produtos
             .AsNoTracking()
             .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
             .OrderByDescending(x => x.ProdutoId)
+            .Skip((numberPage - 1) * limit)
+            .Take(limit)
             .ToListAsync();
             return produtos;
         }
@@ -66,10 +68,12 @@ namespace divisima.Repository
 
         public async Task<List<Produto>> GetProductosRecentes(int numberResults = 5)
         {
-
             var lastProducts = await _context.Produtos
-            .AsNoTracking().Take(numberResults)
+            .AsNoTracking()
+            .Where(x => x.Quantidade > 0)
+            .Include(x => x.Categoria)
             .OrderByDescending(x => x.ProdutoId)
+            .Take(numberResults)
             .ToListAsync();
 
             return lastProducts;
