@@ -48,8 +48,6 @@
 	</section>
 	<!-- Hero section end -->
 
-
-
 	<!-- Features section -->
 	<section class="features-section">
 		<div class="container-fluid">
@@ -94,7 +92,7 @@
 			@foreach(Produto produto in Model.LastProducts){
 				<div class="product-item">
 					<div class="pi-pic">
-						<img src="../arquivos/@produto.Foto" alt="" class="img-list-products">
+						<img src="~/arquivos/@produto.Foto" alt="" class="img-list-products">
 						<div class="pi-links">
 							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Adicionar</span></a>
 							<a asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">

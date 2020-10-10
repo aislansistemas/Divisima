@@ -51,7 +51,11 @@ namespace divisima.Controllers
                 this.Menssagem = "Produto não encontrado";
                 return View(this.Menssagem);
             }
-            return View(produtoResult);
+            var produtoVm = new ProdutoViewModel(){
+                Produto = produtoResult,
+                LastProducts = await _produtoRepository.GetProductosRecentes()
+            };
+            return View(produtoVm);
         }
 
     }
