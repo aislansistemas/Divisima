@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace divisima.Context
 {
-    public class AppDbContext: IdentityDbContext<Usuario>
+    public class AppDbContext : IdentityDbContext<Usuario>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options): base(options) {}
 

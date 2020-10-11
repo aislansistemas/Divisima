@@ -14,18 +14,22 @@ namespace divisima.Controllers
     public class ProdutoController : Controller
     {
         private readonly IProdutoRepository _produtoRepository;
+        private readonly ICategoriaRepository _categoriaRepository;
         private string Menssagem;
 
         public ProdutoController(
-            IProdutoRepository produtoRepository
+            IProdutoRepository produtoRepository,
+            ICategoriaRepository categoriaRepository
         ){
             _produtoRepository = produtoRepository;
+            _categoriaRepository = categoriaRepository;
         } 
 
         public async Task<IActionResult> Index()
         {   
             var produtoVm = new ProdutoViewModel(){
-                LastProducts = await _produtoRepository.GetProductosRecentes()
+                LastProducts = await _produtoRepository.GetProductosRecentes(),
+                CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
             };
             return View(produtoVm);
         }

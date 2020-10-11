@@ -50,26 +50,17 @@
 						</a>
 					</div>
 					<div class="col-xl-6 col-lg-5">
-						<form class="header-search-form">
-							<input type="text" placeholder="Search on divisima ....">
-							<button><i class="flaticon-search"></i></button>
-						</form>
+						<!----------search partial-------->
+						@await Html.PartialAsync("~/Views/Shared/PartialViews/_SearchPartial.cshtml")
 					</div>
 					<div class="col-xl-4 col-lg-5">
 						<div class="user-panel">
-							<div class="up-item">
-								<i class="flaticon-profile"></i>
-								<a id="login-icon" asp-action="Login" asp-controller="Account">Login</a> 
-								Ou 
-								<a id="cadastro-icon" asp-action="Cadastro" asp-controller="Account">Cadastre-se</a>
-							</div>
-							<div class="up-item">
-								<div class="shopping-card">
-									<i class="flaticon-bag"></i>
-									<span>0</span>
-								</div>
-								<a href="#">Shopping Cart</a>
-							</div>
+							<!----------Login partial---------->
+							@await Html.PartialAsync("~/Views/Shared/PartialViews/_LoginPartial.cshtml")
+							<!------------<><><><><>----------->
+							<!----------carrinho de compra ---->
+							@await Component.InvokeAsync("CarrinhoCompraResumo")
+							<!------------<><><><><>----------->
 						</div>
 					</div>
 				</div>

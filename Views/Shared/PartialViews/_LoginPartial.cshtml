@@ -1,0 +1,26 @@
+@using Microsoft.AspNetCore.Identity
+@using Microsoft.AspNetCore.Identity.EntityFrameworkCore
+@using Divisima.Models
+
+@inject SignInManager<Usuario> SignInManager
+
+@if (SignInManager.IsSignedIn(User))
+{
+    <div class="up-item">
+        <i class="flaticon-profile"></i>
+        <a href="#">@User.Identity.Name</a>
+    </div>
+    <div class="up-item">
+        <i class="fa fa-times"></i>
+        <a href="">Sair</a>
+    </div>
+}
+else
+{
+    <div class="up-item">
+		<i class="flaticon-profile"></i>
+		<a id="login-icon" asp-action="Login" asp-controller="Account">Login</a> 
+			Ou 
+		<a id="cadastro-icon" asp-action="Cadastro" asp-controller="Account">Cadastre-se</a>
+	</div>
+}

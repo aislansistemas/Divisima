@@ -228,3 +228,6 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/Index.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/Privacy.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/Detalhes.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/PartialViews/_LoginPartial.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/PartialViews/_SearchPartial.cshtml.g.cs

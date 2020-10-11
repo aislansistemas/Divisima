@@ -116,3 +116,12 @@ input, th{
   background-color: #f51167 !important;
   color: #fff !important;
 }
+
+#icone-carrinho-compra{
+  transition: color 0.4s;
+}
+
+#icone-carrinho-compra:hover{
+  cursor: pointer;
+  color: #50e550;
+}

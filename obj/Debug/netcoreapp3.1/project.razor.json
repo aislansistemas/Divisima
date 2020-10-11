@@ -12422,6 +12422,23 @@
         }
       },
       {
+        "HashCode": 2103895916,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
+        "AssemblyName": "divisima",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:carrinho-compra-resumo"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "CarrinhoCompraResumo"
+        }
+      },
+      {
         "HashCode": 304453417,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__PagerViewComponentTagHelper",
@@ -14464,6 +14481,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/moobi/Divisima/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\CarrinhoCompraResumo\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Categoria/Index.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Categoria\\Index.cshtml",
       "FileKind": "mvc"
@@ -14471,6 +14493,11 @@
     {
       "FilePath": "/home/moobi/Divisima/Views/Produto/Privacy.cshtml",
       "TargetPath": "Views\\Produto\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Views/Shared/PartialViews/_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\PartialViews\\_LoginPartial.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14496,6 +14523,11 @@
     {
       "FilePath": "/home/moobi/Divisima/Views/Account/Cadastro.cshtml",
       "TargetPath": "Views\\Account\\Cadastro.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Views/Shared/PartialViews/_SearchPartial.cshtml",
+      "TargetPath": "Views\\Shared\\PartialViews\\_SearchPartial.cshtml",
       "FileKind": "mvc"
     },
     {
