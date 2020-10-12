@@ -12,8 +12,6 @@ function getProducts(){
     })
 }
 
-
-
 function getProdutoById(){
     let id = $(this).attr('data-id');
     $.get(`/Produto/Detalhes/${id}`, (response) => {
@@ -28,21 +26,19 @@ function carregaMaisProdutos(){
     let imgLoading = setGifLoading();
     $.get('/Produto/ListProductsJson', {numberPage, limit}, (dados) => {
         imgLoading.remove();
+        $(".btn-close-modal").click();
         adicionaExibicaoProdutos(dados.produtos);
+        
     })
+    
 }
 
 function setGifLoading(){
-    var posicaoLoading = $(".row-all-products").offset().top;
-    $("body").animate(
-    {
-        scrollTop: posicaoLoading + "px"
-    }, 1000);
-
+    
     let imgLoading = $('<img>')
     .attr('src', 'img/carregamento.gif')
     imgLoading.slideDown(100);
     //.addClass('rounded mx-auto d-block col-md-offset-3');
-    $('.row-all-products').prepend(imgLoading);
+    $('.modal-content').prepend(imgLoading);
     return imgLoading;
 }

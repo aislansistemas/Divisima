@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http;
 
 namespace divisima.Services
 {
-    public class UploadFile: IUploadFile
+    public class UploadFile : IUploadFile
     {   
         private readonly IWebHostEnvironment _hostingEnvironment;
 
@@ -13,11 +13,11 @@ namespace divisima.Services
         {
             this._hostingEnvironment = hostingEnvironment;
         }
-        public string Upload(IFormFile formFile){
+        public string Upload(IFormFile formFile, string directory){
             try{
                 var nomeArquivo = formFile.FileName;
                 var novoNomeArquivo = nomeArquivo.Replace(" ", "_");
-                string pastaArquivos = Path.Combine(_hostingEnvironment.WebRootPath, "arquivos");
+                string pastaArquivos = Path.Combine(_hostingEnvironment.WebRootPath, directory);
                 string caminhoArquivo = Path.Combine(pastaArquivos, novoNomeArquivo);
                 using (var fileStream = new FileStream(caminhoArquivo, FileMode.Create))
                 {

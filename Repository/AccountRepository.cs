@@ -66,5 +66,24 @@ namespace Divisima.Repository
         public async Task<List<Usuario>> GetAll(){
             return await _userManager.Users.ToListAsync();
         }
+
+        public async Task Atualizar(Usuario usuario)
+        {
+            Usuario user = new Usuario(){
+                UserName = usuario.UserName, 
+                Nome = usuario.Nome,
+                Sobrenome = usuario.Sobrenome,
+                Cpf = usuario.Cpf,
+                Cep = usuario.Cep,
+                Cidade = usuario.Cidade,
+                Estado = usuario.Estado,
+                Endereco = usuario.Endereco,
+                Numero = usuario.Numero,
+                Complemento = usuario.Complemento,
+                Telefone = usuario.Telefone,
+                Foto = usuario.Foto,
+            };
+            await _userManager.UpdateAsync(usuario);
+        }
     }
 }

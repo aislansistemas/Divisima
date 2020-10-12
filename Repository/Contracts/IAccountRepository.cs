@@ -14,5 +14,6 @@ namespace Divisima.Repository.Contracts
          Task CadastraRoles(string roleName);
          Task<bool> PasswordIsValid(Usuario usuario, string password);
          Task<List<Usuario>> GetAll();
+         Task Atualizar(Usuario usuario);
     }
 }

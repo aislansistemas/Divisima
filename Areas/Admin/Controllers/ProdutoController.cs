@@ -49,7 +49,7 @@ namespace divisima.Areas.Admin.Controllers
             try{
                 if(ModelState.IsValid){
                     var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
-                    var nomeArquivo = _uploadSystem.Upload(formFile);
+                    var nomeArquivo = _uploadSystem.Upload(formFile, "arquivos");
                     produto.Foto = nomeArquivo;
                     await _produtoRepository.Cadastrar(produto);
                     var produtoVm = new ProdutoViewModel(){
@@ -71,7 +71,7 @@ namespace divisima.Areas.Admin.Controllers
                 var produtoResult = await _produtoRepository.GetById(produto.ProdutoId);
                 if(produtoResult != null){
                     var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
-                    produto.Foto = formFile != null ? _uploadSystem.Upload(formFile) : produtoResult.Foto;
+                    produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, "arquivos") : produtoResult.Foto;
                     await _produtoRepository.Editar(produto);
                     var produtoVm = new ProdutoViewModel(){
                         Produtos = await _produtoRepository.GetAll(),
