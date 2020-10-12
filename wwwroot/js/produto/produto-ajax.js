@@ -2,7 +2,7 @@
 $(getProducts);
 
 var numberPage = 1;
-var limit = 5;
+var limit = 4;
 
 function getProducts(){
 
@@ -36,9 +36,7 @@ function carregaMaisProdutos(){
 function setGifLoading(){
     
     let imgLoading = $('<img>')
-    .attr('src', 'img/carregamento.gif')
-    imgLoading.slideDown(100);
-    //.addClass('rounded mx-auto d-block col-md-offset-3');
+    .attr('src', 'img/carregamento.gif');
     $('.modal-content').prepend(imgLoading);
     return imgLoading;
 }

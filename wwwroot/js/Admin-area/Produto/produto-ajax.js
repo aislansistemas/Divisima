@@ -1,7 +1,12 @@
 $(getProdutos());
 
+var numberPage = 1;
+var limit = 6;
+
 function getProdutos(){
-    $.get('/Admin/Produto/GetProdutos', (dados) => {
+    numberPage = 1;
+    limit = 6;
+    $.get('/Admin/Produto/GetProdutos', {numberPage, limit}, (dados) => {
         montaTabelaProduto(dados.produtos);
         montaSelectCategorias(dados.categoriasAtivas);
         console.log(dados);
@@ -63,4 +68,12 @@ function procedimentoPadrao(dados) {
     $('#tabela-list-produto').text('');
     montaTabelaProduto(dados.produtos);
     montaSelectCategorias(dados.categoriasAtivas);
+}
+
+function carregaMaisProdutos(){
+    numberPage++;
+    $.get('/Admin/Produto/GetProdutos', {numberPage, limit}, (dados) => {
+        montaTabelaProduto(dados.produtos);
+        montaSelectCategorias(dados.categoriasAtivas);
+    })
 }

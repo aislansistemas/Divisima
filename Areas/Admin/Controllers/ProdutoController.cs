@@ -36,9 +36,9 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetProdutos(){
+        public async Task<IActionResult> GetProdutos(int numberPage, int limit){
             var ProdutoVm = new ProdutoViewModel(){
-                Produtos = await _produtoRepository.GetAll(),
+                Produtos = await _produtoRepository.GetAll(numberPage, limit),
                 CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
             };
             return Json(ProdutoVm);
@@ -53,7 +53,7 @@ namespace divisima.Areas.Admin.Controllers
                     produto.Foto = nomeArquivo;
                     await _produtoRepository.Cadastrar(produto);
                     var produtoVm = new ProdutoViewModel(){
-                        Produtos = await _produtoRepository.GetAll(),
+                        Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
@@ -74,7 +74,7 @@ namespace divisima.Areas.Admin.Controllers
                     produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, "arquivos") : produtoResult.Foto;
                     await _produtoRepository.Editar(produto);
                     var produtoVm = new ProdutoViewModel(){
-                        Produtos = await _produtoRepository.GetAll(),
+                        Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
@@ -93,7 +93,7 @@ namespace divisima.Areas.Admin.Controllers
                 if(produtoResult != null){
                     await _produtoRepository.Deletar(produtoResult);
                     var produtoVm = new ProdutoViewModel(){
-                        Produtos = await _produtoRepository.GetAll(),
+                        Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
