@@ -1,6 +1,6 @@
 function adicionaExibicaoProdutos(dados){
-    for(let i = 0; i < dados.length; i++){
-        let produto = dados[i];
+
+    dados.forEach(produto => {
         ///div//////
         let divCol3 = $('<div>').addClass('col-md-3');
         let divProductItem = $('<div>').addClass('product-item');
@@ -43,7 +43,8 @@ function adicionaExibicaoProdutos(dados){
         divCol3.append(divProductItem);
         ///////////
         $('.row-all-products').append(divCol3);
-    }
+    });
+
 }
 
 function getLinkDetails(id){
