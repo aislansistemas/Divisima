@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using divisima.Context;
 using divisima.Models;
 using divisima.Repository.Contracts;
+using Divisima.Services.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace divisima.Repository
@@ -35,12 +36,12 @@ namespace divisima.Repository
         }
 
         public async Task Editar(Produto produto)
-        {
+        {  
             try{
                 _context.Produtos.Update(produto);
                 await _context.SaveChangesAsync();
             } catch(DbUpdateConcurrencyException e) {
-                throw new DbUpdateConcurrencyException(e.Message);
+                throw new DbConcurrencyException(e.Message);
             }
         }
 
@@ -62,7 +63,7 @@ namespace divisima.Repository
             try{
                 return await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(x => x.ProdutoId == id);
             } catch(Exception e) {
-                throw new Exception(e.Message);
+                throw new NotFoundExeception("O Produto não foi encontrado");
             }
         }
 
