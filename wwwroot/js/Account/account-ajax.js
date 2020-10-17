@@ -1,4 +1,8 @@
 
+var divFeedInvalidUser =  $('.feed-user-invalid');
+
+$(divFeedInvalidUser.hide());
+
 $('#btn-cadastra-usuario').on('click', (e) => {
     e.preventDefault();
     let dados = getValueForInputsCadastro()
@@ -22,7 +26,12 @@ $('#btn-login').on('click', (e) => {
     e.preventDefault();
     let dados = getValueForInputsLogin();
     $.post('/Account/LoginAjax', dados, (response) => {
-        console.log(response);
+        if(response == "sucesso") {
+            window.location.href = "/Produto/Index";
+        } else {
+            $('.mensage-invalid-user').text(response);
+            divFeedInvalidUser.show("medium");
+        }
     });
 });
 
@@ -33,3 +42,8 @@ function getValueForInputsLogin(){
     };
     return data;
 }
+
+$('.btn-close-feed-invalid').on('click', (e) => {
+    e.preventDefault();
+    divFeedInvalidUser.hide("slow");
+});

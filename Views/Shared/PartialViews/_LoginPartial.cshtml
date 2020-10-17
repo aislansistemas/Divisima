@@ -11,7 +11,9 @@
             <i class="flaticon-profile"></i>
             <li><a class="link-user-autenticado" href="#">@User.Identity.Name</a>
                 <ul class="sub-menu-superior">
-                    <li><a class="link-dropdown" href="#">teste</a></li>
+                    @if(User.IsInRole("Admin")){
+                        <li><a class="link-dropdown" asp-area="Admin" asp-action="Index" asp-controller="Admin">Area Adiministrativa</a></li>
+                    }
                     <li><a class="link-dropdown" href="./category.html">Category Page</a></li>
                     <li><a class="link-dropdown" href="./cart.html">Cart Page</a></li>
                     <li><a class="link-dropdown" href="./checkout.html">Checkout Page</a></li>

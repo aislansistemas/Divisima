@@ -32,20 +32,20 @@ namespace divisima.Controllers
         public async Task<IActionResult> LoginAjax(LoginViewModel loginVM)
         {
             if (!ModelState.IsValid)
-                return Json(loginVM);
+                return Json("Por favor preencha os dados corretamente !");
+                
             var usuario = await _accRepository.GetUserByEmail(loginVM.UserName);
             if (await _accRepository.PasswordIsValid(usuario, loginVM.Password)) {
                 
                 await _signInManager.SignInAsync(usuario,false);
                 if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                 {
-                    return Json("Redirect");
+                    return Json("sucesso");
                 }
                 return Json(loginVM.ReturnUrl);
             }
-            
-            ModelState.AddModelError("", "Usuário/Senha inválidos ou não localizados!!");
-            return Json(ModelState);
+           
+            return Json("Úsuario não encontrado !");
         }
 
         public IActionResult Cadastro()
