@@ -25,18 +25,17 @@ function carregaMaisProdutos(){
     numberPage++;
     let imgLoading = setGifLoading();
     $.get('/Produto/ListProductsJson', {numberPage, limit}, (dados) => {
-        imgLoading.remove();
-        $(".btn-close-modal").click();
-        adicionaExibicaoProdutos(dados.produtos);
-        
+        setTimeout(() => {
+            imgLoading.remove();
+            $(".btn-close-modal").click();
+            adicionaExibicaoProdutos(dados.produtos);
+        }, 1200);
     })
     
 }
 
 function setGifLoading(){
-    
-    let imgLoading = $('<img>')
-    .attr('src', 'img/carregamento.gif');
+    let imgLoading = $('<img>').attr('src', 'img/carregamento.gif');
     $('.modal-content').prepend(imgLoading);
     return imgLoading;
 }

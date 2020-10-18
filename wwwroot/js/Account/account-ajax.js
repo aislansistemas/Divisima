@@ -27,7 +27,7 @@ $('#btn-login').on('click', (e) => {
     let dados = getValueForInputsLogin();
     $.post('/Account/LoginAjax', dados, (response) => {
         if(response == "sucesso") {
-            window.location.href = "/Produto/Index";
+            window.location.href = "/";
         } else {
             $('.mensage-invalid-user').text(response);
             divFeedInvalidUser.show("medium");
