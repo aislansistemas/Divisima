@@ -1,10 +1,15 @@
 
 $('#btn-cadastra-usuario').on('click', (e) => {
     e.preventDefault();
-    let dados = getValueForInputsCadastro()
-    $.post('/Account/CadastroAjax', dados, (response) => {
-        console.log(response);
-    });
+    let dados = getValueForInputsCadastro();
+    let erros = validaCadastro(dados);
+    if(erros.length <= 0) {
+        $.post('/Account/CadastroAjax', dados, (response) => {
+            console.log(response);
+        });
+    } else {
+        console.log(erros);
+    }    
 });
 
 function getValueForInputsCadastro(){
@@ -40,4 +45,31 @@ function exibiFeedback(mensage){
         $('.mensage-invalid-user').text(mensage);
         divFeedInvalid.show("medium");
     }, timeCarregamentoPadrao);   
+}
+
+
+function validaCadastro(dados){
+    let erros = [];
+
+    if(dados.Nome.length == 0){
+        erros.push('O nome precisa ser informado');
+    }
+
+    if(dados.Sobrenome == 0){
+        erros.push('O Sobrenome precisa ser informado');
+    }
+
+    if(dados.Cpf == 0){
+        erros.push('O Cpf precisa ser informado');
+    }
+
+    if(dados.UserName == 0){
+        erros.push('O E-mail precisa ser informado');
+    }
+
+    if(dados.Password < 6){
+        erros.push('A senha precisa ter no mínimo 6 digitos, letras maiúsculas e minúsculas e numeros');
+    }
+   
+    return erros;
 }

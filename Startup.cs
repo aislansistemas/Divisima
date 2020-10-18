@@ -37,9 +37,11 @@ namespace divisima
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
 
-            services.AddIdentity<Usuario, IdentityRole>()
-                 .AddEntityFrameworkStores<AppDbContext>()
-                 .AddDefaultTokenProviders();
+            services.AddIdentity<Usuario, IdentityRole>(options => {
+                options.Password.RequireNonAlphanumeric = false;
+            })
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
             
             services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>
