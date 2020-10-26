@@ -9,13 +9,14 @@ $(
 );
 
 function executaSpinner(){
-    $('.text-login-btn').text('');
+    $('.text-btn-post').text('');
     divSpinnerLoading.show();
 }
 
-function removeSpinner(){
+function removeSpinner(text){
     setTimeout(() => {
         divSpinnerLoading.hide();
-        $('.text-login-btn').text("LOGIN");
+        $('.text-btn-post').text(text);
     }, timeCarregamentoPadrao);
 }
+

@@ -39,6 +39,9 @@ namespace divisima
 
             services.AddIdentity<Usuario, IdentityRole>(options => {
                 options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequiredLength = 6;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireLowercase = false;
             })
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();

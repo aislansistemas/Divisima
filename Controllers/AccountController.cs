@@ -66,7 +66,7 @@ namespace divisima.Controllers
 
                     return Json("sucesso");
                 }
-                return Json("existente");
+                return Json("Desculpe Já existente um úsuario cadastrado com o mesmo e-mail!");
             }
             return Json(usuarioVm);
         }

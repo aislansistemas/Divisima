@@ -8,9 +8,9 @@ $('#btn-login').on('click', (e) => {
             executaSpinner();
             window.location.href = "/";
         } else {
-            removeSpinner();
+            removeSpinner('LOGIN');
             exibiFeedback(response);
-            limpaInputsLogin();
+            this.form.reset;
         }
     });
 });
@@ -33,9 +33,4 @@ function exibiFeedback(mensage){
         $('.mensage-invalid-user').text(mensage);
         divFeedInvalid.show("medium");
     }, timeCarregamentoPadrao);   
-}
-
-function limpaInputsLogin(){
-    $('#UserName').val('');
-    $('#Password').val('');
 }
