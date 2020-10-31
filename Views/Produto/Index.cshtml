@@ -31,7 +31,7 @@
 							<h2>denim jackets</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
 							<a href="#" class="site-btn sb-line">DISCOVER</a>
-							<a href="#" class="site-btn sb-white">ADD TO CART</a>
+							<a href="#" class="site-btn sb-white add-cart">ADD TO CART</a>
 						</div>
 					</div>
 					<div class="offer-card text-white">
@@ -94,8 +94,11 @@
 					<div class="pi-pic">
 						<img src="~/arquivos/@produto.Foto" alt="" class="img-list-products">
 						<div class="pi-links">
-							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>Adicionar</span></a>
-							<a asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
+							<a href="#" class="add-card" data-id="1">
+								<i class="flaticon-bag">
+								</i><span>Adicionar</span>
+							</a>
+							<a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
 								<i class="fa fa-eye icone-ver-detalhes"></i>
 							</a>
 						</div>

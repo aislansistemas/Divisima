@@ -34,6 +34,7 @@ namespace divisima
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
+            services.AddScoped<ICarrinhoCompraItemRepository, CarrinhoCompraItemRepository>();
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
 
@@ -45,6 +46,9 @@ namespace divisima
             })
             .AddEntityFrameworkStores<AppDbContext>()
             .AddDefaultTokenProviders();
+
+            services.AddMemoryCache();
+            services.AddSession();
             
             services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>
@@ -73,6 +77,8 @@ namespace divisima
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseSession();
 
             app.UseEndpoints(endpoints =>
             {

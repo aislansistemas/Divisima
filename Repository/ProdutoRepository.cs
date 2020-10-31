@@ -63,7 +63,7 @@ namespace divisima.Repository
             try{
                 return await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(x => x.ProdutoId == id);
             } catch(Exception e) {
-                throw new NotFoundExeception("O Produto não foi encontrado");
+                throw new NotFoundException("O Produto não foi encontrado");
             }
         }
 

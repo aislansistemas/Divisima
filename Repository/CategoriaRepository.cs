@@ -6,6 +6,7 @@ using divisima.Context;
 using divisima.Enums.CategoriaEnums;
 using divisima.Models;
 using divisima.Repository.Contracts;
+using Divisima.Services.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace divisima.Repository
@@ -38,7 +39,7 @@ namespace divisima.Repository
                 return categoria;
                 
             } catch(Exception e){
-                throw new Exception("Erro na operação", e);
+                throw new NotFoundException("A categoria não foi encontrada");
             }
         }
 

@@ -66,7 +66,11 @@ namespace Divisima.Repository
         }
         public async Task<Usuario> GetUserByEmail(string email)
         {
-            return await _userManager.FindByNameAsync(email);
+            try{
+                return await _userManager.FindByNameAsync(email);
+            } catch(Exception e) {
+                throw new NotFoundException("Erro ao procurar email");
+            }
         }
 
         public async Task<List<Usuario>> GetAll(int numberPage, int limit){

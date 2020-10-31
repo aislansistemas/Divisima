@@ -19,6 +19,7 @@ function enviarDadosAjax(dados){
         if(response == "sucesso"){
             window.location.href = "/";
         } else {
+            removeSpinner('CADASTRAR');
             setErrosValidation(response);
         }
     });
