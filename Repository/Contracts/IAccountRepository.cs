@@ -15,5 +15,6 @@ namespace Divisima.Repository.Contracts
          Task<bool> PasswordIsValid(Usuario usuario, string password);
          Task<List<Usuario>> GetAll(int numberPage, int limit);
          Task Atualizar(Usuario usuario);
+        
     }
 }

@@ -39,3 +39,33 @@ function setGifLoading(){
     $('.modal-content').prepend(imgLoading);
     return imgLoading;
 }
+
+$('.add-cart').on('click', (e) => {
+    e.preventDefault();
+    let produtoId = $('.add-cart').data('id');
+    let quantidade = $('.input-quantidade').val();
+    let result = validarInputQuantidade(quantidade);
+    if(result){
+        adicionarItemAoCarrinho(produtoId, quantidade);
+    }
+});
+
+function adicionarItemAoCarrinho(produtoId, quantidade){
+    $.post('/CarrinhoCompra/Adicionar', {produtoId, quantidade}, (response) => {
+        alert('sucesso');
+    })
+}
+
+function validarInputQuantidade(quantidade){
+    let quantidadeDisponivel = $('.quantidade-value').data('item-disponivel');
+    if(quantidade < 1) {
+        exibirFeedValidacaoQuantidade("Por favor informe a quantidade de produtos!");
+        return false;
+    }
+    if(quantidade > quantidadeDisponivel){
+        exibirFeedValidacaoQuantidade("Desculpe não temos essa quantidade em estoque!");
+        return false;
+    }
+
+    return true;
+}

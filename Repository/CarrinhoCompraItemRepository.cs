@@ -29,6 +29,16 @@ namespace Divisima.Repository
             }
         }
 
+        public CarrinhoCompraItem CreateObject(int produtoId, int quantidade, string usuarioId)
+        {
+            var carrinhoCompraItem = new CarrinhoCompraItem(){
+                Quantidade = quantidade,
+                ProdutoId = produtoId,
+                UsuarioId = usuarioId
+            };
+            return carrinhoCompraItem;
+        }
+
         public async Task<CarrinhoCompraItem> GetCarrinhoItemById(int id)
         {
             try {

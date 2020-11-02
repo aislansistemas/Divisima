@@ -10,5 +10,6 @@ namespace Divisima.Repository.Contracts
         Task<CarrinhoCompraItem> GetCarrinhoItemById(int id);
         Task<List<CarrinhoCompraItem>> GetItemsForUserById(string id);
         Task Remover(CarrinhoCompraItem carrinhoCompraItem);
+        CarrinhoCompraItem CreateObject(int produtoId, int quantidade, string usuarioId);
     }
 }

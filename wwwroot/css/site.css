@@ -130,4 +130,19 @@ input, th{
   font-weight: 600;
 }
 
+#img-item-carrinho-compras {
+  width: 75px !important;
+  height: 85px !important;
+  border-radius: 5px;
+}
+
+.li-carrinho-compra-items {
+  height: 108px;
+  transition: background-color 0.5s;
+}
+
+.li-carrinho-compra-items:hover {
+  background-color: #e5e5e5;
+}
+
 

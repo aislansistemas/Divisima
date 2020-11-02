@@ -80,6 +80,7 @@ namespace Divisima.Repository
             .Skip((numberPage - 1) * limit)
             .Take(limit)
             .ToListAsync();
+        
         }
 
         public async Task Atualizar(Usuario usuario)
@@ -100,11 +101,9 @@ namespace Divisima.Repository
                     Foto = usuario.Foto,
                 };
                 await _userManager.UpdateAsync(usuario);
-
             } catch (DbUpdateConcurrencyException e) {
                 throw new DbConcurrencyException(e.Message);
             }   
         }
-
     }
 }

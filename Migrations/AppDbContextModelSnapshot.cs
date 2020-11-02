@@ -17,6 +17,30 @@ namespace divisima.Migrations
                 .HasAnnotation("ProductVersion", "3.1.9")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Divisima.Models.CarrinhoCompraItem", b =>
+                {
+                    b.Property<int>("CarrinhoCompraId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProdutoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Quantidade")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UsuarioId")
+                        .HasColumnType("varchar(255) CHARACTER SET utf8mb4");
+
+                    b.HasKey("CarrinhoCompraId");
+
+                    b.HasIndex("ProdutoId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("CarrinhoCompraItems");
+                });
+
             modelBuilder.Entity("Divisima.Models.Usuario", b =>
                 {
                     b.Property<string>("Id")
@@ -301,6 +325,19 @@ namespace divisima.Migrations
                     b.HasIndex("UsuarioId");
 
                     b.ToTable("Produtos");
+                });
+
+            modelBuilder.Entity("Divisima.Models.CarrinhoCompraItem", b =>
+                {
+                    b.HasOne("divisima.Models.Produto", "Produto")
+                        .WithMany()
+                        .HasForeignKey("ProdutoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Divisima.Models.Usuario", "Usuario")
+                        .WithMany()
+                        .HasForeignKey("UsuarioId");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

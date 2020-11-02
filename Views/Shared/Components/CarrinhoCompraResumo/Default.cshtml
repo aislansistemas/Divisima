@@ -1,9 +1,33 @@
+@model CarrinhoCompraViewModel
 
-<div class="up-item">
-    <div id="icone-carrinho-compra" class="shopping-card">
-        <a href="aa"></a>
-            <i class="flaticon-bag"></i>
-            <span>@TempData["numero_itens"]</span>
-        </a>
-    </div>	
-</div>
+@if(Model.TotalItems > 0){
+    <div class="up-item">
+        <div id="icone-carrinho-compra" class="shopping-card">
+            <ul class="main-menu-superior">
+                <li><a href="aa"><i class="flaticon-bag"></i><span>@Model.TotalItems</span></a>
+                    <ul class="sub-menu-superior" style="left: -150px !important; width: 270px">
+                        @foreach (var item in Model.CarrinhoCompraList)
+                        {
+                            <li class="li-carrinho-compra-items">
+                                <a class="link-dropdown" href="./category.html">
+                                    <img id="img-item-carrinho-compras" src="~/arquivos/@item.Produto.Foto">
+                                    <b class="pl-2" style="position: absolute; top: 5px; font-weight: 600;">@item.Produto.Nome</b>
+                                </a>
+                                <b class="pl-2 text-primary" style="position: absolute; left: 96px;top: 50px;font-weight: 600;">R$ @item.Produto.Valor.ToString("N2")</b>
+                            </li>
+                            <hr class="ml-3 mr-3 text-secondary" style="margin-top: -1px">
+                        }    
+                        <a asp-action="Index" asp-controller="CarrinhoCompra">Ir para o Carrinho</a>
+                    </ul>
+                    
+                </li>
+            </ul>
+        </div>	
+    </div>
+} else {
+    <div class="up-item">
+        <div id="icone-carrinho-compra" class="shopping-card">
+            <a href="aa"><i class="flaticon-bag"></i></a> 
+        </div>	
+    </div>
+}

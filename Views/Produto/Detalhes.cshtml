@@ -9,6 +9,15 @@
 	<!-- product section -->
 	<section class="product-section">
 		<div class="container">
+			<div class="container d-flex justify-content-center">
+			<div class="alert alert-secondary feed-quantidade-invalida" role="alert">
+				<i class="fa fa-exclamation-circle fa-2x text-danger"></i> 
+  				<strong class="text-danger pr-2 mensage-invalid-quantidade"></strong>
+				<button type="button" class="close btn-close-feed-invalid" aria-label="Close">
+    				<span aria-hidden="true">&times;</span>
+  				</button>
+			</div>
+		</div>
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="product-pic-zoom">
@@ -67,14 +76,14 @@
 					<div class="quantity">
 						<p>Quantidade</p>
 						<div class="col-md-3">
-                        	<div class="pro-qty"><input type="text" value="1"></div>
+                        	<div class="pro-qty"><input class="input-quantidade" type="text" value="1"></div>
 						</div>
 						<div class="col-md-3">
-							<small class="xl-size disable text-secondary p-stock">@Model.Produto.Quantidade items disponíveis</small>
+							<small class="xl-size disable text-secondary p-stock quantidade-value" data-item-disponivel="@Model.Produto.Quantidade">@Model.Produto.Quantidade items disponíveis</small>
 						</div>
                     </div>
 					<a href="#" class="site-btn">COMPRAR</a>
-					<a asp-action="Adicionar" asp-route-id="@Model.Produto.ProdutoId" asp-controller="CarrinhoCompra" class="site-btn btn-primary">Adicionar ao carrinho</a>
+					<button data-id="@Model.Produto.ProdutoId" class="site-btn btn-primary add-cart">Adicionar ao carrinho</button>
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
 							<div class="panel-header" id="headingOne">
