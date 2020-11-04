@@ -7,5 +7,6 @@ namespace divisima.ViewModels
     {
         public List<CarrinhoCompraItem> CarrinhoCompraList { get; set; }
         public int TotalItems { get; set;}
+        public decimal ValorTotalItems { get; set; }
     }
 }

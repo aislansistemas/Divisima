@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using divisima.Models;
 using divisima.Repository.Contracts;
+using divisima.ViewModels;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Authorization;
@@ -34,8 +35,11 @@ namespace Divisima.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(){
             Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);
-            var itemsCarrinho = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
-            return View(itemsCarrinho);
+            var carrinhoVm = new CarrinhoCompraViewModel(){ 
+                CarrinhoCompraList = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id),
+                ValorTotalItems = _carrinhoCompraRepository.GetValorTotalDeItems(usuario.Id)
+            };
+            return View(carrinhoVm);
         }
 
         [Authorize]

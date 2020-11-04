@@ -2,6 +2,7 @@ using divisima.Context;
 using divisima.Repository;
 using divisima.Repository.Contracts;
 using divisima.Services;
+using Divisima.Extensions;
 using Divisima.Models;
 using Divisima.Repository;
 using Divisima.Repository.Contracts;
@@ -31,13 +32,9 @@ namespace divisima
             services.AddDbContext<AppDbContext>(options =>
               options.UseMySql(Configuration.GetConnectionString("AppConnection")));
 
-            services.AddScoped<ICategoriaRepository, CategoriaRepository>();
-            services.AddScoped<IProdutoRepository, ProdutoRepository>();
-            services.AddScoped<IAccountRepository, AccountRepository>();
-            services.AddScoped<ICarrinhoCompraItemRepository, CarrinhoCompraItemRepository>();
-            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-            services.AddSingleton<IUploadFile, UploadFile>();
-
+            services.AddRepositories();
+            services.AddServices();
+           
             services.AddIdentity<Usuario, IdentityRole>(options => {
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredLength = 6;

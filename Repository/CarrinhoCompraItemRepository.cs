@@ -65,6 +65,11 @@ namespace Divisima.Repository
             }
         }
 
+        public decimal GetValorTotalDeItems(string usuarioId)
+        {
+            return _context.CarrinhoCompraItems.Where(x => x.UsuarioId == usuarioId ).Sum(x => x.Produto.Valor);
+        }
+
         public async Task Remover(CarrinhoCompraItem carrinhoCompraItem)
         {
             try{
