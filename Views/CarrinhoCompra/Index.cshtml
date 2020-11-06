@@ -44,9 +44,8 @@
 										<td class="size-col"><h4>Size M</h4></td>
 										<td class="total-col"><h4>R$ @item.Produto.Valor.ToString("N2")</h4></td>
 										<td class="total-col">
-											<button data-toggle="modal" data-target="#modalDelete" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete">
+											<button data-toggle="modal" data-target="#modalDelete" onclick="abrirModalRemoveItem(this, @item.CarrinhoCompraId)" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete">
 												<i class="fa fa-times-circle fa-2x"></i>
-												<input type="hidden" value="@item.CarrinhoCompraId">
 											</button>
 										</td>
 									</tr>
@@ -147,23 +146,21 @@
 
 	<!-- Modal delete-->
 	<div class="modal fade" id="modalDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-sm" role="document">
+		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-content">
-			<div class="modal-header">
-				<h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja Deletar este produto?</h5>
-				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-				<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-			<div class="modal-body">
-				<form>
-					<input type="text" class="carrinho-id">
-				</form>
-			</div>
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-				<button type="button" class="btn btn-danger" onclick="deletarProduto()">Deletar</button>
-			</div>
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja Deletar este produto?</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span>
+					</button>
+					<form>
+						<input type="hidden" class="carrinho-id">
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn-estilizado btn-cinza" data-dismiss="modal">Fechar</button>
+					<button type="button" class="btn-estilizado btn-roza" onclick="removerItem()">Deletar</button>
+				</div>
 			</div>
 		</div>
 	</div>

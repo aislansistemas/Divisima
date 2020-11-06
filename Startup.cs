@@ -1,14 +1,8 @@
 using divisima.Context;
-using divisima.Repository;
-using divisima.Repository.Contracts;
-using divisima.Services;
 using Divisima.Extensions;
 using Divisima.Models;
-using Divisima.Repository;
-using Divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;

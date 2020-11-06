@@ -4,8 +4,10 @@ using System.Threading.Tasks;
 using divisima.Models;
 using divisima.Repository.Contracts;
 using divisima.ViewModels;
+using Divisima.Enums.StatusMensageEnums;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
+using Divisima.Services.ResponseMensageService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
@@ -58,6 +60,27 @@ namespace Divisima.Controllers
             }
         } 
 
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> Remover(int carrinhoId){
+            try{
+                if(carrinhoId < 1){
+                    return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
+                }
+
+                var carrinhoResult = await _carrinhoCompraRepository.GetCarrinhoItemById(carrinhoId);
+
+                if(carrinhoResult == null){
+                    return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
+                }
+                
+                await _carrinhoCompraRepository.Remover(carrinhoResult);
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "Item removido com sucesso"));
+            } catch(Exception) {
+                return Json("Ocorreu um erro ao tentar realizar a operação!");
+            }
+
+        }
 
     }
 }
