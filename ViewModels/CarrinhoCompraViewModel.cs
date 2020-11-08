@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using divisima.Models;
 using Divisima.Models;
 
 namespace divisima.ViewModels

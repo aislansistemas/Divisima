@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using divisima.Context;
+using divisima.Models;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
 using Divisima.Services.Exceptions;
@@ -65,9 +66,10 @@ namespace Divisima.Repository
             }
         }
 
-        public decimal GetValorTotalDeItems(string usuarioId)
+        public decimal GetValorTotalDeItems(List<CarrinhoCompraItem> carrinhoCompraItems)
         {
-            return _context.CarrinhoCompraItems.Where(x => x.UsuarioId == usuarioId ).Sum(x => x.Produto.Valor);
+            decimal valorTotalDeItems = carrinhoCompraItems.Sum(x => x.Produto.Valor);
+            return valorTotalDeItems;
         }
 
         public async Task Remover(CarrinhoCompraItem carrinhoCompraItem)

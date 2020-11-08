@@ -52,8 +52,19 @@ $('.add-cart').on('click', (e) => {
 
 function adicionarItemAoCarrinho(produtoId, quantidade){
     $.post('/CarrinhoCompra/Adicionar', {produtoId, quantidade}, (response) => {
-        alert('sucesso');
+        validaResponseAjax(response);
     })
+}
+
+function validaResponseAjax(response){
+    if(response.status == "success"){
+        $.toaster({ title : 'Sucesso', priority : response.status, message : response.mensagem });
+        setTimeout(() => {
+            window.location.href = "/CarrinhoCompra/";
+        },800);
+    } else {
+        $.toaster({ title : 'Atenção', priority : response.status, message : response.mensagem });
+    }
 }
 
 function validarInputQuantidade(quantidade){

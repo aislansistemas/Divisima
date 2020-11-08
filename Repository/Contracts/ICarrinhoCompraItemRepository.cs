@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using divisima.Models;
 using Divisima.Models;
 
 namespace Divisima.Repository.Contracts
@@ -11,6 +12,6 @@ namespace Divisima.Repository.Contracts
         Task<List<CarrinhoCompraItem>> GetItemsForUserById(string id);
         Task Remover(CarrinhoCompraItem carrinhoCompraItem);
         CarrinhoCompraItem CreateObject(int produtoId, int quantidade, string usuarioId);
-        decimal GetValorTotalDeItems(string usuarioId);
+        decimal GetValorTotalDeItems(List<CarrinhoCompraItem> carrinhoCompraItems);
     }
 }

@@ -37,9 +37,10 @@ namespace Divisima.Controllers
         [HttpGet]
         public async Task<IActionResult> Index(){
             Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);
+            var produtosAdicionados = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
             var carrinhoVm = new CarrinhoCompraViewModel(){ 
-                CarrinhoCompraList = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id),
-                ValorTotalItems = _carrinhoCompraRepository.GetValorTotalDeItems(usuario.Id)
+                CarrinhoCompraList = produtosAdicionados,
+                ValorTotalItems = _carrinhoCompraRepository.GetValorTotalDeItems(produtosAdicionados)
             };
             return View(carrinhoVm);
         }
@@ -53,10 +54,13 @@ namespace Divisima.Controllers
                     Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                     var carrinhoMontado = _carrinhoCompraRepository.CreateObject(produtoId, quantidade, usuario.Id);
                     await _carrinhoCompraRepository.Adicionar(carrinhoMontado);
+                    return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "Produto Adicionado ao carrinho!"));
                 }
-                return RedirectToAction("Index", "Produto");           
+
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
+                     
             } catch(Exception) {
-                throw new Exception("Desculpe ocorreu um erro no servidor");
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.error, "Desculpe ocorreu um erro no servidor"));
             }
         } 
 

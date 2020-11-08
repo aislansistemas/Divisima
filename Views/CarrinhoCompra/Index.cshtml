@@ -10,60 +10,68 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
-					<div class="cart-table">
-						<h3>Itens Adicionados</h3>
-						<div class="cart-table-warp">
-							<table>
-							<thead>
-								<tr>
-									<th class="product-th">Produtos</th>
-									<th class="quy-th">Quantidade</th>
-									<th class="size-th">Tamanho</th>
-									<th class="total-th">Preço</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody>
-								@foreach (var item in Model.CarrinhoCompraList)
-								{
+
+					@if(@Model.CarrinhoCompraList.Count > 0){
+						<div class="cart-table">
+							<h3>Itens Adicionados (@Model.CarrinhoCompraList.Count)</h3>
+							<div class="cart-table-warp">
+								<table>
+								<thead>
 									<tr>
-										<td class="product-col">
-											<img src="~/arquivos/@item.Produto.Foto" alt="">
-											<div class="pc-title">
-												<h4>@item.Produto.Nome</h4>
-												<p>R$ @item.Produto.Valor.ToString("N2")</p>
-											</div>
-										</td>
-										<td class="quy-col">
-											<div class="quantity">
-												<div class="pro-qty">
-													<input type="text" value="@item.Quantidade">
-												</div>
-											</div>
-										</td>
-										<td class="size-col"><h4>Size M</h4></td>
-										<td class="total-col"><h4>R$ @item.Produto.Valor.ToString("N2")</h4></td>
-										<td class="total-col">
-											<button data-toggle="modal" data-target="#modalDelete" onclick="abrirModalRemoveItem(this, @item.CarrinhoCompraId)" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete">
-												<i class="fa fa-times-circle fa-2x"></i>
-											</button>
-										</td>
+										<th class="product-th">Produtos</th>
+										<th class="quy-th">Quantidade</th>
+										<th class="size-th">Tamanho</th>
+										<th class="total-th">Preço</th>
+										<th>Ação</th>
 									</tr>
-								}
-							</tbody>
-						</table>
+								</thead>
+								<tbody>
+									@foreach (var item in Model.CarrinhoCompraList)
+									{
+										<tr>
+											<td class="product-col">
+												<img src="~/arquivos/@item.Produto.Foto" alt="">
+												<div class="pc-title">
+													<h4>@item.Produto.Nome</h4>
+													<p>R$ @item.Produto.Valor.ToString("N2")</p>
+												</div>
+											</td>
+											<td class="quy-col">
+												<div class="quantity">
+													<div class="pro-qty">
+														<input type="text" value="@item.Quantidade">
+													</div>
+												</div>
+											</td>
+											<td class="size-col"><h4>Size M</h4></td>
+											<td class="total-col"><h4>R$ @item.Produto.Valor.ToString("N2")</h4></td>
+											<td class="total-col">
+												<button data-toggle="modal" data-target="#modalDelete" onclick="abrirModalRemoveItem(this, @item.CarrinhoCompraId)" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete" title="Remover item">
+													<i class="fa fa-times-circle fa-2x"></i>
+												</button>
+											</td>
+										</tr>
+									}
+								</tbody>
+							</table>
+							</div>
+							<div class="total-cost">
+								<h6>Total <span>R$ @Model.ValorTotalItems.ToString("N2")</span></h6>
+							</div>
 						</div>
-						<div class="total-cost">
-							<h6>Total <span>R$ @Model.ValorTotalItems.ToString("N2")</span></h6>
-						</div>
-					</div>
+					}else {
+						<h1 class="text-center">Você não tem nenhum Produto adicionado ao carrinho de compras.</h1>
+					}
+
 				</div>
 				<div class="col-lg-4 card-right">
 					<!---<form class="promo-code-form">
 						<input type="text" placeholder="Enter promo code">
 						<button>Submit</button>
 					</form>--->
-					<a href="" class="site-btn">continuar a compra</a>
+					@if(@Model.CarrinhoCompraList.Count > 0){
+						<a href="" class="site-btn">continuar a compra</a>
+					}
 					<a asp-action="Index" asp-controller="Produto" class="site-btn sb-dark">continue comprando</a>
 				</div>
 			</div>
@@ -153,8 +161,8 @@
 					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 					<span aria-hidden="true">&times;</span>
 					</button>
-					<form>
-						<input type="hidden" class="carrinho-id">
+					<form id="form-remove-carrinho-id">
+						<input type="hidden" name="carrinho-id" class="carrinho-id">
 					</form>
 				</div>
 				<div class="modal-footer">
