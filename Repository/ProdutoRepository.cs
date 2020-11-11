@@ -51,9 +51,9 @@ namespace divisima.Repository
             .AsNoTracking()
             .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
-            .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
             .Take(limit)
+            .OrderByDescending(x => x.ProdutoId)
             .ToListAsync();
             return produtos;
         }
@@ -62,7 +62,7 @@ namespace divisima.Repository
         {   
             try{
                 return await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(x => x.ProdutoId == id);
-            } catch(Exception e) {
+            } catch(Exception) {
                 throw new NotFoundException("O Produto não foi encontrado");
             }
         }
@@ -80,5 +80,15 @@ namespace divisima.Repository
             return lastProducts;
         }
 
+        public async Task<List<Produto>> GetProdutosByCatergoriaId(int categoriaId, int numberPage = 1, int limit = 5)
+        {
+            return await _context.Produtos.AsNoTracking()
+            .Where(p => p.CategoriaId == categoriaId)
+            .Include(x => x.Categoria)
+            .Skip((numberPage - 1) * limit)
+            .Take(limit)
+            .OrderByDescending(x => x.ProdutoId)
+            .ToListAsync();
+        }
     }
 }

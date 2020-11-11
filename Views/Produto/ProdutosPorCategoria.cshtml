@@ -1,0 +1,34 @@
+@model CategoriaViewModel
+<!-- Product filter section -->
+	<section class="product-filter-section mt-5">
+		<div class="container">
+			<div class="section-title">
+				<h2 class="titulo-categoria">@Model.Categoria.Nome</h2>
+			</div>
+			<!---lista produtos---->
+			<div class="row row-all-products-por-categoria">	
+				<!-------------------->	
+			</div>
+			<!---lista produtos---->
+			<div class="text-center pt-5">
+				<button class="site-btn sb-line sb-dark btn-ver-mais" onclick="carregarMaisProdutosPorCategoria()" data-toggle="modal" data-target="#modal-carregamento">Ver mais</button>
+			</div>
+		</div>
+	</section>
+<!-- Product filter section end -->
+
+<!--- modal carregamento --->
+    <div class="modal" id="modal-carregamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered " role="document">
+            <div class="modal-content">		
+            <div class="modal-body">
+            
+            </div>
+                <button style="display: none" type="button" class="btn btn-secondary btn-close-modal" data-dismiss="modal"></button>
+            </div>
+        </div>
+    </div>
+<!--- modal carregamento --->
+<div>
+	<input type="hidden" id="input-categoria-id" value="@Model.Categoria.CategoriaId">
+</div>

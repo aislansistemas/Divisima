@@ -123,7 +123,9 @@
 			<ul class="product-filter-menu">
 				@foreach (Categoria categoria in Model.CategoriasAtivas)
 				{
-					<li><a>@categoria.Nome</a></li>
+					<li>
+						<a asp-action="ProdutosPorCategoria" asp-controller="Produto" asp-route-id="@categoria.CategoriaId">@categoria.Nome</a>
+					</li>
 				}
 			</ul>
 
@@ -154,15 +156,15 @@
 	<!-- Banner section end  -->
 
 
-	<!--- modal carregamento --->
+<!--- modal carregamento --->
 	<div class="modal" id="modal-carregamento" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered " role="document">
-		<div class="modal-content">		
-		<div class="modal-body">
-		
-		</div>
-			<button style="display: none" type="button" class="btn btn-secondary btn-close-modal" data-dismiss="modal"></button>
+		<div class="modal-dialog modal-dialog-centered " role="document">
+			<div class="modal-content">		
+			<div class="modal-body">
+			
+			</div>
+				<button style="display: none" type="button" class="btn btn-secondary btn-close-modal" data-dismiss="modal"></button>
+			</div>
 		</div>
 	</div>
-	</div>
-	<!--- modal carregamento --->
+<!--- modal carregamento --->

@@ -232,3 +232,4 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/PartialViews/_LoginPartial.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/PartialViews/_SearchPartial.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/CarrinhoCompra/Index.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/ProdutosPorCategoria.cshtml.g.cs

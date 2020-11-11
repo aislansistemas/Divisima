@@ -2,7 +2,7 @@ var divFeedQuantidade = $('.feed-quantidade-invalida');
 
 $(divFeedQuantidade.hide());
 
-function adicionaExibicaoProdutos(dados){
+function adicionaExibicaoProdutosPorCategoria(dados){
 
     dados.forEach(produto => {
         ///div//////
@@ -12,7 +12,7 @@ function adicionaExibicaoProdutos(dados){
         let divPiLinks = $('<div>').addClass('pi-links');
         let divPiText = $('<div>').addClass('pi-text');
         ///div/////
-        let img = $('<img>').attr('src', '../arquivos/' + produto.foto).addClass('img-list-products');
+        let img = $('<img>').attr('src', '../../arquivos/' + produto.foto).addClass('img-list-products');
         //////////////////////////////////////
         let iconeAddCart = $('<i>').addClass('flaticon-bag');
         let spanTextAddCart = $('<span>').text('Adicionar');
@@ -46,7 +46,7 @@ function adicionaExibicaoProdutos(dados){
         ////apends - div col3///
         divCol3.append(divProductItem);
         ///////////
-        $('.row-all-products').append(divCol3);
+        $('.row-all-products-por-categoria').append(divCol3);
     });
 
 }

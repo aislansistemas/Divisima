@@ -8,7 +8,8 @@ function getProducts(){
 
     $.get('/Produto/ListProductsJson', {numberPage, limit}, (dados) => {
         console.log(dados);
-        adicionaExibicaoProdutos(dados.produtos)
+        adicionaExibicaoProdutos(dados.produtos);
+        getTituloPagina(dados.produtos);
     })
 }
 
