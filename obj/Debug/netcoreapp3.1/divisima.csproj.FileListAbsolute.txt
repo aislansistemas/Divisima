@@ -113,7 +113,6 @@
 /home/moobi/workshop/c#/divisima/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll
 /home/moobi/Divisima/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /home/moobi/Divisima/bin/Debug/netcoreapp3.1/appsettings.json
-/home/moobi/Divisima/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /home/moobi/Divisima/bin/Debug/netcoreapp3.1/divisima
 /home/moobi/Divisima/bin/Debug/netcoreapp3.1/divisima.deps.json
 /home/moobi/Divisima/bin/Debug/netcoreapp3.1/divisima.runtimeconfig.json
@@ -233,3 +232,4 @@
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Shared/PartialViews/_SearchPartial.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/CarrinhoCompra/Index.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/netcoreapp3.1/Razor/Views/Produto/ProdutosPorCategoria.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/netcoreapp3.1/scopedcss/bundle/divisima.styles.css
