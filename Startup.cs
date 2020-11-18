@@ -1,3 +1,4 @@
+using System;
 using divisima.Context;
 using Divisima.Extensions;
 using Divisima.Models;
@@ -16,20 +17,21 @@ namespace divisima
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            
         }
-
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {   
+        {
             services.AddDbContext<AppDbContext>(options =>
               options.UseMySql(Configuration.GetConnectionString("AppConnection")));
 
             services.AddRepositories();
             services.AddServices();
-           
-            services.AddIdentity<Usuario, IdentityRole>(options => {
+
+            services.AddIdentity<Usuario, IdentityRole>(options =>
+            {
                 options.Password.RequireNonAlphanumeric = false;
                 options.Password.RequiredLength = 6;
                 options.Password.RequireUppercase = false;
@@ -40,11 +42,11 @@ namespace divisima
 
             services.AddMemoryCache();
             services.AddSession();
-            
+
             services.AddControllersWithViews()
             .AddNewtonsoftJson(options =>
-            options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-            );;
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+            );
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -64,7 +66,7 @@ namespace divisima
             app.UseStaticFiles();
 
             app.UseRouting();
-            
+
             app.UseAuthentication();
 
             app.UseAuthorization();
@@ -76,7 +78,7 @@ namespace divisima
                 endpoints.MapControllerRoute(
                     name: "AdminArea",
                     pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
-                    
+
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Produto}/{action=Index}/{id?}");
