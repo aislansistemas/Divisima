@@ -69,7 +69,7 @@
 						<button>Submit</button>
 					</form>--->
 					@if(@Model.CarrinhoCompraList.Count > 0){
-						<a href="" class="site-btn">continuar a compra</a>
+						<a asp-action="Checkout" asp-controller="Pedido" class="site-btn">continuar a compra</a>
 					}
 					<a asp-action="Index" asp-controller="Produto" class="site-btn sb-dark">continue comprando</a>
 				</div>

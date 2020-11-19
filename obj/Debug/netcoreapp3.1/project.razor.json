@@ -14546,6 +14546,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/home/moobi/Divisima/Views/Pedido/Checkout.cshtml",
+      "TargetPath": "Views\\Pedido\\Checkout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/moobi/Divisima/Views/Produto/ProdutosPorCategoria.cshtml",
       "TargetPath": "Views\\Produto\\ProdutosPorCategoria.cshtml",
       "FileKind": "mvc"
