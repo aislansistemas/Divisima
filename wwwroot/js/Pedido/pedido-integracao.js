@@ -6,6 +6,7 @@ $('#consultar-cep').on('blur', () => {
             $('#estado').val(response.uf);
             exibirFeedCepInvalido(false);
         } else {
+            $('#consultar-cep').val('');
             $('#cidade').val('');
             $('#estado').val('');
             exibirFeedCepInvalido(true);
