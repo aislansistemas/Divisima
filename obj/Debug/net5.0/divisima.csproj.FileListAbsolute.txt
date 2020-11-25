@@ -1,10 +1,5 @@
 /home/moobi/Divisima/bin/Debug/net5.0/appsettings.Development.json
 /home/moobi/Divisima/bin/Debug/net5.0/appsettings.json
-/home/moobi/Divisima/bin/Debug/net5.0/jQuery-Mask-Plugin-master/bower.json
-/home/moobi/Divisima/bin/Debug/net5.0/jQuery-Mask-Plugin-master/component.json
-/home/moobi/Divisima/bin/Debug/net5.0/jQuery-Mask-Plugin-master/composer.json
-/home/moobi/Divisima/bin/Debug/net5.0/jQuery-Mask-Plugin-master/package-lock.json
-/home/moobi/Divisima/bin/Debug/net5.0/jQuery-Mask-Plugin-master/package.json
 /home/moobi/Divisima/bin/Debug/net5.0/divisima
 /home/moobi/Divisima/bin/Debug/net5.0/divisima.deps.json
 /home/moobi/Divisima/bin/Debug/net5.0/divisima.runtimeconfig.json

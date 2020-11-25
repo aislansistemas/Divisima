@@ -43,7 +43,7 @@ namespace Divisima.Repository
         public async Task<CarrinhoCompraItem> GetCarrinhoItemById(int id)
         {
             try {
-                return await _context.CarrinhoCompraItems.AsNoTracking().FirstOrDefaultAsync(x => x.CarrinhoCompraId == id);
+                return await _context.CarrinhoCompraItems.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.CarrinhoCompraId == id);
             } catch(Exception) {
                 throw new NotFoundException("Não foi possível localizar o item!");
             }
@@ -53,7 +53,7 @@ namespace Divisima.Repository
         {
             try {
                 var carrinhoCompraItem = await _context.CarrinhoCompraItems
-                .AsNoTracking()
+                .AsNoTrackingWithIdentityResolution()
                 .Where(x => x.UsuarioId == id)
                 .Include(x => x.Produto)
                 .Include(x => x.Usuario)

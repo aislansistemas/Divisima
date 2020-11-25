@@ -29,13 +29,13 @@ namespace divisima.Repository
 
         public async Task<List<Categoria>> GetAll()
         {
-            return await _dbContext.Categorias.OrderByDescending(x => x.CategoriaId).ToListAsync();
+            return await _dbContext.Categorias.AsNoTrackingWithIdentityResolution().OrderByDescending(x => x.CategoriaId).ToListAsync();
         }
 
         public async Task<Categoria> GetById(int id)
         {
             try{
-                var categoria = await _dbContext.Categorias.AsNoTracking().FirstOrDefaultAsync(x => x.CategoriaId == id);
+                var categoria = await _dbContext.Categorias.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.CategoriaId == id);
                 return categoria;
                 
             } catch(Exception e){

@@ -49,16 +49,19 @@ namespace divisima.Areas.Admin.Controllers
             try{
                 if(ModelState.IsValid){
                     var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
-                    var nomeArquivo = _uploadSystem.Upload(formFile, "arquivos");
+                    var nomeArquivo = _uploadSystem.Upload(formFile, Functions.GetPathUploadProdutos());
                     produto.Foto = nomeArquivo;
                     await _produtoRepository.Cadastrar(produto);
+                    
                     var produtoVm = new ProdutoViewModel(){
                         Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
                     return Json(produtoVm);
                 }
+
                 var errors = new ErroViewModel(){Erros = ModelState};
+
                 return Json(errors);
             } catch(Exception e) {
                 return Json("Erro ao realizar a operação",e);
@@ -71,14 +74,17 @@ namespace divisima.Areas.Admin.Controllers
                 var produtoResult = await _produtoRepository.GetById(produto.ProdutoId);
                 if(produtoResult != null){
                     var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
-                    produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, "arquivos") : produtoResult.Foto;
+                    produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, Functions.GetPathUploadProdutos()) : produtoResult.Foto;
                     await _produtoRepository.Editar(produto);
+
                     var produtoVm = new ProdutoViewModel(){
                         Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
+
                     return Json(produtoVm);
                 }
+
                 var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
                 return Json(errors);
             } catch(Exception e) {

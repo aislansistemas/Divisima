@@ -25,7 +25,7 @@ namespace divisima
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<AppDbContext>(options =>
-              options.UseMySql(Configuration.GetConnectionString("AppConnection")));
+            options.UseMySql(Configuration.GetConnectionString("AppConnection")));
 
             services.AddRepositories();
             services.AddServices();

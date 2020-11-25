@@ -3,6 +3,7 @@ using divisima.Repository.Contracts;
 using divisima.Services;
 using Divisima.Repository;
 using Divisima.Repository.Contracts;
+using Divisima.Services.Pedidos;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,6 +17,8 @@ namespace Divisima.Extensions
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
             services.AddScoped<IAccountRepository, AccountRepository>();
             services.AddScoped<ICarrinhoCompraItemRepository, CarrinhoCompraItemRepository>();
+            services.AddScoped<IPedidoRepository, PedidoRepository>();
+            services.AddScoped<IPedidoItemRepository, PedidoItemRepository>();
 
             return services;
         }
@@ -24,6 +27,7 @@ namespace Divisima.Extensions
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
+            services.AddSingleton<IGerenciadorPedido, GerenciadorPedido>();
             
             return services;
         }

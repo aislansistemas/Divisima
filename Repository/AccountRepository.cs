@@ -75,7 +75,7 @@ namespace Divisima.Repository
 
         public async Task<List<Usuario>> GetAll(int numberPage, int limit){
             return await _context.Users
-            .AsNoTracking()
+            .AsNoTrackingWithIdentityResolution()
             .OrderByDescending(x => x.Id)
             .Skip((numberPage - 1) * limit)
             .Take(limit)

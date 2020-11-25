@@ -48,7 +48,7 @@ namespace divisima.Repository
         public async Task<List<Produto>> GetAll(int numberPage = 0, int limit = 5)
         {
             var produtos = await _context.Produtos
-            .AsNoTracking()
+            .AsNoTrackingWithIdentityResolution()
             .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
             .Skip((numberPage - 1) * limit)
@@ -61,7 +61,7 @@ namespace divisima.Repository
         public async Task<Produto> GetById(int id)
         {   
             try{
-                return await _context.Produtos.AsNoTracking().FirstOrDefaultAsync(x => x.ProdutoId == id);
+                return await _context.Produtos.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.ProdutoId == id);
             } catch(Exception) {
                 throw new NotFoundException("O Produto não foi encontrado");
             }

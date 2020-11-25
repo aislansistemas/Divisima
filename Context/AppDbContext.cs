@@ -12,5 +12,7 @@ namespace divisima.Context
         public DbSet<Produto> Produtos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<CarrinhoCompraItem> CarrinhoCompraItems { get; set; }
+        public DbSet<PedidoItem> PedidoItem { get; set; }
+        public DbSet<Pedido> Pedido { get; set; }
     }
 }
