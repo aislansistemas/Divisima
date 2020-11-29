@@ -18,6 +18,13 @@ namespace divisima.Repository
             this._context = context;
         }
 
+        public async Task BaixarQuantidadeProduto(int produtoId, int quantidade)
+        {
+            var produtoResult = await _context.Produtos.FirstOrDefaultAsync(x => x.ProdutoId == produtoId);
+            produtoResult.Quantidade -= quantidade;
+            await this.Editar(produtoResult);
+        }
+
         public async Task Cadastrar(Produto produto)
         {
             produto.DataCadastro = DateTime.Now;
@@ -51,9 +58,9 @@ namespace divisima.Repository
             .AsNoTrackingWithIdentityResolution()
             .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
+            .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
             .Take(limit)
-            .OrderByDescending(x => x.ProdutoId)
             .ToListAsync();
             return produtos;
         }
@@ -85,9 +92,9 @@ namespace divisima.Repository
             return await _context.Produtos.AsNoTracking()
             .Where(p => p.CategoriaId == categoriaId)
             .Include(x => x.Categoria)
+            .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
             .Take(limit)
-            .OrderByDescending(x => x.ProdutoId)
             .ToListAsync();
         }
     }

@@ -27,7 +27,7 @@ namespace Divisima.Extensions
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();
-            services.AddSingleton<IGerenciadorPedido, GerenciadorPedido>();
+            services.AddScoped<IGerenciadorPedido, GerenciadorPedido>();
             
             return services;
         }

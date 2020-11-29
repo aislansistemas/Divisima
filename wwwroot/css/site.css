@@ -132,7 +132,7 @@ input, th{
 
 #img-item-carrinho-compras {
   width: 75px !important;
-  height: 85px !important;
+  height: 100px !important;
   border-radius: 5px;
 }
 
@@ -143,6 +143,15 @@ input, th{
 
 .li-carrinho-compra-items:hover {
   background-color: #e5e5e5;
+}
+
+#div-feed-sucess {
+  z-index: 99999; 
+  border-radius: 12px;
+  color: #50e550;
+  margin: 50px auto !important;
+  padding: 20px !important;
+  font-weight: 600 !important;
 }
 
 

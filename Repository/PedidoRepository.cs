@@ -35,8 +35,8 @@ namespace Divisima.Repository
             await _context.SaveChangesAsync();
         }
 
-        public async Task<Pedido> GetLastProduto() {
-            return await _context.Pedido.AsNoTrackingWithIdentityResolution().LastOrDefaultAsync();
+        public async Task<Pedido> GetLastPedido() {
+            return await _context.Pedido.AsNoTrackingWithIdentityResolution().OrderBy(x => x.PedidoId).LastOrDefaultAsync();
         }
     }
 }

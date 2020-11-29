@@ -8,7 +8,7 @@ namespace Divisima.Repository.Contracts
     {
         Task<List<Pedido>> GetAll(int numberPage = 0, int limit = 5);
         Task Cadastrar(Pedido pedido);
-        Task<Pedido> GetLastProduto();
+       Task<Pedido> GetLastPedido();
     
     }
 }

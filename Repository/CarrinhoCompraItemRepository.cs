@@ -55,6 +55,7 @@ namespace Divisima.Repository
                 var carrinhoCompraItem = await _context.CarrinhoCompraItems
                 .AsNoTrackingWithIdentityResolution()
                 .Where(x => x.UsuarioId == id)
+                .OrderByDescending(x => x.CarrinhoCompraId)
                 .Include(x => x.Produto)
                 .Include(x => x.Usuario)
                 .ToListAsync();
@@ -75,7 +76,11 @@ namespace Divisima.Repository
         public async Task Remover(CarrinhoCompraItem carrinhoCompraItem)
         {
             try{
-                _context.CarrinhoCompraItems.Remove(carrinhoCompraItem);
+                var carrinhoResult = await _context.CarrinhoCompraItems.FirstOrDefaultAsync(x => x.CarrinhoCompraId == carrinhoCompraItem.CarrinhoCompraId);
+                if(carrinhoResult == null) {
+                    throw new NotFoundException("Produto não encontrado!");
+                }
+                _context.CarrinhoCompraItems.Remove(carrinhoResult);
                 await _context.SaveChangesAsync();
             } catch(Exception) {
                 throw new NotFoundException("Não foi possível localizar o item!");

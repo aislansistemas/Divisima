@@ -388,3 +388,4 @@
 /home/moobi/Divisima/obj/Debug/net5.0/divisima.pdb
 /home/moobi/Divisima/obj/Debug/net5.0/divisima.genruntimeconfig.cache
 /home/moobi/Divisima/bin/Debug/net5.0/Humanizer.dll
+/home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Error/Error.cshtml.g.cs

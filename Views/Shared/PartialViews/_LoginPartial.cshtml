@@ -14,9 +14,8 @@
                     @if(User.IsInRole("Admin")){
                         <li><a class="link-dropdown" asp-area="Admin" asp-action="Index" asp-controller="Admin">Area Adiministrativa</a></li>
                     }
-                    <li><a class="link-dropdown" href="./category.html">Category Page</a></li>
                     <li><a class="link-dropdown" asp-action="Index" asp-controller="CarrinhoCompra">Carrinho de compras</a></li>
-                    <li><a class="link-dropdown" href="./checkout.html">Checkout Page</a></li>
+                    <li><a class="link-dropdown" asp-action="Checkout" asp-controller="Pedido">Pagina de compra</a></li>
                     <hr class="ml-3 mr-3 text-secondary" style="margin-bottom: 0px; margin-top: 0px">
                     <li><a class="link-dropdown" asp-action="Logout" asp-controller="Account">Sair</a></li>
                 </ul>

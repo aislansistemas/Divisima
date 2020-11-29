@@ -1,7 +1,11 @@
-@model CarrinhoCompraViewModel  
+@model Divisima.Models.Pedido
 	<!-- Page info -->
 	<div class="page-top-info">
-		<div class="container">
+		<div class="container text-center">
+			@if(@TempData["Mensagem"] != null) {
+				<i class="fa fa-exclamation-circle fa-2x text-danger"></i> 
+				<span class="text-danger"> @TempData["Mensagem"]</span>
+			}
 		</div>
 	</div>
 	<!-- Page info end -->
@@ -11,9 +15,9 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8 order-2 order-lg-1">
-					<form class="checkout-form">
+					<form asp-action="Checkout" asp-controller="Pedido" method="post" class="checkout-form">
 						<div class="cf-title">Endereço para entraga </div>
-						<div class="row">
+						<!---<div class="row">
 							<div class="col-md-7">
 								<p>Informações de pagamento</p>
 							</div>
@@ -29,22 +33,26 @@
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> ---->
 						<div class="row address-inputs">
                             <div class="col-md-6">
-								<small style="position: absolute; top: -25px;" class="text-danger" id="feed-valida-cep"></small>
-								<input type="text" name="Cep" data-mask="00000-000" id="consultar-cep" placeholder="CEP">
+								<span style="position: absolute; top: -25px;" asp-validation-for="Cep" class="text-danger" id="feed-valida-cep"></span>
+								<input type="text" name="Cep" data-mask="00000-000" id="consultar-cep" placeholder="CEP">		
 							</div>
 							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" asp-validation-for="Cidade" class="text-danger"></span>
 								<input type="text" name="Cidade" id="cidade" placeholder="Cidade">
 							</div>
 							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" asp-validation-for="Estado" class="text-danger"></span>
 								<input type="text" name="Estado" id="estado" placeholder="Estado">
 							</div>
 							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" asp-validation-for="Bairro" class="text-danger"></span>
 								<input type="text" name="Bairro" id="bairro" placeholder="Bairro">
 							</div>
 							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" asp-validation-for="Endereco" class="text-danger"></span>
 								<input type="text" name="Endereco" placeholder="Endereco/Rua/Avenida">
 							</div>
 							<div class="col-md-6">
@@ -54,28 +62,22 @@
 								<input type="text" name="Complemento" placeholder="Complemento">
 							</div>
 						</div>
+						<!---
 						<div class="cf-title">Delievery Info</div>
-						<div class="cf-title">Payment</div>
-						<button class="site-btn submit-order-btn">Finalizar Compra</button>
+						<div class="cf-title">Payment</div>--->
+						<input type="submit" class="site-btn submit-order-btn" value="Finalizar Compra">
 					</form>
 				</div>
 				<div class="col-lg-4 order-1 order-lg-2">
 					<div class="checkout-cart">
-						<h3>Intens no carrinho (@Model.CarrinhoCompraList.Count)</h3>
+						<h3 class="total-itens-carrinho"></h3>
 						<ul class="product-list">
-                            @foreach (var item in Model.CarrinhoCompraList)
-							{
-                                <li>
-                                    <div class="pl-thumb"><img src="~/arquivos/@item.Produto.Foto" alt=""></div>
-                                    <h6>@item.Produto.Nome</h6>
-                                    <p>R$@item.Produto.Valor.ToString("N2")</p>
-                                </li>
-                            }    
+							<!----conteudo carregado dinâmicamente via ajax -->
 						</ul>
 						<ul class="price-list">
 							<li class="total">
-                                Total<span>R$@Model.ValorTotalItems.ToString("N2")</span>
-                            </li>
+								Total<span class="valor-total-itens mr-5"></span>
+							</li>
 						</ul>
 					</div>
 				</div>
@@ -83,3 +85,9 @@
 		</div>
 	</section>
 <!-- checkout section end -->
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+
