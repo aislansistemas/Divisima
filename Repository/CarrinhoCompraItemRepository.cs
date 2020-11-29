@@ -54,10 +54,10 @@ namespace Divisima.Repository
             try {
                 var carrinhoCompraItem = await _context.CarrinhoCompraItems
                 .AsNoTrackingWithIdentityResolution()
-                .Where(x => x.UsuarioId == id)
-                .OrderByDescending(x => x.CarrinhoCompraId)
                 .Include(x => x.Produto)
                 .Include(x => x.Usuario)
+                .Where(x => x.UsuarioId == id)
+                .OrderByDescending(x => x.CarrinhoCompraId) 
                 .ToListAsync();
 
                 return carrinhoCompraItem;

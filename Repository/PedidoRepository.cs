@@ -22,8 +22,8 @@ namespace Divisima.Repository
             .AsNoTrackingWithIdentityResolution()
             .Include(x => x.PedidoItem)
             .Skip((numberPage - 1) * limit)
-            .Take(limit)
             .OrderByDescending(x => x.PedidoId)
+            .Take(limit)
             .ToListAsync();
             
             return pedidos;

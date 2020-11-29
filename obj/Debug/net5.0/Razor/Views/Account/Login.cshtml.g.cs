@@ -33,8 +33,15 @@ using divisima.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/home/moobi/Divisima/Views/_ViewImports.cshtml"
+using divisima.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d7ed1b654c431f8767762e6f3bac3ed35871ecfa", @"/Views/Account/Login.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09967dfe9b254561ecab6a27903e8c8e6697c712", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a447a0e9bd5a0169b4899ace0ca8cb63a42bc5af", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_Login : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Cadastro", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -85,7 +92,7 @@ using divisima.ViewModels;
 			</div>
 			<div class=""content-bottom"">
 				");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7ed1b654c431f8767762e6f3bac3ed35871ecfa5550", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7ed1b654c431f8767762e6f3bac3ed35871ecfa5696", async() => {
                 WriteLiteral("\n\t\t\t\t\t<div class=\"field-group\">\n\t\t\t\t\t\t<span class=\"fa fa-user\" aria-hidden=\"true\"></span>\n\t\t\t\t\t\t<div class=\"wthree-field\">\n\t\t\t\t\t\t\t<input name=\"text1\" id=\"UserName\" type=\"text\"");
                 BeginWriteAttribute("value", " value=\"", 806, "\"", 814, 0);
                 EndWriteAttribute();
@@ -111,7 +118,7 @@ using divisima.ViewModels;
                 BeginWriteAttribute("class", " class=\"", 1456, "\"", 1464, 0);
                 EndWriteAttribute();
                 WriteLiteral(">\n\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7ed1b654c431f8767762e6f3bac3ed35871ecfa7014", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7ed1b654c431f8767762e6f3bac3ed35871ecfa7160", async() => {
                     WriteLiteral("Cadastre-se");
                 }
                 );

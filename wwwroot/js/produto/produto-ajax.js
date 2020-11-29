@@ -51,7 +51,7 @@ $('.add-cart').on('click', (e) => {
     }
 });
 
-function adicionarItemAoCarrinho(produtoId, quantidade){
+function adicionarItemAoCarrinho(produtoId, quantidade = 1){
     $.post('/CarrinhoCompra/Adicionar', {produtoId, quantidade}, (response) => {
         validaResponseAjax(response);
     })

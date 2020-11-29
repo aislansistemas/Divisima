@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="product-pic-zoom">
-						<img class="product-big-img" src="~/arquivos/@Model.Produto.Foto" alt="">
+						<img class="product-big-img" src="~/@Functions.GetPathUploadProdutos()/@Model.Produto.Foto" alt="">
 					</div>
 					<div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
 						<div class="product-thumbs-track">
@@ -35,7 +35,8 @@
 				<div class="col-lg-6 product-details">
 					<h2 class="p-title">@Model.Produto.Nome</h2>
 					<h3 class="p-price">R$ @Model.Produto.Valor.ToString("N2")</h3>
-					<h4 class="p-stock">Available: <span>In Stock</span></h4>
+					<h4 class="p-stock">Disponível: <span>Em estoque</span></h4>
+					<!------------------ implementação futura
 					<div class="p-rating">
 						<i class="fa fa-star-o"></i>
 						<i class="fa fa-star-o"></i>
@@ -43,6 +44,7 @@
 						<i class="fa fa-star-o"></i>
 						<i class="fa fa-star-o fa-fade"></i>
 					</div>
+					
 					<div class="p-review">
 						<a href="">3 reviews</a>|<a href="">Add your review</a>
 					</div>
@@ -72,7 +74,7 @@
 							<input type="radio" name="sc" id="xxl-size">
 							<label for="xxl-size">42</label>
 						</div>
-					</div>
+					</div> ----->
 					<div class="quantity">
 						<p>Quantidade</p>
 						<div class="col-md-3">
@@ -82,7 +84,8 @@
 							<small class="xl-size disable text-secondary p-stock quantidade-value" data-item-disponivel="@Model.Produto.Quantidade">@Model.Produto.Quantidade items disponíveis</small>
 						</div>
                     </div>
-					<a href="#" class="site-btn">COMPRAR</a>
+					<!---- implementação futura 
+					<a href="#" class="site-btn">COMPRAR</a> ------>
 					<button data-id="@Model.Produto.ProdutoId" class="site-btn btn-primary add-cart">Adicionar ao carrinho</button>
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
@@ -95,6 +98,7 @@
 								</div>
 							</div>
 						</div>
+						<!---- implementação futura
 						<div class="panel">
 							<div class="panel-header" id="headingTwo">
 								<button class="panel-link" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">care details </button>
@@ -117,16 +121,17 @@
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pharetra tempor so dales. Phasellus sagittis auctor gravida. Integer bibendum sodales arcu id te mpus. Ut consectetur lacus leo, non scelerisque nulla euismod nec.</p>
 								</div>
 							</div>
-						</div>
+						</div>------------------->
 					</div>
 				<!--------------redes sociais----------------------->
+					<!------ implementação futura
 					<div class="social-sharing">
 						<a href=""><i class="fa fa-google-plus"></i></a>
 						<a href=""><i class="fa fa-pinterest"></i></a>
 						<a href=""><i class="fa fa-facebook"></i></a>
 						<a href=""><i class="fa fa-twitter"></i></a>
 						<a href=""><i class="fa fa-youtube"></i></a>
-					</div>
+					</div> ------------------------>
 				<!--------------redes sociais----------------------->
 				</div>
 			</div>
@@ -139,75 +144,26 @@
 	<section class="related-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>RELATED PRODUCTS</h2>
+				<h2>Mais Produtos</h2>
 			</div>
 			<div class="product-slider owl-carousel">
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="~/img/product/1.jpg" alt="">
-						<div class="pi-links">
-							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-						</div>
-					</div>
-					<div class="pi-text">
-						<h6>$35,00</h6>
-						<p>Flamboyant Pink Top </p>
-					</div>
-				</div>
-				<div class="product-item">
-					<div class="pi-pic">
-						<div class="tag-new">New</div>
-						<img src="./img/product/2.jpg" alt="">
-						<div class="pi-links">
-							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-						</div>
-					</div>
-					<div class="pi-text">
-						<h6>$35,00</h6>
-						<p>Black and White Stripes Dress</p>
-					</div>
-				</div>
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="./img/product/3.jpg" alt="">
-						<div class="pi-links">
-							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-						</div>
-					</div>
-					<div class="pi-text">
-						<h6>$35,00</h6>
-						<p>Flamboyant Pink Top </p>
-					</div>
-				</div>
-				<div class="product-item">
+				@foreach (var produto in @Model.LastProducts)
+				{
+					<div class="product-item">
 						<div class="pi-pic">
-							<img src="./img/product/4.jpg" alt="">
+							<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="">
 							<div class="pi-links">
-								<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-								<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
+								<a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
+									<i class="fa fa-eye icone-ver-detalhes"></i>
+								</a>
 							</div>
 						</div>
 						<div class="pi-text">
-							<h6>$35,00</h6>
-							<p>Flamboyant Pink Top </p>
+							<h6>R$@produto.Valor.ToString("N2")</h6>
+							<p>@produto.Nome</p>
 						</div>
 					</div>
-				<div class="product-item">
-					<div class="pi-pic">
-						<img src="./img/product/6.jpg" alt="">
-						<div class="pi-links">
-							<a href="#" class="add-card"><i class="flaticon-bag"></i><span>ADD TO CART</span></a>
-							<a href="#" class="wishlist-btn"><i class="flaticon-heart"></i></a>
-						</div>
-					</div>
-					<div class="pi-text">
-						<h6>$35,00</h6>
-						<p>Flamboyant Pink Top </p>
-					</div>
-				</div>
+				}
 			</div>
 		</div>
 	</section>

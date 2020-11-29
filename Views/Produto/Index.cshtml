@@ -23,13 +23,13 @@
 							<span>Novidades</span>
 							<h2>Jaquetas jeans</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-							<a href="#" class="site-btn sb-line">Ver</a>
-							<a href="#" class="site-btn sb-white">Adicionar</a>
+							<!-------<a href="#" class="site-btn sb-line">Ver</a>
+							<a href="#" class="site-btn sb-white">Adicionar</a>--------->
 						</div>
 					</div>
 					<div class="offer-card text-white">
-						<span>Por apenas</span>
-						<span style="font-size: 2em;">R$29,99</span>
+						<span class="pt-3" style="text-transform: uppercase">Por apenas</span>
+						<span style="font-size: 2em; text-transform: uppercase">R$29,99</span>
 						<p>Compre agora</p>
 					</div>
 				</div>
@@ -41,13 +41,13 @@
 							<span>Novidades</span>
 							<h2>Jaquetas jeans</h2>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum sus-pendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
-							<a href="#" class="site-btn sb-line">Ver</a>
-							<a href="#" class="site-btn sb-white">Adicionar</a>
+							<!------<a href="#" class="site-btn sb-line">Ver</a>
+							<a href="#" class="site-btn sb-white">Adicionar</a>---------->
 						</div>
 					</div>
 					<div class="offer-card text-white">
-						<span>Por apenas</span>
-						<span style="font-size: 2em;">R$29,99</span>
+						<span class="pt-3" style="text-transform: uppercase">Por apenas</span>
+						<span style="font-size: 2em; text-transform: uppercase">R$29,99</span>
 						<p>Compre agora</p>
 					</div>
 				</div>
@@ -92,7 +92,6 @@
 	</section>
 	<!-- Features section end -->
 
-
 	<!-- letest product section -->
 	<section class="top-letest-product-section">
 		<div class="container">
@@ -103,12 +102,8 @@
 			@foreach(Produto produto in Model.LastProducts){
 				<div class="product-item">
 					<div class="pi-pic">
-						<img src="~/arquivos/@produto.Foto" alt="" class="img-list-products">
+						<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="" class="img-list-products">
 						<div class="pi-links">
-							<a href="#" class="add-card" data-id="1">
-								<i class="flaticon-bag">
-								</i><span>Adicionar</span>
-							</a>
 							<a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
 								<i class="fa fa-eye icone-ver-detalhes"></i>
 							</a>
@@ -154,6 +149,7 @@
 	<!-- Product filter section end -->
 
 	<!-- Banner section -->
+	<!------- implementações futuras
 	<section class="banner-section">
 		<div class="container">
 			<div class="banner set-bg" data-setbg="img/banner-bg.jpg">
@@ -163,7 +159,7 @@
 				<a href="#" class="site-btn">SHOP NOW</a>
 			</div>
 		</div>
-	</section>
+	</section> ---------------->
 	<!-- Banner section end  -->
 
 

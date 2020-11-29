@@ -1,0 +1,44 @@
+@model ProdutoViewModel
+
+<!-- Product filter section -->
+	<section class="product-filter-section">
+		<div class="container">
+			<div class="section-title mt-4">
+				<h2>Resultados da pesquisa (@Model.TotalProdutos)</h2>
+			</div>
+
+			<div class="row">
+                @if(@Model.TotalProdutos > 0) {
+                    @foreach(var produto in Model.Produtos) {
+                        <div class="col-lg-3 col-sm-6">
+                            <div class="product-item">
+                                <div class="pi-pic">
+                                    <img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="">
+                                    <div class="pi-links">
+                                    <a href="#" class="add-card" data-id="1">
+                                            <i class="flaticon-bag"></i><span>Adicionar</span>
+                                        </a>
+                                        <a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
+                                            <i class="fa fa-eye icone-ver-detalhes"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="pi-text">
+                                    <h6>R$@produto.Valor.ToString("N2")</h6>
+                                    <p>@produto.Nome</p>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                } else {
+                    <!-- Page info -->
+                        <div class="col-md-12 d-flex justify-content-center mb-5">
+                            <i class="fa fa-exclamation-circle fa-3x text-warning"></i> 
+                            <h2 class="text-warning text-center ml-1 h2"> Desculpe nenhum produto foi encontrado!</h2>
+                        </div>
+                    <!-- Page info end -->
+                }
+			</div>
+		</div>
+	</section>
+<!-- Product filter section end -->

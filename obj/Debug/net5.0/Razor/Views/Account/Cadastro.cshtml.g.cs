@@ -33,8 +33,15 @@ using divisima.ViewModels;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "/home/moobi/Divisima/Views/_ViewImports.cshtml"
+using divisima.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ce5e2179cb1ce7c251d560edfb50f1b0009c0c27", @"/Views/Account/Cadastro.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"09967dfe9b254561ecab6a27903e8c8e6697c712", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a447a0e9bd5a0169b4899ace0ca8cb63a42bc5af", @"/Views/_ViewImports.cshtml")]
     public class Views_Account_Cadastro : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "Login", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -85,7 +92,7 @@ using divisima.ViewModels;
 			</div>
 			<div class=""content-bottom"">
 				");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce5e2179cb1ce7c251d560edfb50f1b0009c0c275565", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce5e2179cb1ce7c251d560edfb50f1b0009c0c275711", async() => {
                 WriteLiteral(@"
 					<div class=""field-group"">
 						<span class=""fa fa-user"" aria-hidden=""true""></span>
@@ -131,7 +138,7 @@ using divisima.ViewModels;
                 BeginWriteAttribute("class", " class=\"", 2171, "\"", 2179, 0);
                 EndWriteAttribute();
                 WriteLiteral(">\n\t\t\t\t\t\t\t");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce5e2179cb1ce7c251d560edfb50f1b0009c0c277656", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ce5e2179cb1ce7c251d560edfb50f1b0009c0c277802", async() => {
                     WriteLiteral("Login");
                 }
                 );

@@ -25,6 +25,17 @@ namespace divisima.Repository
             await this.Editar(produtoResult);
         }
 
+        public async Task<List<Produto>> BuscarProdutosByName(string nomeProduto) {
+            var produtos = await _context.Produtos
+            .AsNoTrackingWithIdentityResolution()
+            .Include(p => p.Categoria)
+            .Where(p => EF.Functions.Like(p.Nome, "%" + nomeProduto + "%") && p.Quantidade > 0)
+            .OrderByDescending(p => p.ProdutoId)
+            .ToListAsync();
+
+            return produtos;
+        }
+
         public async Task Cadastrar(Produto produto)
         {
             produto.DataCadastro = DateTime.Now;
@@ -56,12 +67,13 @@ namespace divisima.Repository
         {
             var produtos = await _context.Produtos
             .AsNoTrackingWithIdentityResolution()
-            .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
+            .Where(x => x.Quantidade > 0)
             .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
             .Take(limit)
             .ToListAsync();
+
             return produtos;
         }
 
@@ -78,8 +90,8 @@ namespace divisima.Repository
         {
             var lastProducts = await _context.Produtos
             .AsNoTracking()
-            .Where(x => x.Quantidade > 0)
             .Include(x => x.Categoria)
+            .Where(x => x.Quantidade > 0)
             .OrderByDescending(x => x.ProdutoId)
             .Take(numberResults)
             .ToListAsync();
@@ -90,7 +102,7 @@ namespace divisima.Repository
         public async Task<List<Produto>> GetProdutosByCatergoriaId(int categoriaId, int numberPage = 1, int limit = 5)
         {
             return await _context.Produtos.AsNoTracking()
-            .Where(p => p.CategoriaId == categoriaId)
+            .Where(p => p.CategoriaId == categoriaId && p.Quantidade > 0)
             .Include(x => x.Categoria)
             .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)

@@ -34,6 +34,21 @@ namespace divisima.Controllers
             return View(produtoVm);
         }
 
+        [HttpGet, ActionName("BuscarProdutos")]
+        public async Task<IActionResult> BuscarProdutos(string produto) {
+            if(produto == null) {
+                return RedirectToAction(nameof(Index));
+            }
+            
+            var produtosResult = await _produtoRepository.BuscarProdutosByName(produto);
+            var produtoVm = new ProdutoViewModel() {
+                Produtos = produtosResult,
+                TotalProdutos = produtosResult.Count()
+            };
+
+            return View(produtoVm);
+        }
+
         [HttpGet]
         public async Task<IActionResult> ListProductsJson(int numberPage, int limit)
         {   

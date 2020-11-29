@@ -369,7 +369,6 @@
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Pedido/Checkout.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/Detalhes.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/Index.cshtml.g.cs
-/home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/Privacy.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/ProdutosPorCategoria.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Shared/Error.cshtml.g.cs
@@ -389,3 +388,4 @@
 /home/moobi/Divisima/obj/Debug/net5.0/divisima.genruntimeconfig.cache
 /home/moobi/Divisima/bin/Debug/net5.0/Humanizer.dll
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Error/Error.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/BuscarProdutos.cshtml.g.cs
