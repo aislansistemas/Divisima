@@ -4,12 +4,12 @@ $('#btn-login').on('click', (e) => {
     executaSpinner();
     let dados = getValueForInputsLogin();
     $.post('/Account/LoginAjax', dados, (response) => {
-        if(response == "sucesso") {
+        if(response.status == "success") {
             executaSpinner();
             window.location.href = "/";
         } else {
             removeSpinner('LOGIN');
-            exibiFeedback(response);
+            exibiFeedback(response.mensagem);
             this.form.reset;
         }
     });

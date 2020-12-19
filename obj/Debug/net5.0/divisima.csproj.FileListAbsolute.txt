@@ -389,3 +389,5 @@
 /home/moobi/Divisima/bin/Debug/net5.0/Humanizer.dll
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Error/Error.cshtml.g.cs
 /home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/BuscarProdutos.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/net5.0/Razor/Areas/Admin/Views/Pedido/Index.cshtml.g.cs
+/home/moobi/Divisima/bin/Debug/net5.0/MercadoPago.dll

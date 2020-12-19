@@ -35,13 +35,20 @@ using divisima.ViewModels;
 #nullable disable
 #nullable restore
 #line 4 "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml"
+using Divisima.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 5 "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml"
 using ReflectionIT.Mvc.Paging;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b982869b6825fdc005e969b7e292aceaa5d43572", @"/Areas/Admin/Views/Produto/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"827c221c20a03c1d3110f5965d70446996d3943b", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f0e7cb9fc1418874c0d27e536fb766af725cbc50", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Produto_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "0", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -130,7 +137,7 @@ using ReflectionIT.Mvc.Paging;
         </button>
    ");
             WriteLiteral("   </div>\n      <div class=\"modal-body\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d435728363", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d435728523", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -166,7 +173,7 @@ using ReflectionIT.Mvc.Paging;
                 <label for=""descricao-produto"">Tamanho<span class=""text-danger"">*</span></label>
                 <select class=""form-control text-dark"" name=""Tamanho"">
                   ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357210517", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357210677", async() => {
                     WriteLiteral("PP");
                 }
                 );
@@ -183,7 +190,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357211823", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357211983", async() => {
                     WriteLiteral("P");
                 }
                 );
@@ -200,7 +207,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357213128", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357213288", async() => {
                     WriteLiteral("M");
                 }
                 );
@@ -217,7 +224,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357214433", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357214593", async() => {
                     WriteLiteral("G");
                 }
                 );
@@ -234,7 +241,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357215738", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357215898", async() => {
                     WriteLiteral("GG");
                 }
                 );
@@ -251,7 +258,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357217044", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357217204", async() => {
                     WriteLiteral("Extra G");
                 }
                 );
@@ -369,7 +376,7 @@ using ReflectionIT.Mvc.Paging;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357223147", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357223307", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -407,7 +414,7 @@ using ReflectionIT.Mvc.Paging;
                 <label for=""descricao-produto"">Tamanho</label>
                 <select class=""form-control tamanho-produto text-dark"" name=""Tamanho"">
                   ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357225353", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357225513", async() => {
                     WriteLiteral("PP");
                 }
                 );
@@ -424,7 +431,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357226659", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357226819", async() => {
                     WriteLiteral("P");
                 }
                 );
@@ -441,7 +448,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357227964", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357228124", async() => {
                     WriteLiteral("M");
                 }
                 );
@@ -458,7 +465,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357229269", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357229429", async() => {
                     WriteLiteral("G");
                 }
                 );
@@ -475,7 +482,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357230574", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357230734", async() => {
                     WriteLiteral("GG");
                 }
                 );
@@ -492,7 +499,7 @@ using ReflectionIT.Mvc.Paging;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357231880", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357232040", async() => {
                     WriteLiteral("Extra G");
                 }
                 );
@@ -563,7 +570,7 @@ using ReflectionIT.Mvc.Paging;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357235910", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b982869b6825fdc005e969b7e292aceaa5d4357236070", async() => {
                 WriteLiteral("\n          <input type=\"hidden\" class=\"id-produto\">\n        ");
             }
             );

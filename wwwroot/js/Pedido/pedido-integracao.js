@@ -18,7 +18,7 @@ function exibirFeedCepInvalido(exibir){
     let iconWarning = $('<i>').addClass('fa fa-exclamation-circle text-danger');
     if(exibir){
         $('#feed-valida-cep').text('');
-        $('#feed-valida-cep').text(' Ops ! O Cep informado não existe').prepend(iconWarning);
+        $('#feed-valida-cep').text(' Ops! O Cep informado não existe').prepend(iconWarning);
     } else {
         $('#feed-valida-cep').text('');
     }

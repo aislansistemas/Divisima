@@ -30,6 +30,7 @@ namespace Divisima.Models
         public decimal ValorTotal { get; set; }
         public PagamentoStatusEnum Status { get; set; }
         public DateTime Data { get; set; }
-        public List<PedidoItem> PedidoItem { get; set; }
+        public virtual List<PedidoItem> PedidoItem { get; set; }
+        public virtual Usuario Usuario { get; set; }
     }
 }

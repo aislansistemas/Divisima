@@ -50,7 +50,8 @@ namespace Divisima.Services.Pedidos
                 };
                 await _produtoRepository.BaixarQuantidadeProduto(carrinhoItem.ProdutoId, carrinhoItem.Quantidade);
                 await _pedidoItemRepository.Cadastrar(pedidoItem);
-                await _carrinhoCompraRepository.Remover(carrinhoItem);
+                var carrinhoResult = await _carrinhoCompraRepository.GetCarrinhoItemById(carrinhoItem.CarrinhoCompraId);
+                await _carrinhoCompraRepository.Remover(carrinhoResult);
             }
         }
 

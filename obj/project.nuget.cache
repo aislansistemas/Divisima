@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "y5ljvmEoKBaaPtUKxInZvIYIXbIshhakxu1W4gG/apaKCIH2FNcY4doVm0u07R7EZRFUicTNVO/rkwpb6MtOrw==",
+  "dgSpecHash": "+2aWzb349gmFgtax7pVeXznLaXD+Y8U6t/g7oE/iGUPUJF/DyxIhctQtcccD2ui4z3+ull1Z14AfZeIwnvLAgw==",
   "success": true,
   "projectFilePath": "/home/moobi/Divisima/divisima.csproj",
   "expectedPackageFiles": [
     "/home/moobi/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
+    "/home/moobi/.nuget/packages/mercadopago-sdk/1.9.0/mercadopago-sdk.1.9.0.nupkg.sha512",
     "/home/moobi/.nuget/packages/microsoft.aspnetcore.authentication/2.2.0/microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "/home/moobi/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/home/moobi/.nuget/packages/microsoft.aspnetcore.authentication.cookies/2.2.0/microsoft.aspnetcore.authentication.cookies.2.2.0.nupkg.sha512",
@@ -158,5 +159,16 @@
     "/home/moobi/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/home/moobi/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "O pacote 'mercadopago-sdk 1.9.0' foi restaurado usando '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' em vez da estrutura de destino do projeto 'net5.0'. Esse pacote pode não ser totalmente compatível com o seu projeto.",
+      "libraryId": "mercadopago-sdk",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
 }

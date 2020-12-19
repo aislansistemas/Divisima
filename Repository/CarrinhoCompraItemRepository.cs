@@ -76,11 +76,7 @@ namespace Divisima.Repository
         public async Task Remover(CarrinhoCompraItem carrinhoCompraItem)
         {
             try{
-                var carrinhoResult = await _context.CarrinhoCompraItems.FirstOrDefaultAsync(x => x.CarrinhoCompraId == carrinhoCompraItem.CarrinhoCompraId);
-                if(carrinhoResult == null) {
-                    throw new NotFoundException("Produto não encontrado!");
-                }
-                _context.CarrinhoCompraItems.Remove(carrinhoResult);
+                _context.CarrinhoCompraItems.Remove(carrinhoCompraItem);
                 await _context.SaveChangesAsync();
             } catch(Exception) {
                 throw new NotFoundException("Não foi possível localizar o item!");

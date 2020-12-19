@@ -14,5 +14,6 @@
     <PackageReference Include="ReflectionIT.Mvc.Paging" Version="5.0.0"/>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0"/>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.0"/>
+    <PackageReference Include="mercadopago-sdk" Version="1.9.0"/>
   </ItemGroup>
 </Project>

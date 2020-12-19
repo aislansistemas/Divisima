@@ -2,8 +2,11 @@
 using System;
 using System.Threading.Tasks;
 using Divisima.Enums.PerfilUsuarioEnums;
+using Divisima.Enums.StatusMensageEnums;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
+using Divisima.Services.Exceptions;
+using Divisima.Services.ResponseMensageService;
 using Divisima.ViewModels;
 using Divisima.ViewModels.Account;
 using Microsoft.AspNetCore.Identity;
@@ -34,22 +37,24 @@ namespace divisima.Controllers
         {
             try{
                 if (!ModelState.IsValid)
-                    return Json("Por favor preencha os dados corretamente !");
+                    throw new InvalidModelStateException("Por favor preencha os dados corretamente !");
                     
                 var usuario = await _accRepository.GetUserByEmail(loginVM.UserName);
-                if (await _accRepository.PasswordIsValid(usuario, loginVM.Password)) {
-                    
-                    await _signInManager.SignInAsync(usuario,false);
-                    if (string.IsNullOrEmpty(loginVM.ReturnUrl))
-                    {
-                        return Json("sucesso");
-                    }
-                    return Json(loginVM.ReturnUrl);
+                if(usuario == null) 
+                    throw new NotFoundException("Usuário não encontrado !");
+
+                if (!await _accRepository.PasswordIsValid(usuario, loginVM.Password))
+                    throw new InvalidArgumentException("Usuário Inválido !");
+
+                await _signInManager.SignInAsync(usuario,false);
+                if (string.IsNullOrEmpty(loginVM.ReturnUrl))
+                {
+                    return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "sucesso"));
                 }
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, loginVM.ReturnUrl)); 
             
-                return Json("Úsuario não encontrado !");
             } catch (Exception e) {
-                return Json("Erro ao realizar a operação",e);
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, e.Message));
             }
         }
 
@@ -64,14 +69,14 @@ namespace divisima.Controllers
                 
                 var usuarioIsExistente = await _accRepository.GetUserByEmail(usuarioVm.UserName);
                 
-                if(usuarioIsExistente == null){
-                    var usuarioCadastrado = await _accRepository.CadastraUsuario(usuarioVm);
-                    await _signInManager.SignInAsync(usuarioCadastrado, isPersistent: false);
-                    return Json("sucesso");
-                }           
-                return Json("Desculpe Já existente um úsuario cadastrado com o mesmo e-mail!");
+                if(usuarioIsExistente != null)
+                    throw new InvalidArgumentException("Desculpe Já existente um úsuario cadastrado com o mesmo e-mail!");  
+
+                var usuarioCadastrado = await _accRepository.CadastraUsuario(usuarioVm);
+                await _signInManager.SignInAsync(usuarioCadastrado, isPersistent: false);
+                return Json("sucesso");      
             } catch(Exception e) {
-                return Json("Erro ao realizar a operação",e);
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, e.Message));
             }
             
         }

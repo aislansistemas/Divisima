@@ -1,0 +1,44 @@
+@model PedidoViewModel
+
+<div class="row">
+  <div class="col-md-12">
+    <div class="card ">
+      <div class="card-header">
+        <h2 class="card-title"> Pedidos</h2>
+      </div>
+      <div class="card-body">
+        <div class="">
+          <table class="table" id="">
+            <thead class="text-primary">
+              <tr>
+                <th>Nome do cliente</th>
+                <th>Valor Total</th>
+                <th>Data</th>
+                <th>Pagamento Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+                @foreach (var pedido in @Model.PedidosList)
+                {
+                  <tr>
+                    <td>@pedido.Usuario.Nome.ToUpper() @pedido.Usuario.Sobrenome.ToUpper()</td>
+                    <td>@pedido.ValorTotal.ToString("N2")</td>
+                    <td>@pedido.Data</td>
+                    <td>@pedido.Status</td>
+                    <td>
+                      <button class="btn btn-warning btn-sm">Detalhes</button>
+                    </td>
+                  </tr>
+                }
+            </tbody>    
+          </table>
+          <div>
+              <button class="btn btn-success btn-sm" onclick="carregaMaisProdutos()">Ver Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+

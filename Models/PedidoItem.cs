@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using divisima.Enums.ProdutoEnums;
 using divisima.Models;
 
@@ -5,6 +6,7 @@ namespace Divisima.Models
 {
     public class PedidoItem
     {
+        [Key]
         public int PedidoItemId { get; set; }
         public int Quantidade { get; set; }
         public int ProdutoId { get; set; }

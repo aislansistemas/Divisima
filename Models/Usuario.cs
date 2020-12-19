@@ -17,7 +17,8 @@ namespace Divisima.Models
         public string Numero { get; set; }
         public string Complemento { get; set; }
         public string Telefone { get; set; }
-        public string Foto { get; set;}
-        public virtual List<Produto> Produtos { get; set;}
+        public string Foto { get; set; }
+        public virtual List<Produto> Produtos { get; set; }
+        public virtual List<Pedido> Pedidos { get; set; }
     }
 }
