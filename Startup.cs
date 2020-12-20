@@ -30,16 +30,6 @@ namespace divisima
             services.AddRepositories();
             services.AddServices();
 
-            services.AddCors(cfg=> {
-                cfg.AddDefaultPolicy(policy =>
-                {
-                    policy.AllowAnyOrigin()
-                    .AllowAnyMethod()
-                    .AllowAnyHeader();
-                    //.WithHeaders("accept");
-                });
-            });
-
             services.AddIdentity<Usuario, IdentityRole>(options =>
             {
                 options.Password.RequireNonAlphanumeric = false;
@@ -80,8 +70,6 @@ namespace divisima
             app.UseAuthentication();
 
             app.UseAuthorization();
-
-            app.UseCors();
 
             app.UseSession();
 
