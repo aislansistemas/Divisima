@@ -1,0 +1,61 @@
+@model PedidoViewModel
+
+@{
+    var pedido = @Model.PedidoItemList.ElementAt(1);
+    var usuario = pedido.Pedido.Usuario;
+    var numero = @pedido.Pedido.Numero != null ? @pedido.Pedido.Numero : "Não informado";
+    var Complemento = @pedido.Pedido.Complemento != null ? @pedido.Pedido.Complemento : "Não informado";
+}
+<div class="container-fluid">
+    <div class="row text-dark">
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li class="text-dark">Nome do Usuário: @usuario.Nome @usuario.Sobrenome</li>
+                <li class="text-dark">Email: @usuario.UserName</li>
+            </ul>  
+        </div>
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li class="text-dark">CEP: @pedido.Pedido.Cep</li>
+                <li class="text-dark">Cidade/Estado: @pedido.Pedido.Cidade/@pedido.Pedido.Estado</li>
+                <li class="text-dark">Bairro: @pedido.Pedido.Bairro</li>
+                <li class="text-dark">Endereco: @pedido.Pedido.Endereco</li>
+                <li class="text-dark">Numero: @numero</li>
+                <li class="text-dark">Complemento: @Complemento</li>
+            </ul>  
+        </div>  
+        <div class="col-md-4">
+            <ul class="list-unstyled">
+                <li class="text-dark">Status:  @pedido.Pedido.Status</li>
+                <li class="text-dark">Data da compra: @pedido.Pedido.Data</li>
+                <li class="text-dark">Valor total: @pedido.Pedido.ValorTotal.ToString("N2")</li>
+            </ul>  
+        </div>
+        <div class="col-md-12">
+            <h4 class="text-dark">Itens do pedido</h4>
+            <table class="table table-dark" id="" style="border-radius: 8px;">
+                <thead class="text-primary">
+                <tr>
+                    <th></th>
+                    <th class="text-primary">Produto</th>
+                    <th class="text-primary">Quantidade</th>
+                    <th class="text-primary">Tamanho</th>
+                </tr>
+                </thead>
+                <tbody>
+                    @foreach (var pedidoItem in @Model.PedidoItemList)
+                    {
+                        <tr>
+                            <td class="text-dark">
+                                <img height="70px" width="50px" src="@Functions.GetImagemParaExibicao(@pedidoItem.Produto.Foto)">
+                            </td>
+                            <td class="text-dark">@pedidoItem.Produto.Nome</td>
+                            <td class="text-dark">@pedidoItem.Quantidade</td>
+                            <td class="text-dark">@pedidoItem.Tamanho</td>
+                        </tr>  
+                    } 
+                </tbody>    
+            </table>
+        </div>         
+    </div>
+</div>

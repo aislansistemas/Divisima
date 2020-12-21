@@ -1,8 +1,10 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Divisima.Enums;
 using Divisima.Enums.GeneroEnum;
+using Divisima.Models;
 
 namespace divisima.Models
 {
@@ -25,5 +27,6 @@ namespace divisima.Models
         public DateTime DataCadastro { get; set; }
         [Required(ErrorMessage = "Gênero deve ser preenchido*")]
         public GeneroEnum Genero { get; set; }
+        public virtual List<PedidoItem> PedidoItem { get; set; }
     }
 }

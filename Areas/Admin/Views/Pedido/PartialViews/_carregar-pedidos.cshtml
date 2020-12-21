@@ -1,0 +1,14 @@
+@model PedidoViewModel
+
+@foreach (var pedido in @Model.PedidosList)
+{
+  <tr>
+    <td>@pedido.Usuario.Nome.ToUpper() @pedido.Usuario.Sobrenome.ToUpper()</td>
+    <td>@pedido.ValorTotal.ToString("N2")</td>
+    <td>@pedido.Data</td>
+    <td>@pedido.Status</td>
+    <td>
+      <button onclick="vizualizarDetalhes(@pedido.PedidoId)" data-toggle="modal" data-target="#modal-detalhe-pedido" class="btn btn-warning btn-sm">Detalhes</button>
+    </td>
+  </tr>
+}

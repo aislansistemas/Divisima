@@ -47,8 +47,15 @@ using ReflectionIT.Mvc.Paging;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml"
+using divisima.Services;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c0cb7f826af1de6ea245782a012ca2e0f93097b2", @"/Areas/Admin/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f0e7cb9fc1418874c0d27e536fb766af725cbc50", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fc5079621a4072d83e7c8199e1d109ba3714a50", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

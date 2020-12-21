@@ -15652,6 +15652,11 @@
   "RootNamespace": "divisima",
   "Documents": [
     {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Pedido/PartialViews/_detalhe.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Pedido\\PartialViews\\_detalhe.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/home/moobi/Divisima/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
@@ -15674,6 +15679,11 @@
     {
       "FilePath": "/home/moobi/Divisima/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Pedido/PartialViews/_carregar-pedidos.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Pedido\\PartialViews\\_carregar-pedidos.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -15769,6 +15779,11 @@
     {
       "FilePath": "/home/moobi/Divisima/Views/Pedido/Checkout.cshtml",
       "TargetPath": "Views\\Pedido\\Checkout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/moobi/Divisima/Areas/Admin/Views/Shared/PartialViews/_loading.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\PartialViews\\_loading.cshtml",
       "FileKind": "mvc"
     },
     {

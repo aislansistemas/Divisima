@@ -6,5 +6,6 @@ namespace Divisima.ViewModels
     public class PedidoViewModel
     {
         public List<Pedido> PedidosList { get; set; }
+        public List<PedidoItem> PedidoItemList { get; set; }
     }
 }

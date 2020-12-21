@@ -39,5 +39,6 @@ namespace Divisima.Repository
         public async Task<Pedido> GetLastPedido() {
             return await _context.Pedido.AsNoTrackingWithIdentityResolution().OrderBy(x => x.PedidoId).LastOrDefaultAsync();
         }
+
     }
 }
