@@ -46,7 +46,7 @@ namespace divisima.Controllers
                 if (!await _accRepository.PasswordIsValid(usuario, loginVM.Password))
                     throw new InvalidArgumentException("Usuário Inválido !");
 
-                await _signInManager.SignInAsync(usuario,false);
+                await _signInManager.SignInAsync(usuario, true);
                 if (string.IsNullOrEmpty(loginVM.ReturnUrl))
                 {
                     return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "sucesso"));

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using divisima.Repository.Contracts;
+using Divisima.Enums;
 using Divisima.Enums.PagamentoEnums;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
@@ -31,7 +32,8 @@ namespace Divisima.Services.Pedidos
         {
             try {
                 pedido.ValorTotal = _carrinhoCompraRepository.GetValorTotalDeItems(carrinhoCompraItens);
-                pedido.Status = PagamentoStatusEnum.Pendente;
+                pedido.Status = PagamentoStatusEnum.Pago;
+                pedido.Entregue = BooleanoEnum.Nao;
                 pedido.Data = DateTime.Now;
                 await _pedidoRepository.Cadastrar(pedido);
                 var pedidoCadastrado = await _pedidoRepository.GetLastPedido();

@@ -16,8 +16,8 @@
 			<div class="row">
 				<div class="col-lg-8 order-2 order-lg-1">
 					<form asp-action="Checkout" asp-controller="Pedido" method="post" class="checkout-form">
-						<div class="cf-title">Endereço para entraga </div>
-						<!---<div class="row">
+						<!----<div class="cf-title">Endereço para entraga </div>
+						<div class="row">
 							<div class="col-md-7">
 								<p>Informações de pagamento</p>
 							</div>
@@ -34,7 +34,7 @@
 								</div>
 							</div>
 						</div> ---->
-						<div class="row address-inputs">
+						<div class="row address-inputs" style="display: none;">
                             <div class="col-md-6">
 								<span style="position: absolute; top: -25px;" asp-validation-for="Cep" class="text-danger" id="feed-valida-cep"></span>
 								<input type="text" name="Cep" data-mask="00000-000" id="consultar-cep" placeholder="CEP">		
@@ -61,83 +61,16 @@
 							<div class="col-md-6">
 								<input type="text" name="Complemento" placeholder="Complemento">
 							</div>
+							<div class="col-md-6">
+								<input type="hidden" id="input-valor-total" placeholder="Valor Total">
+							</div>
 						</div>
 						<!---
 						<div class="cf-title">Delievery Info</div>
 						<div class="cf-title">Payment</div>--->
 						<input type="submit" class="site-btn submit-order-btn" value="Finalizar Compra">
-					</form> 
-
-<form action="/process_payment" method="post" id="paymentForm">
-   <h3>Detalhe do comprador</h3>
-     <div>
-       <div>
-         <label for="email">E-mail</label>
-         <input id="email" name="email" type="text" value="test@test.com"/>
-       </div>
-       <div>
-         <label for="docType">Tipo de documento</label>
-         <select id="docType" name="docType" data-checkout="docType" type="text"></select>
-       </div>
-       <div>
-         <label for="docNumber">Número do documento</label>
-         <input id="docNumber" name="docNumber" data-checkout="docNumber" type="text"/>
-       </div>
-     </div>
-   <h3>Detalhes do cartão</h3>
-     <div>
-       <div>
-         <label for="cardholderName">Titular do cartão</label>
-         <input id="cardholderName" data-checkout="cardholderName" type="text">
-       </div>
-       <div>
-         <label for="">Data de vencimento</label>
-         <div>
-           <input type="text" placeholder="MM" id="cardExpirationMonth" data-checkout="cardExpirationMonth"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-           <span class="date-separator">/</span>
-           <input type="text" placeholder="YY" id="cardExpirationYear" data-checkout="cardExpirationYear"
-             onselectstart="return false" onpaste="return false"
-             oncopy="return false" oncut="return false"
-             ondrag="return false" ondrop="return false" autocomplete=off>
-         </div>
-       </div>
-       <div>
-         <label for="cardNumber">Número do cartão</label>
-         <input type="text" id="cardNumber" data-checkout="cardNumber"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div>
-         <label for="securityCode">Código de segurança</label>
-         <input id="securityCode" data-checkout="securityCode" type="text"
-           onselectstart="return false" onpaste="return false"
-           oncopy="return false" oncut="return false"
-           ondrag="return false" ondrop="return false" autocomplete=off>
-       </div>
-       <div id="issuerInput">
-         <label for="issuer">Banco emissor</label>
-         <select id="issuer" name="issuer" data-checkout="issuer"></select>
-       </div>
-       <div>
-         <label for="installments">Parcelas</label>
-         <select type="text" id="installments" name="installments"></select>
-       </div>
-       <div>
-         <input type="hidden" name="transactionAmount" id="transactionAmount" value="100" />
-         <input type="hidden" name="paymentMethodId" id="paymentMethodId" />
-         <input type="hidden" name="description" id="description" />
-         <br>
-         <button type="submit">Pagar</button>
-         <br>
-       </div>
-   </div>
- </form>
-
-
+						<div id="container-buttons-paypal"></div>
+					</form>
 				</div>
 				<div class="col-lg-4 order-1 order-lg-2">
 					<div class="checkout-cart">
@@ -157,6 +90,73 @@
 	</section>
 <!-- checkout section end -->
 
+<!-------------------------------------->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=AUkLY4vSQsmDfP_19jKeGIqhmiIv5ujGaLBIjX9AtTq8-IBTPO8fw8OHMV5d8AULvCyn0oWhqcpMFI0p&currency=BRL" data-sdk-integration-source="button-factory"></script>
+<script>
+	paypal.Buttons({
+		enableStandardCardFields: true,
+		createOrder: function(data, actions) {
+			return actions.order.create({
+				purchase_units: [{
+					amount: {
+						value: document.querySelector('#input-valor-total').value,
+						currency_code: 'BRL'
+					},
+					/*shipping: {
+						address: {
+							address_line_1: '2211 N First Street',
+							address_line_2: 'Building 17',
+							admin_area_2: 'San Jose',
+							admin_area_1: 'CA',
+							postal_code: '95131',
+							country_code: 'US'
+						}
+					},*/
+				}]
+			});
+		},
+		onApprove: function(data, actions) {
+			return actions.order.capture().then(function(details) {
+				//console.log(details);
+				var ruaENumero = details.purchase_units[0].shipping.address.address_line_1;
+				var ruaENumeroFormatado = ruaENumero.split(" ");
+				var bairro = details.purchase_units[0].shipping.address.address_line_2;
+				var estado = details.purchase_units[0].shipping.address.admin_area_1;
+				var cidade = details.purchase_units[0].shipping.address.admin_area_2;
+				var cep = details.purchase_units[0].shipping.address.postal_code;
+				var valorTotal = details.purchase_units[0].amount.value;
+				$.ajax({
+					url: "/Pedido/Checkout",
+					type: "POST",
+					dataType: "json",
+					data: {
+						'Endereco': ruaENumeroFormatado[0],
+						'Numero': ruaENumeroFormatado[2],
+						'Cidade': cidade,
+						'Bairro': bairro ?? "Não informado",
+						'Estado': estado,
+						'Cep': cep,
+						'ValorTotal': valorTotal
+					},
+					success: function(result) {
+						console.log(result);
+						alert('Transação concluída por ' + details.payer.name.given_name);
+						window.location = '/';
+					},
+					error: function(request, status, erro) {
+						alert("Problema ocorrido: " + status + "\nDescição: " + erro);
+					}
+				});
+			});
+		},
+		onError: function (err) {
+			window.location.href = "/Error/Error";
+		}
+	}).render("#container-buttons-paypal");
+</script>
+<!-------------------------------------->
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }

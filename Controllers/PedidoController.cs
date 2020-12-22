@@ -38,9 +38,7 @@ namespace Divisima.Controllers
 
         [Authorize]
         [HttpGet]
-        public IActionResult Checkout() {
-            return View();
-        }
+        public IActionResult Checkout() => View();
 
         [HttpGet, ActionName("ItensCarrinhoResumo")]
         public async Task<IActionResult> ItensCarrinhoResumo() {
@@ -55,31 +53,26 @@ namespace Divisima.Controllers
 
         [Authorize]
         [HttpPost, ActionName("Checkout")]
-        [ValidateAntiForgeryToken]
         public async Task<IActionResult> CheckoutConfirm(Pedido pedido) {
             try {
-                
-                if(!ModelState.IsValid){
-                    return View(pedido);
-                }
                 
                 Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);
                 var carrinhoCompraItems = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
 
                 if(carrinhoCompraItems.Count < 1) {
-                    TempData["Mensagem"] = "Não foi possível cadastrar o pedido pois seu carrinho de compras está vazio!";
-                    return View();
+                    throw new InvalidArgumentException("Não foi possível cadastrar o pedido pois seu carrinho de compras está vazio!");
+                    
                 }
 
                 pedido.UsuarioId = usuario.Id;
                 await _gerenciadorPedido.ExecutarPedido(pedido, carrinhoCompraItems);
                 
                 TempData["Mensagem"] = "Compra feita com sucesso, aguarde em breve você receberá sua encomenda !";
-                return RedirectToAction("Index", "Produto");
+                return Json("Compra feita com sucesso, aguarde em breve você receberá sua encomenda !");
                 
             } catch(Exception e) {
                 TempData["Error"] = e.Message;
-                return RedirectToAction("Error", "Error");
+                return Json(e.Message);
             }
         }
 

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using Divisima.Enums;
 using Divisima.Enums.PagamentoEnums;
 
 namespace Divisima.Models
@@ -29,6 +30,7 @@ namespace Divisima.Models
         public string Complemento { get; set; }
         public decimal ValorTotal { get; set; }
         public PagamentoStatusEnum Status { get; set; }
+        public BooleanoEnum Entregue { get; set; }
         public DateTime Data { get; set; }
         public virtual List<PedidoItem> PedidoItem { get; set; }
         public virtual Usuario Usuario { get; set; }

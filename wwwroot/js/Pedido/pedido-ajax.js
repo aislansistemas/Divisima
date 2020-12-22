@@ -10,6 +10,7 @@ function carregarCarrinhoIntensResumo() {
 function montarHtmlCarrinhoItens(response) {
     $('.total-itens-carrinho').text('Intens no carrinho (' + response.carrinhoCompraList.length + ')');
     $('.valor-total-itens').text( getValorFormatado(response.valorTotalItems) );
+    $('#input-valor-total').val(response.valorTotalItems);
 
     let carrinhoCompraList = response.carrinhoCompraList;
     carrinhoCompraList.forEach(item => {
