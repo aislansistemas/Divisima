@@ -28,7 +28,8 @@ namespace divisima.Repository
         public async Task<List<Produto>> BuscarProdutosByName(string nomeProduto) {
             var produtos = await _context.Produtos
             .AsNoTrackingWithIdentityResolution()
-            .Include(p => p.Categoria)
+            .Include(x => x.Categoria)
+            .Include(x => x.Foto)
             .Where(p => EF.Functions.Like(p.Nome, "%" + nomeProduto + "%") && p.Quantidade > 0)
             .OrderByDescending(p => p.ProdutoId)
             .ToListAsync();
@@ -68,6 +69,7 @@ namespace divisima.Repository
             var produtos = await _context.Produtos
             .AsNoTrackingWithIdentityResolution()
             .Include(x => x.Categoria)
+            .Include(x => x.Foto)
             .Where(x => x.Quantidade > 0)
             .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
@@ -80,9 +82,22 @@ namespace divisima.Repository
         public async Task<Produto> GetById(int id)
         {   
             try{
-                return await _context.Produtos.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.ProdutoId == id);
+                return await _context.Produtos
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.Categoria)
+                .Include(x => x.Foto)
+                .FirstOrDefaultAsync(x => x.ProdutoId == id);
             } catch(Exception) {
                 throw new NotFoundException("O Produto não foi encontrado");
+            }
+        }
+
+        public async Task<Produto> GetLastProdutoCadastrado()
+        {
+            try{
+                return await _context.Produtos.AsNoTrackingWithIdentityResolution().OrderBy(x => x.ProdutoId).LastOrDefaultAsync();
+            } catch(Exception) {
+                throw new NotFoundException("Produto não encontrado");
             }
         }
 
@@ -91,6 +106,7 @@ namespace divisima.Repository
             var lastProducts = await _context.Produtos
             .AsNoTracking()
             .Include(x => x.Categoria)
+            .Include(x => x.Foto)
             .Where(x => x.Quantidade > 0)
             .OrderByDescending(x => x.ProdutoId)
             .Take(numberResults)
@@ -104,6 +120,7 @@ namespace divisima.Repository
             return await _context.Produtos.AsNoTracking()
             .Where(p => p.CategoriaId == categoriaId && p.Quantidade > 0)
             .Include(x => x.Categoria)
+            .Include(x => x.Foto)
             .OrderByDescending(x => x.ProdutoId)
             .Skip((numberPage - 1) * limit)
             .Take(limit)

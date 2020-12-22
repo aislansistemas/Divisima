@@ -93,11 +93,19 @@
               <select class="form-control text-dark categoria-produto" id="select-categorias" name="CategoriaId">
               </select>
             </div>
-            <div class="col-md-3"> 
+            <div id="div-campos-foto-clone" class="col-md-4" style="border: 1px solid #dedede;"> 
               <label>Foto<span class="text-danger">*</span></label>
-              <input class="form-control" type="file" id="foto" name="Foto">
-               <span class="text-danger validate-foto"></span>
+              <input class="form-control" type="file" name="Foto" multiple="true">
+              <span class="text-danger validate-foto"></span>
             </div>
+            <!---<div class="row" id="fotos-incluidas-input">
+
+            </div>
+            <div class="col-md-2">
+              <button id="btn-adicionar-inputs-foto" class="btn btn-sucess btn-sm" title="Adicionar mais fotos">
+                <i class="tim-icons icon-simple-add"></i>
+              </button>
+            </div>------>
           </div>
         </form>
       </div>

@@ -21,14 +21,16 @@
 			<div class="row">
 				<div class="col-lg-6">
 					<div class="product-pic-zoom">
-						<img class="product-big-img" src="~/@Functions.GetPathUploadProdutos()/@Model.Produto.Foto" alt="">
+						<img class="product-big-img" src="~/@Functions.GetPathUploadProdutos()/@Model.Produto.Foto[0].Foto" alt="">
 					</div>
 					<div class="product-thumbs" tabindex="1" style="overflow: hidden; outline: none;">
 						<div class="product-thumbs-track">
-							<div class="pt active" data-imgbigurl="img/single-product/1.jpg"><img src="../arquivos/@Model.Produto.Foto" alt=""></div>
-							<div class="pt" data-imgbigurl="~/img/single-product/2.jpg"><img src="../arquivos/@Model.Produto.Foto" alt=""></div>
-							<div class="pt" data-imgbigurl="~/img/single-product/3.jpg"><img src="../arquivos/@Model.Produto.Foto" alt=""></div>
-							<div class="pt" data-imgbigurl="~/img/single-product/4.jpg"><img src="../arquivos/@Model.Produto.Foto" alt=""></div>
+							@foreach (var fotos in @Model.Produto.Foto)
+							{
+								<div class="pt active fotos-produtos-list" data-imgbigurl="/@Functions.GetPathUploadProdutos()/@fotos.Foto">
+									<img src="~/@Functions.GetPathUploadProdutos()/@fotos.Foto" alt="">
+								</div>
+							}
 						</div>
 					</div>
 				</div>

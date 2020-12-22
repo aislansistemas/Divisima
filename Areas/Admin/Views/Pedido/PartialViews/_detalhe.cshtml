@@ -1,7 +1,7 @@
 @model PedidoViewModel
 
 @{
-    var pedido = @Model.PedidoItemList.ElementAt(1);
+    var pedido = @Model.PedidoItemList.ElementAt(0);
     var usuario = pedido.Pedido.Usuario;
     var numero = @pedido.Pedido.Numero != null ? @pedido.Pedido.Numero : "Não informado";
     var Complemento = @pedido.Pedido.Complemento != null ? @pedido.Pedido.Complemento : "Não informado";
@@ -39,6 +39,7 @@
                 <tr>
                     <th></th>
                     <th class="text-primary">Produto</th>
+                    <th class="text-primary">Valor</th>
                     <th class="text-primary">Quantidade</th>
                     <th class="text-primary">Tamanho</th>
                 </tr>
@@ -48,9 +49,10 @@
                     {
                         <tr>
                             <td class="text-dark">
-                                <img height="70px" width="50px" src="@Functions.GetImagemParaExibicao(@pedidoItem.Produto.Foto)">
+                                
                             </td>
                             <td class="text-dark">@pedidoItem.Produto.Nome</td>
+                            <td class="text-dark">@pedidoItem.Produto.Valor.ToString("N2")</td>
                             <td class="text-dark">@pedidoItem.Quantidade</td>
                             <td class="text-dark">@pedidoItem.Tamanho</td>
                         </tr>  

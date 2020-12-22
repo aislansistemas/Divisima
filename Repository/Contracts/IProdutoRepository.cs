@@ -15,5 +15,6 @@ namespace divisima.Repository.Contracts
          Task<List<Produto>> GetProdutosByCatergoriaId(int categoriaId, int numberPage = 1, int limit = 5);
          Task BaixarQuantidadeProduto(int produtoId, int quantidade);
          Task<List<Produto>> BuscarProdutosByName(string nomeProduto);
+         Task<Produto> GetLastProdutoCadastrado();
     }
 }

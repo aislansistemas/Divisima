@@ -19,6 +19,7 @@ namespace Divisima.Extensions
             services.AddScoped<ICarrinhoCompraItemRepository, CarrinhoCompraItemRepository>();
             services.AddScoped<IPedidoRepository, PedidoRepository>();
             services.AddScoped<IPedidoItemRepository, PedidoItemRepository>();
+            services.AddScoped<IFotoProdutoRepository, FotoProdutoRepository>();
 
             return services;
         }

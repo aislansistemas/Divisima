@@ -23,10 +23,10 @@ namespace divisima.Models
         public int Quantidade { get; set; }
         [Required(ErrorMessage = "Tamanho deve ser preenchido*")]
         public int Tamanho { get; set; }
-        public string Foto { get; set; }
         public DateTime DataCadastro { get; set; }
         [Required(ErrorMessage = "Gênero deve ser preenchido*")]
         public GeneroEnum Genero { get; set; }
         public virtual List<PedidoItem> PedidoItem { get; set; }
+        public virtual List<FotoProduto> Foto { get; set; }
     }
 }

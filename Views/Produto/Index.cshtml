@@ -102,7 +102,7 @@
 			@foreach(Produto produto in Model.LastProducts){
 				<div class="product-item">
 					<div class="pi-pic">
-						<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="" class="img-list-products">
+						<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto[0].Foto" alt="" class="img-list-products">
 						<div class="pi-links">
 							<a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
 								<i class="fa fa-eye icone-ver-detalhes"></i>

@@ -12,13 +12,13 @@ function adicionaExibicaoProdutosPorCategoria(dados){
         let divPiLinks = $('<div>').addClass('pi-links');
         let divPiText = $('<div>').addClass('pi-text');
         ///div/////
-        let img = $('<img>').attr('src', '../../arquivos/' + produto.foto).addClass('img-list-products');
+        let img = $('<img>').attr('src', '../../arquivos/' + produto.foto[0].foto).addClass('img-list-products');
         //////////////////////////////////////
-        let iconeAddCart = $('<i>').addClass('flaticon-bag');
-        let spanTextAddCart = $('<span>').text('Adicionar');
-        let linkAddCart = $('<a>').addClass('add-card');
-        linkAddCart.append(iconeAddCart);
-        linkAddCart.append(spanTextAddCart);
+       // let iconeAddCart = $('<i>').addClass('flaticon-bag');
+        //let spanTextAddCart = $('<span>').text('Adicionar');
+       // let linkAddCart = $('<a>').addClass('add-card');
+       // linkAddCart.append(iconeAddCart);
+        //linkAddCart.append(spanTextAddCart);
         /////////////////////////////////////
         let iconeDetalhes = $('<i>').addClass('fa fa-eye icone-ver-detalhes');
         let linkDetails = getLinkDetails(produto.produtoId);
@@ -32,7 +32,7 @@ function adicionaExibicaoProdutosPorCategoria(dados){
         divPiText.append(pNomeProduto);
         /////////////////////
         ///apends divpilinks ////
-        divPiLinks.append(linkAddCart);
+        //divPiLinks.append(linkAddCart);
         divPiLinks.append(linkDetails);
         ////////////////////////
         ////apends pi-pic /////

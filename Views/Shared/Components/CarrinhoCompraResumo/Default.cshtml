@@ -4,7 +4,10 @@
     <div class="up-item">
         <div id="icone-carrinho-compra" class="shopping-card">
             <ul class="main-menu-superior">
-                <li><a href="#"><i class="flaticon-bag"></i><span>@Model.TotalItems</span></a>
+                <li>
+                    <a href="#">
+                        <i class="fa fa-shopping-cart"></i><span>@Model.TotalItems</span>
+                    </a>
                     <ul class="sub-menu-superior" style="left: -150px !important; width: 270px">
                         @foreach (var item in Model.CarrinhoCompraList)
                         {
@@ -29,7 +32,7 @@
 } else {
     <div class="up-item">
         <div id="icone-carrinho-compra" class="shopping-card">
-            <a href="#"><i class="flaticon-bag"></i><span>0</span></a> 
+            <a href="#"><i class="fa fa-shopping-cart"></i><span>0</span></a> 
         </div>	
     </div>
 }

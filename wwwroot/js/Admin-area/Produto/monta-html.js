@@ -1,6 +1,6 @@
 function montaTabelaProduto(dados){
     for(let i = 0; i < dados.length; i++){
-        
+    
         let produtos = dados[i];
         let tr = setElement('tr', 'tr-produtos');
         let tdNome = setElement('td', 'td-nome', produtos.nome);
@@ -8,12 +8,12 @@ function montaTabelaProduto(dados){
         let valorFormatado = getValorFormatado(produtos.valor);
         let tdValor = setElement('td', 'td-valor', valorFormatado);
         let tdBtnDetalhe = setElement('td', 'td-btn-detalhe');
-        let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
+        let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto[0].foto, produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
         let tdBtnDelete = setElement('td', 'td-btn-delete');
         let btnDelete = getElementButtonProducts('delete', produtos.produtoId);
-        let tdBtnEdit = setElement('td', 'td-btn-edit');
-        let btnEdit = getElementButtonProducts('edit', produtos.produtoId, produtos.foto,produtos.nome, produtos.descricao, produtos.quantidade, produtos.valor, produtos.tamanho, produtos.categoria);
-        tdBtnEdit.append(btnEdit);
+        //let tdBtnEdit = setElement('td', 'td-btn-edit');
+        //let btnEdit = getElementButtonProducts('edit', produtos.produtoId, produtos.foto[0].foto,produtos.nome, produtos.descricao, produtos.quantidade, produtos.valor, produtos.tamanho, produtos.categoria);
+        //tdBtnEdit.append(btnEdit);
         tdBtnDelete.append(btnDelete);
         tdBtnDetalhe.append(btnDetalhes);
         tr.append(tdNome);
@@ -21,7 +21,7 @@ function montaTabelaProduto(dados){
         tr.append(tdValor);
         tr.append(tdBtnDetalhe);
         tr.append(tdBtnDelete);
-        tr.append(tdBtnEdit);
+        //tr.append(tdBtnEdit);
         $('#tabela-list-produto').append(tr);
 
     }
@@ -124,5 +124,13 @@ function setValureForInputs(
     $('.foto-produto').attr('filename',foto);
     console.log(foto);
 }
+
+$('#btn-adicionar-inputs-foto').on('click', (e) => {
+    e.preventDefault();
+    //var divClone = $('#div-campos-foto-clone').removeClass('col-md-3');
+    var divClonada = $('#div-campos-foto-clone').clone();
+    $('#fotos-incluidas-input').prepend(divClonada);
+});
+
 
 

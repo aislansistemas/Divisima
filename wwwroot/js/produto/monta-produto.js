@@ -12,7 +12,7 @@ function adicionaExibicaoProdutos(dados){
         let divPiLinks = $('<div>').addClass('pi-links');
         let divPiText = $('<div>').addClass('pi-text');
         ///div/////
-        let img = $('<img>').attr('src', '../arquivos/' + produto.foto).addClass('img-list-products');
+        let img = $('<img>').attr('src', '../arquivos/' + produto.foto[0].foto).addClass('img-list-products');
         //////////////////////////////////////
         //let iconeAddCart = $('<i>').addClass('flaticon-bag');
         //let spanTextAddCart = $('<span>').text('Adicionar');
