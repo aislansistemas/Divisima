@@ -74,8 +74,16 @@ function validarInputQuantidade(quantidade){
         exibirFeedValidacaoQuantidade("Por favor informe a quantidade de produtos!");
         return false;
     }
+
     if(quantidade > quantidadeDisponivel){
         exibirFeedValidacaoQuantidade("Desculpe não temos essa quantidade em estoque!");
+        return false;
+    }
+
+    let inputUsuario = $('#input-usuario-logado').val();
+    console.log(inputUsuario);
+    if(inputUsuario == null || inputUsuario == "" || inputUsuario == undefined) {
+        exibirFeedValidacaoQuantidade("Por favor, faça login para poder adicionar o produto ao carrinho!");
         return false;
     }
 
