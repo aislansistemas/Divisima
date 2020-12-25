@@ -55,6 +55,7 @@ namespace Divisima.Repository
                 var carrinhoCompraItem = await _context.CarrinhoCompraItems
                 .AsNoTrackingWithIdentityResolution()
                 .Include(x => x.Produto)
+                .Include(x => x.Produto.Foto)
                 .Include(x => x.Usuario)
                 .Where(x => x.UsuarioId == id)
                 .OrderByDescending(x => x.CarrinhoCompraId) 

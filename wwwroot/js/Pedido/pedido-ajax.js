@@ -16,7 +16,7 @@ function montarHtmlCarrinhoItens(response) {
     carrinhoCompraList.forEach(item => {
 
         let divConteinerImagem = $('<div>').addClass('pl-thumb');
-        let fotoProduto = $('<img>').attr('src', '/arquivos/' + item.produto.foto).attr('id', 'img-item-carrinho-compras');
+        let fotoProduto = $('<img>').attr('src', '/arquivos/' + item.produto.foto[0].foto).attr('id', 'img-item-carrinho-compras');
         divConteinerImagem.append(fotoProduto);
 
         let nomeProduto = $('<h6>').text(item.produto.nome);

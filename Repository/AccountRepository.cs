@@ -68,7 +68,7 @@ namespace Divisima.Repository
         {
             try{
                 return await _userManager.FindByNameAsync(email);
-            } catch(Exception e) {
+            } catch(Exception) {
                 throw new NotFoundException("Erro ao procurar email");
             }
         }
