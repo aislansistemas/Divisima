@@ -3,10 +3,12 @@ using Divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using Divisima.ViewModels;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace divisima.Areas.Admin.Controllers
 {   
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class PedidoController : Controller
     {
         private readonly IPedidoRepository _pedidoRepository;

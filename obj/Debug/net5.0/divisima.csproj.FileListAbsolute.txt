@@ -415,3 +415,5 @@
 /home/moobi/Divisima/bin/Debug/net5.0/runtimes/win-arm64/native/e_sqlite3.dll
 /home/moobi/Divisima/bin/Debug/net5.0/runtimes/win-x64/native/e_sqlite3.dll
 /home/moobi/Divisima/bin/Debug/net5.0/runtimes/win-x86/native/e_sqlite3.dll
+/home/moobi/Divisima/obj/Debug/net5.0/Razor/Views/Produto/PartialViews/_Carregar-produtos.cshtml.g.cs
+/home/moobi/Divisima/obj/Debug/net5.0/Razor/Areas/Admin/Views/Usuario/CadastrarUsuario.cshtml.g.cs

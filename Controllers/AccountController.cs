@@ -72,7 +72,7 @@ namespace divisima.Controllers
                 if(usuarioIsExistente != null)
                     throw new InvalidArgumentException("Desculpe Já existente um úsuario cadastrado com o mesmo e-mail!");  
 
-                var usuarioCadastrado = await _accRepository.CadastraUsuario(usuarioVm);
+                var usuarioCadastrado = await _accRepository.CadastrarUsuario(usuarioVm, PerfilUsuarioEnum.Comun);
                 await _signInManager.SignInAsync(usuarioCadastrado, isPersistent: false);
                 return Json("sucesso");      
             } catch(Exception e) {

@@ -5,5 +5,6 @@ namespace Divisima.ViewModels.Account
         public string Nome { get; set; }
         public string Sobrenome { get; set; }
         public string Cpf { get; set; }
+        public string Perfil { get; set; }
     }
 }

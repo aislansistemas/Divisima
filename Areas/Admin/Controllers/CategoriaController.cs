@@ -4,10 +4,12 @@ using divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using divisima.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 
 namespace divisima.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class CategoriaController: Controller
     {
         private readonly ICategoriaRepository _categoriaRepository;

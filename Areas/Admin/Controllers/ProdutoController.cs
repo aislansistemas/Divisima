@@ -7,12 +7,14 @@ using divisima.Services;
 using divisima.ViewModels;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace divisima.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = "Admin")]
     public class ProdutoController: Controller
     {   
         private readonly IProdutoRepository _produtoRepository;

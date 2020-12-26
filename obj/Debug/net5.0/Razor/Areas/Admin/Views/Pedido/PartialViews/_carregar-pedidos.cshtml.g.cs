@@ -54,8 +54,15 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml"
+using Divisima.Enums.PerfilUsuarioEnums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4f9e55e26359aa89f1c2d30c33cab9249dd791fc", @"/Areas/Admin/Views/Pedido/PartialViews/_carregar-pedidos.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fc5079621a4072d83e7c8199e1d109ba3714a50", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"93f344eef8af2260ba3830a072f115ba68da65f6", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Pedido_PartialViews__carregar_pedidos : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PedidoViewModel>
     {
         #pragma warning disable 1998

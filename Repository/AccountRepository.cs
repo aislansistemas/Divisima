@@ -36,8 +36,10 @@ namespace Divisima.Repository
             }
         }
 
-        public async Task<Usuario> CadastraUsuario(CadastroUsuarioViewModel cadastroUsuarioVm)
-        {
+        public async Task<Usuario> CadastrarUsuario(
+            CadastroUsuarioViewModel cadastroUsuarioVm, 
+            string roleName
+        ) {
             var user = new Usuario() { 
                 UserName = cadastroUsuarioVm.UserName, 
                 Nome = cadastroUsuarioVm.Nome,
@@ -48,7 +50,7 @@ namespace Divisima.Repository
             if(!result.Succeeded){
                 throw new Exception("Erro ao tentar cadastrar um novo usuario");
             }
-            await this.SetRoleForUsuario(user, PerfilUsuarioEnum.Comun);
+            await this.SetRoleForUsuario(user, roleName);
             return user;
         }
     

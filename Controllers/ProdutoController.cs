@@ -50,14 +50,14 @@ namespace divisima.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ListProductsJson(int numberPage, int limit)
+        public async Task<IActionResult> ListProductsAjax(int numberPage, int limit)
         {   
             var produtoVm = new ProdutoViewModel(){
                 LastProducts = await _produtoRepository.GetProductosRecentes(),
                 Produtos = await _produtoRepository.GetAll(numberPage, limit)
             };
           
-            return Json(produtoVm);
+            return PartialView("PartialViews/_Carregar-produtos", produtoVm);
         }
 
         [HttpGet]

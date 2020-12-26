@@ -10,7 +10,7 @@ namespace Divisima.Repository.Contracts
     public interface IAccountRepository
     {
          Task<Usuario> GetUserByEmail(string email);
-         Task<Usuario> CadastraUsuario(CadastroUsuarioViewModel cadastroUsuarioVm);
+         Task<Usuario> CadastrarUsuario(CadastroUsuarioViewModel cadastroUsuarioVm, string roleName);
          Task CadastraRoles(string roleName);
          Task<bool> PasswordIsValid(Usuario usuario, string password);
          Task<List<Usuario>> GetAll(int numberPage, int limit);

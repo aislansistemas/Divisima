@@ -6,9 +6,9 @@ var limit = 4;
 
 function getProducts(){
 
-    $.get('/Produto/ListProductsJson', {numberPage, limit}, (dados) => {
-        console.log(dados);
-        adicionaExibicaoProdutos(dados.produtos);
+    $.get('/Produto/ListProductsAjax', {numberPage, limit}, (dados) => {
+        //adicionaExibicaoProdutos(dados.produtos);
+        $('.row-all-products').html(dados);
         getTituloPagina(dados.produtos);
     })
 }
@@ -25,7 +25,7 @@ function getProdutoById(){
 function carregaMaisProdutos(){
     numberPage++;
     let imgLoading = setGifLoading();
-    $.get('/Produto/ListProductsJson', {numberPage, limit}, (dados) => {
+    $.get('/Produto/ListProductsAjax', {numberPage, limit}, (dados) => {
         setTimeout(() => {
             imgLoading.remove();
             $(".btn-close-modal").click();

@@ -54,8 +54,15 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 7 "/home/moobi/Divisima/Areas/Admin/Views/_ViewImports.cshtml"
+using Divisima.Enums.PerfilUsuarioEnums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fb70a75e960057e979fbf9c4593d92b439dd8ca", @"/Areas/Admin/Views/Produto/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9fc5079621a4072d83e7c8199e1d109ba3714a50", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"93f344eef8af2260ba3830a072f115ba68da65f6", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Produto_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("value", "0", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -144,7 +151,7 @@ using divisima.Services;
         </button>
    ");
             WriteLiteral("   </div>\n      <div class=\"modal-body\">\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca8681", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca8855", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -180,7 +187,7 @@ using divisima.Services;
                 <label for=""descricao-produto"">Tamanho<span class=""text-danger"">*</span></label>
                 <select class=""form-control text-dark"" name=""Tamanho"">
                   ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca10835", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca11009", async() => {
                     WriteLiteral("PP");
                 }
                 );
@@ -197,7 +204,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca12141", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca12315", async() => {
                     WriteLiteral("P");
                 }
                 );
@@ -214,7 +221,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca13446", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca13620", async() => {
                     WriteLiteral("M");
                 }
                 );
@@ -231,7 +238,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca14751", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca14925", async() => {
                     WriteLiteral("G");
                 }
                 );
@@ -248,7 +255,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca16056", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca16230", async() => {
                     WriteLiteral("GG");
                 }
                 );
@@ -265,7 +272,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca17362", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca17536", async() => {
                     WriteLiteral("Extra G");
                 }
                 );
@@ -387,7 +394,7 @@ using divisima.Services;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca23927", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca24101", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -425,7 +432,7 @@ using divisima.Services;
                 <label for=""descricao-produto"">Tamanho</label>
                 <select class=""form-control tamanho-produto text-dark"" name=""Tamanho"">
                   ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca26133", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca26307", async() => {
                     WriteLiteral("PP");
                 }
                 );
@@ -442,7 +449,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca27439", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca27613", async() => {
                     WriteLiteral("P");
                 }
                 );
@@ -459,7 +466,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca28744", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca28918", async() => {
                     WriteLiteral("M");
                 }
                 );
@@ -476,7 +483,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca30049", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca30223", async() => {
                     WriteLiteral("G");
                 }
                 );
@@ -493,7 +500,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca31354", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca31528", async() => {
                     WriteLiteral("GG");
                 }
                 );
@@ -510,7 +517,7 @@ using divisima.Services;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca32660", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca32834", async() => {
                     WriteLiteral("Extra G");
                 }
                 );
@@ -581,7 +588,7 @@ using divisima.Services;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca36690", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9fb70a75e960057e979fbf9c4593d92b439dd8ca36864", async() => {
                 WriteLiteral("\n          <input type=\"hidden\" class=\"id-produto\">\n        ");
             }
             );
