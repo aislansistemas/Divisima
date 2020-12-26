@@ -154,6 +154,7 @@ input, th{
   font-weight: 600 !important;
 }
 
-
-
+#container-master-layout {
+  padding: 0px;
+}
 

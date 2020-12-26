@@ -50,7 +50,7 @@ namespace Divisima.Controllers
         public async Task<IActionResult> Adicionar(int produtoId, int quantidade){
             try{
                 var produtoResult = await _produtoRepository.GetById(produtoId);
-                if(produtoResult != null){
+                if(produtoResult != null) {
                     Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                     var carrinhoMontado = _carrinhoCompraRepository.CreateObject(produtoId, quantidade, usuario.Id);
                     await _carrinhoCompraRepository.Adicionar(carrinhoMontado);
