@@ -41,7 +41,7 @@ namespace divisima.Areas.Admin.Controllers
                     PedidoItemList = pedidoItens
                 };
                 return PartialView("PartialViews/_detalhe", pedidoVm);
-            } catch(Exception e) {
+            } catch(Exception) {
                 return View();
             }
         }

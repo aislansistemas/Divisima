@@ -40,8 +40,8 @@ namespace Divisima.Areas.Admin.Controllers
                 await _accountRepository.CadastrarUsuario(usuarioVm, usuarioVm.Perfil);
                 
                 return RedirectToAction(nameof(Index));
-            } catch(Exception e) {
-                return View(e.Message);
+            } catch(Exception) {
+                return View();
             }
         }
     }

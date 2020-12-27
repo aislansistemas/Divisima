@@ -77,7 +77,7 @@ namespace divisima.Areas.Admin.Controllers
 
                 return Json(errors);
             } catch(Exception e) {
-                return Json("Erro ao realizar a operação",e);
+                return Json("error", e.Message);
             }
         }
 
@@ -101,7 +101,7 @@ namespace divisima.Areas.Admin.Controllers
                 var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
                 return Json(errors);
             } catch(Exception e) {
-                return Json("Erro ao realizar a operação",e);
+                return Json("error", e.Message);
             }
         }
         
@@ -120,7 +120,7 @@ namespace divisima.Areas.Admin.Controllers
                 var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
                 return Json(errors);
             } catch(Exception e) {
-                return Json("Erro ao realizar a operação",e);
+                return Json("error", e.Message);
             }
         }
     }

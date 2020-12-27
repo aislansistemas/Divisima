@@ -45,7 +45,7 @@ namespace divisima.Areas.Admin.Controllers
                 return Json("Preencha os dados corretamente");
 
             } catch (Exception e) {
-                return Json("Desculpe ocorreu um erro no servidor" + e);
+                return Json("error", e.Message);
             }    
         }
 
@@ -64,7 +64,7 @@ namespace divisima.Areas.Admin.Controllers
                 return Json(CategoriaVm);
                
            } catch(Exception e) {
-               return Json("Desculpe ocorreu um erro no servidor" + e);
+               return Json("error", e.Message);
            }
         }
         [HttpPost, ActionName("Inativar")]
@@ -83,7 +83,7 @@ namespace divisima.Areas.Admin.Controllers
                 return Json(CategoriaVm);
 
             } catch(Exception e) {
-                return Json("Desculpe ocorreu um erro no servidor" + e);
+                return Json("error", e.Message);
             }   
         }
 
@@ -103,7 +103,7 @@ namespace divisima.Areas.Admin.Controllers
                 return Json(CategoriaVm);
                 
             } catch(Exception e) {
-                return Json("Desculpe ocorreu um erro no servidor" + e);
+                return Json("error", e.Message);
             }   
         }
     }
