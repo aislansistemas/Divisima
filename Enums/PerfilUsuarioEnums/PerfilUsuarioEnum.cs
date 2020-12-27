@@ -8,7 +8,8 @@ namespace Divisima.Enums.PerfilUsuarioEnums
         public const string Admin = "Admin";
         public const string Comun = "Comun";
 
-        public static List<string> GetPerfilUsuarioCombo() {
+        public static List<string> GetPerfilUsuarioCombo() 
+        {
             List<string> perfilUsuarioCombo = new List<string>(){
                 Comun,
                 Admin
