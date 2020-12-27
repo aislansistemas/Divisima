@@ -38,21 +38,25 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(){
-            return View();
-        }
+        public IActionResult Index() => View();
 
         [HttpGet]
-        public async Task<IActionResult> GetProdutos(int numberPage, int limit){
-            var ProdutoVm = new ProdutoViewModel(){
-                Produtos = await _produtoRepository.GetAll(numberPage, limit),
-                CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
-            };
-            return Json(ProdutoVm);
+        public async Task<IActionResult> GetProdutos(int numberPage, int limit)
+        {
+            try {
+                var ProdutoVm = new ProdutoViewModel(){
+                    Produtos = await _produtoRepository.GetAll(numberPage, limit),
+                    CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
+                };
+                return Json(ProdutoVm);
+            } catch(Exception e) {
+                return Json(e.Message);
+            }
         }
 
         [HttpPost, ActionName("Cadastrar")]
-        public async Task<IActionResult> Cadastrar(Produto produto){
+        public async Task<IActionResult> Cadastrar(Produto produto)
+        {
             try{
                 if(ModelState.IsValid){
                     await _produtoRepository.Cadastrar(produto);
@@ -82,7 +86,8 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpPost, ActionName("Editar")]
-        public async Task<IActionResult> Editar(Produto produto){
+        public async Task<IActionResult> Editar(Produto produto)
+        {
             try{
                 var produtoResult = await _produtoRepository.GetById(produto.ProdutoId);
                 if(produtoResult != null){
@@ -106,7 +111,8 @@ namespace divisima.Areas.Admin.Controllers
         }
         
         [HttpPost, ActionName("Deletar")]
-        public async Task<IActionResult> Deletar(int id){
+        public async Task<IActionResult> Deletar(int id)
+        {
             try{
                 var produtoResult = await _produtoRepository.GetById(id);
                 if(produtoResult != null){

@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using divisima.Context;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
+using Divisima.Services.Exceptions;
 using Microsoft.EntityFrameworkCore;
 
 namespace Divisima.Repository
@@ -18,26 +20,44 @@ namespace Divisima.Repository
 
         public async Task<List<Pedido>> GetAll(int numberPage = 0, int limit = 5)
         {
-            var pedidos = await _context.Pedido
-            .AsNoTrackingWithIdentityResolution()
-            .Include(x => x.PedidoItem)
-            .Include(u => u.Usuario)
-            .OrderByDescending(x => x.PedidoId)
-            .Skip((numberPage - 1) * limit)
-            .Take(limit)
-            .ToListAsync();
-            
-            return pedidos;
+            try {
+                var pedidos = await _context.Pedido
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.PedidoItem)
+                .Include(u => u.Usuario)
+                .OrderByDescending(x => x.PedidoId)
+                .Skip((numberPage - 1) * limit)
+                .Take(limit)
+                .ToListAsync();
+                
+                return pedidos;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum pedido encontrado.");
+            }
         }
 
         public async Task Cadastrar(Pedido pedido)
         {
-            _context.Pedido.Add(pedido);
-            await _context.SaveChangesAsync();
+            try {
+                _context.Pedido.Add(pedido);
+                await _context.SaveChangesAsync();
+            } catch(Exception) {
+                 throw new CreatedException("Não foi possível cadastrar o pedido.");
+            }
         }
 
-        public async Task<Pedido> GetLastPedido() {
-            return await _context.Pedido.AsNoTrackingWithIdentityResolution().OrderBy(x => x.PedidoId).LastOrDefaultAsync();
+        public async Task<Pedido> GetLastPedido() 
+        {
+            try {
+                var lastPedido = await _context.Pedido
+                .AsNoTrackingWithIdentityResolution()
+                .OrderBy(x => x.PedidoId)
+                .LastOrDefaultAsync();
+
+                return lastPedido;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum pedido encontrado.");
+            }
         }
 
     }

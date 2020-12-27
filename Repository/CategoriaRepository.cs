@@ -28,27 +28,39 @@ namespace divisima.Repository
         }
 
         public async Task<List<Categoria>> GetAll()
-        {
-            return await _dbContext.Categorias.AsNoTrackingWithIdentityResolution().OrderByDescending(x => x.CategoriaId).ToListAsync();
+        {   
+            try{
+                var categorias = await _dbContext.Categorias
+                .AsNoTrackingWithIdentityResolution()
+                .OrderByDescending(x => x.CategoriaId)
+                .ToListAsync();
+
+                return categorias;
+            } catch(Exception) {
+                throw new NotFoundException("A categoria não foi encontrada.");
+            }
         }
 
         public async Task<Categoria> GetById(int id)
         {
             try{
-                var categoria = await _dbContext.Categorias.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.CategoriaId == id);
+                var categoria = await _dbContext.Categorias
+                .AsNoTrackingWithIdentityResolution()
+                .FirstOrDefaultAsync(x => x.CategoriaId == id);
+
                 return categoria;
-                
-            } catch(Exception e){
-                throw new NotFoundException("A categoria não foi encontrada");
+            } catch(Exception){
+                throw new NotFoundException("A categoria não foi encontrada.");
             }
         }
 
-        public async Task Editar(Categoria categoria){
+        public async Task Editar(Categoria categoria)
+        {
             try{
                 _dbContext.Categorias.Update(categoria);
                 await _dbContext.SaveChangesAsync();
-            } catch(DbUpdateConcurrencyException e) {
-                throw new DbUpdateConcurrencyException("Erro na operação", e);
+            } catch(DbUpdateConcurrencyException) {
+                throw new DbUpdateConcurrencyException("Erro na operação.");
             }
         }
 
@@ -58,8 +70,8 @@ namespace divisima.Repository
                 categoria.Ativo = CategoriaAtivoEnum.Inativo;
                 _dbContext.Update(categoria);
                 await _dbContext.SaveChangesAsync();
-            } catch(DbUpdateConcurrencyException e) {
-                throw new DbUpdateConcurrencyException("Erro na operação", e);
+            } catch(DbUpdateConcurrencyException) {
+                throw new DbUpdateConcurrencyException("Erro na operação.");
             }
         }
 
@@ -69,8 +81,8 @@ namespace divisima.Repository
                 categoria.Ativo = CategoriaAtivoEnum.Ativo;
                 _dbContext.Update(categoria);
                 await _dbContext.SaveChangesAsync();
-            } catch(DbUpdateConcurrencyException e) {
-                throw new DbUpdateConcurrencyException("Erro na operação", e);
+            } catch(DbUpdateConcurrencyException) {
+                throw new DbUpdateConcurrencyException("Erro na operação.");
             }
         }
 

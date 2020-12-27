@@ -25,7 +25,7 @@ namespace Divisima.Repository
             try {
                 _context.Add(carrinhoCompraItem);
                 await _context.SaveChangesAsync();
-            } catch(Exception e) {
+            } catch(Exception) {
                 throw new CreatedException("Não foi possível adicionar o produto ao carrinho!");
             }
         }

@@ -25,13 +25,19 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllJson(){
-            var categorias = await _categoriaRepository.GetAll();
-            return Json(categorias);
+        public async Task<IActionResult> GetAllJson()
+        {
+            try {
+                var categorias = await _categoriaRepository.GetAll();
+                return Json(categorias);
+            } catch(Exception e) {
+                return Json(e.Message);
+            }
         }
 
         [HttpPost,ActionName("Cadastrar")]
-        public async Task<IActionResult> CadastrarConfirme(Categoria categoria){
+        public async Task<IActionResult> CadastrarConfirme(Categoria categoria)
+        {
             try{
                 if(ModelState.IsValid){
                     await _categoriaRepository.Cadastrar(categoria);
@@ -50,7 +56,8 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpPost, ActionName("Editar")]
-        public async Task<IActionResult> Editar(Categoria categoria){
+        public async Task<IActionResult> Editar(Categoria categoria)
+        {
            try{
                 var categoriaResult = await _categoriaRepository.GetById(categoria.CategoriaId);
                 if(categoriaResult == null){
@@ -67,8 +74,10 @@ namespace divisima.Areas.Admin.Controllers
                return Json("error", e.Message);
            }
         }
+
         [HttpPost, ActionName("Inativar")]
-        public async Task<IActionResult> Inativar(int id){
+        public async Task<IActionResult> Inativar(int id)
+        {
             try{
                 var categoriaResult = await _categoriaRepository.GetById(id);
                 if(categoriaResult == null){
@@ -88,7 +97,8 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpPost, ActionName("Ativar")]
-        public async Task<IActionResult> Ativar(int id){
+        public async Task<IActionResult> Ativar(int id)
+        {
             try{
                 var categoriaResult = await _categoriaRepository.GetById(id);
                 if(categoriaResult == null){

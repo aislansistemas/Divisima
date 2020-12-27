@@ -20,7 +20,7 @@ namespace divisima.Controllers
         public ProdutoController(
             IProdutoRepository produtoRepository,
             ICategoriaRepository categoriaRepository
-        ){
+        ) {
             _produtoRepository = produtoRepository;
             _categoriaRepository = categoriaRepository;
         } 
@@ -35,7 +35,8 @@ namespace divisima.Controllers
         }
 
         [HttpGet, ActionName("BuscarProdutos")]
-        public async Task<IActionResult> BuscarProdutos(string produto) {
+        public async Task<IActionResult> BuscarProdutos(string produto) 
+        {
             if(produto == null) {
                 return RedirectToAction(nameof(Index));
             }
@@ -61,7 +62,8 @@ namespace divisima.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Detalhes(int id){
+        public async Task<IActionResult> Detalhes(int id)
+        {
             if(id <= 0){
                 this.Menssagem = "Produto não encontrado";
                 return View(this.Menssagem);
@@ -79,7 +81,8 @@ namespace divisima.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ProdutosPorCategoria(int id) { 
+        public async Task<IActionResult> ProdutosPorCategoria(int id) 
+        { 
             var categoriaVm = new CategoriaViewModel(){
                 Categoria = await _categoriaRepository.GetById(id)
             };
@@ -87,7 +90,8 @@ namespace divisima.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> ProdutosPorCategoriaAjax(int id, int numberPage, int limit){
+        public async Task<IActionResult> ProdutosPorCategoriaAjax(int id, int numberPage, int limit)
+        {
             var produtoVm = new ProdutoViewModel(){
                 Produtos = await _produtoRepository.GetProdutosByCatergoriaId(id, numberPage, limit)
             };

@@ -22,9 +22,14 @@ namespace Divisima.Areas.Admin.Controllers
         public IActionResult Index() => View();
 
         [HttpGet, ActionName("GetUsers")]
-        public async Task<IActionResult> GetUsers(int numberPage, int limit){
-            List<Usuario> usuario = await _accountRepository.GetAll(numberPage, limit);
-            return Json(usuario);
+        public async Task<IActionResult> GetUsers(int numberPage, int limit)
+        {
+            try {
+                List<Usuario> usuario = await _accountRepository.GetAll(numberPage, limit);
+                return Json(usuario);
+            } catch(Exception e) {
+                return Json(e.Message);
+            }
         }
 
 

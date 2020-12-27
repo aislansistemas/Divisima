@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using Divisima.Services.Exceptions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 
@@ -13,7 +14,9 @@ namespace divisima.Services
         {
             this._hostingEnvironment = hostingEnvironment;
         }
-        public string Upload(IFormFile formFile, string directory){
+
+        public string Upload(IFormFile formFile, string directory)
+        {
             try{
                 var nomeArquivo = formFile.FileName;
                 var novoNomeArquivo = nomeArquivo.Replace(" ", "_");
@@ -24,8 +27,8 @@ namespace divisima.Services
                     formFile.CopyTo(fileStream);
                 }
                 return novoNomeArquivo;
-            } catch(Exception e) {
-                throw new Exception(e.ToString());
+            } catch(Exception) {
+                throw new InvalidArgumentException("Não foi possível salvar o arquivo.");
             }    
         }
     }

@@ -8,6 +8,7 @@ using divisima.ViewModels;
 using Divisima.Repository.Contracts;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using System;
 
 namespace Divisima.Components
 {
@@ -23,17 +24,22 @@ namespace Divisima.Components
             this._userManager = userManager;
         }
 
-        public IViewComponentResult Invoke(){
-            Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
-            var carrinhoVM = new CarrinhoCompraViewModel();
-            if(User.Identity.IsAuthenticated){
-                var carrinhoComprasForUser = _carrinhoRepository.GetItemsForUserById(usuario.Id).Result;
-                carrinhoVM.CarrinhoCompraList = carrinhoComprasForUser;
-                carrinhoVM.TotalItems = carrinhoComprasForUser.Count;
-    
+        public IViewComponentResult Invoke()
+        {
+            try {
+                Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
+                var carrinhoVM = new CarrinhoCompraViewModel();
+                if(User.Identity.IsAuthenticated){
+                    var carrinhoComprasForUser = _carrinhoRepository.GetItemsForUserById(usuario.Id).Result;
+                    carrinhoVM.CarrinhoCompraList = carrinhoComprasForUser;
+                    carrinhoVM.TotalItems = carrinhoComprasForUser.Count;
+        
+                    return View(carrinhoVM);
+                }
                 return View(carrinhoVM);
+            } catch(Exception) {
+                return View();
             }
-            return View(carrinhoVM);
         }
 
        

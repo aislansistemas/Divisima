@@ -4,8 +4,6 @@ namespace Divisima.Controllers
 {
     public class ErrorController : Controller
     {
-        public IActionResult Error() {
-            return View();
-        }
+        public IActionResult Error() => View();
     }
 }

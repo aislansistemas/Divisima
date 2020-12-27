@@ -20,28 +20,42 @@ namespace divisima.Repository
 
         public async Task BaixarQuantidadeProduto(int produtoId, int quantidade)
         {
-            var produtoResult = await _context.Produtos.FirstOrDefaultAsync(x => x.ProdutoId == produtoId);
-            produtoResult.Quantidade -= quantidade;
-            await this.Editar(produtoResult);
+            try {
+                var produtoResult = await _context.Produtos.FirstOrDefaultAsync(x => x.ProdutoId == produtoId);
+                produtoResult.Quantidade -= quantidade;
+                await this.Editar(produtoResult);
+            } catch(Exception) {
+                throw new DbConcurrencyException("Não foi possível atualizar o produto.");
+            }
         }
 
-        public async Task<List<Produto>> BuscarProdutosByName(string nomeProduto) {
-            var produtos = await _context.Produtos
-            .AsNoTrackingWithIdentityResolution()
-            .Include(x => x.Categoria)
-            .Include(x => x.Foto)
-            .Where(p => EF.Functions.Like(p.Nome, "%" + nomeProduto + "%") && p.Quantidade > 0)
-            .OrderByDescending(p => p.ProdutoId)
-            .ToListAsync();
+        public async Task<List<Produto>> BuscarProdutosByName(string nomeProduto) 
+        {
+            try {
+                var produtos = await _context.Produtos
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.Categoria)
+                .Include(x => x.Foto)
+                .Where(p => EF.Functions.Like(p.Nome, "%" + nomeProduto + "%") && p.Quantidade > 0)
+                .OrderByDescending(p => p.ProdutoId)
+                .ToListAsync();
 
-            return produtos;
+                return produtos;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum produto encontrado.");
+            }
         }
 
         public async Task Cadastrar(Produto produto)
         {
-            produto.DataCadastro = DateTime.Now;
-            _context.Produtos.Add(produto);
-            await _context.SaveChangesAsync();
+            try {
+                produto.DataCadastro = DateTime.Now;
+                _context.Produtos.Add(produto);
+                await _context.SaveChangesAsync();
+            } catch(Exception) {
+                throw new CreatedException("Não foi possível cadastrar o produto.");
+            }
+            
         }
 
         public async Task Deletar(Produto produto)
@@ -49,8 +63,8 @@ namespace divisima.Repository
             try{
                 _context.Produtos.Remove(produto);
                 await _context.SaveChangesAsync();
-            } catch(Exception e) {
-                throw new Exception(e.Message);
+            } catch(Exception) {
+                throw new DbConcurrencyException("Não foi possível deletar o produto.");
             }
         }
 
@@ -59,24 +73,29 @@ namespace divisima.Repository
             try{
                 _context.Produtos.Update(produto);
                 await _context.SaveChangesAsync();
-            } catch(DbUpdateConcurrencyException e) {
-                throw new DbConcurrencyException(e.Message);
+            } catch(DbUpdateConcurrencyException) {
+                throw new DbConcurrencyException("Não foi possível atualizar o produto.");
             }
         }
 
         public async Task<List<Produto>> GetAll(int numberPage = 0, int limit = 5)
         {
-            var produtos = await _context.Produtos
-            .AsNoTrackingWithIdentityResolution()
-            .Include(x => x.Categoria)
-            .Include(x => x.Foto)
-            .Where(x => x.Quantidade > 0)
-            .OrderByDescending(x => x.ProdutoId)
-            .Skip((numberPage - 1) * limit)
-            .Take(limit)
-            .ToListAsync();
+            try {
+                var produtos = await _context.Produtos
+                .AsNoTrackingWithIdentityResolution()
+                .Include(x => x.Categoria)
+                .Include(x => x.Foto)
+                .Where(x => x.Quantidade > 0)
+                .OrderByDescending(x => x.ProdutoId)
+                .Skip((numberPage - 1) * limit)
+                .Take(limit)
+                .ToListAsync();
 
-            return produtos;
+                return produtos;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum produto encontrado.");
+            }
+            
         }
 
         public async Task<Produto> GetById(int id)
@@ -95,7 +114,12 @@ namespace divisima.Repository
         public async Task<Produto> GetLastProdutoCadastrado()
         {
             try{
-                return await _context.Produtos.AsNoTrackingWithIdentityResolution().OrderBy(x => x.ProdutoId).LastOrDefaultAsync();
+                var lastProdutoCadastrado = await _context.Produtos
+                .AsNoTrackingWithIdentityResolution()
+                .OrderBy(x => x.ProdutoId)
+                .LastOrDefaultAsync();
+
+                return lastProdutoCadastrado;
             } catch(Exception) {
                 throw new NotFoundException("Produto não encontrado");
             }
@@ -103,28 +127,38 @@ namespace divisima.Repository
 
         public async Task<List<Produto>> GetProductosRecentes(int numberResults = 5)
         {
-            var lastProducts = await _context.Produtos
-            .AsNoTracking()
-            .Include(x => x.Categoria)
-            .Include(x => x.Foto)
-            .Where(x => x.Quantidade > 0)
-            .OrderByDescending(x => x.ProdutoId)
-            .Take(numberResults)
-            .ToListAsync();
+            try {
+                var lastProducts = await _context.Produtos
+                .AsNoTracking()
+                .Include(x => x.Categoria)
+                .Include(x => x.Foto)
+                .Where(x => x.Quantidade > 0)
+                .OrderByDescending(x => x.ProdutoId)
+                .Take(numberResults)
+                .ToListAsync();
 
-            return lastProducts;
+                return lastProducts;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum produto encontrado.");
+            }
         }
 
         public async Task<List<Produto>> GetProdutosByCatergoriaId(int categoriaId, int numberPage = 1, int limit = 5)
         {
-            return await _context.Produtos.AsNoTracking()
-            .Where(p => p.CategoriaId == categoriaId && p.Quantidade > 0)
-            .Include(x => x.Categoria)
-            .Include(x => x.Foto)
-            .OrderByDescending(x => x.ProdutoId)
-            .Skip((numberPage - 1) * limit)
-            .Take(limit)
-            .ToListAsync();
+            try {
+                var produtosPorCategoria = await _context.Produtos.AsNoTracking()
+                .Where(p => p.CategoriaId == categoriaId && p.Quantidade > 0)
+                .Include(x => x.Categoria)
+                .Include(x => x.Foto)
+                .OrderByDescending(x => x.ProdutoId)
+                .Skip((numberPage - 1) * limit)
+                .Take(limit)
+                .ToListAsync();
+
+                return produtosPorCategoria;
+            } catch(Exception) {
+                throw new NotFoundException("Nenhum produto encontrado.");
+            }
         }
     }
 }

@@ -20,7 +20,7 @@
 									<tr>
 										<th class="product-th">Produtos</th>
 										<th class="quy-th">Quantidade</th>
-										<th class="size-th">Tamanho</th>
+										<!----<th class="size-th">Tamanho</th>----->
 										<th class="total-th">Preço</th>
 										<th>Ação</th>
 									</tr>
@@ -41,7 +41,7 @@
 													<p>@item.Quantidade</p>
 												</div>
 											</td>
-											<td class="size-col"><h4>Size M</h4></td>
+											<!---<td class="size-col"><h4>Size M</h4></td>--->
 											<td class="total-col"><h4>R$ @item.Produto.Valor.ToString("N2")</h4></td>
 											<td class="total-col">
 												<button data-toggle="modal" data-target="#modalDelete" onclick="abrirModalRemoveItem(this, @item.CarrinhoCompraId)" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete" title="Remover item">

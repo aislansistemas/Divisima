@@ -28,7 +28,7 @@ namespace Divisima.Controllers
             IPedidoItemRepository pedidoItemRepository,
             IPedidoRepository pedidoRepository,
             IGerenciadorPedido gerenciadorPedido
-        ){
+        ) {
             _userManager = userManager;
             _carrinhoCompraRepository = carrinhoCompraRepository;
             _pedidoItemRepository = pedidoItemRepository;
@@ -41,7 +41,8 @@ namespace Divisima.Controllers
         public IActionResult Checkout() => View();
 
         [HttpGet, ActionName("ItensCarrinhoResumo")]
-        public async Task<IActionResult> ItensCarrinhoResumo() {
+        public async Task<IActionResult> ItensCarrinhoResumo() 
+        {
             Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);
             var produtosAdicionados = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
             var carrinhoVm = new CarrinhoCompraViewModel(){ 
@@ -53,7 +54,8 @@ namespace Divisima.Controllers
 
         [Authorize]
         [HttpPost, ActionName("Checkout")]
-        public async Task<IActionResult> CheckoutConfirm(Pedido pedido) {
+        public async Task<IActionResult> CheckoutConfirm(Pedido pedido) 
+        {
             try {
                 
                 Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);

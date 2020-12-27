@@ -11,7 +11,8 @@ namespace Divisima.Extensions
 {
     public static class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddRepositories(this IServiceCollection services){
+        public static IServiceCollection AddRepositories(this IServiceCollection services)
+        {
 
             services.AddScoped<ICategoriaRepository, CategoriaRepository>();
             services.AddScoped<IProdutoRepository, ProdutoRepository>();
@@ -24,7 +25,8 @@ namespace Divisima.Extensions
             return services;
         }
 
-        public static IServiceCollection AddServices(this IServiceCollection services){
+        public static IServiceCollection AddServices(this IServiceCollection services)
+        {
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddSingleton<IUploadFile, UploadFile>();

@@ -22,19 +22,23 @@ namespace divisima.Areas.Admin.Controllers
         }
 
         [HttpGet, ActionName("Index")]
-        public IActionResult Index() {
-            return View();
+        public IActionResult Index() => View();
+
+        public async Task<IActionResult> CarregarPedidoAjax() 
+        {
+            try {
+                var pedidos = await _pedidoRepository.GetAll(1, 10);
+                var pedidoVm = new PedidoViewModel() {
+                    PedidosList = pedidos
+                };
+                return PartialView("PartialViews/_carregar-pedidos", pedidoVm);
+            } catch(Exception) {
+                return PartialView("PartialViews/_carregar-pedidos");
+            }
         }
 
-        public async Task<IActionResult> CarregarPedidoAjax() {
-            var pedidos = await _pedidoRepository.GetAll(1, 10);
-            var pedidoVm = new PedidoViewModel() {
-                PedidosList = pedidos
-            };
-            return PartialView("PartialViews/_carregar-pedidos", pedidoVm);
-        }
-
-        public async Task<IActionResult> DetalhesPedidoAjax(int pedidoId) {
+        public async Task<IActionResult> DetalhesPedidoAjax(int pedidoId) 
+        {
             try {
                 var pedidoItens = await _pedidoItemRepository.GetByPedido(pedidoId);
                 var pedidoVm = new PedidoViewModel() {
