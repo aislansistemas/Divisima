@@ -7717,24 +7717,26 @@
     ]
   },
   "packageFolders": {
-    "/home/moobi/.nuget/packages/": {}
+    "C:\\Users\\Aislan\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/moobi/Divisima/divisima.csproj",
+      "projectUniqueName": "D:\\projetos\\Divisima\\divisima.csproj",
       "projectName": "divisima",
-      "projectPath": "/home/moobi/Divisima/divisima.csproj",
-      "packagesPath": "/home/moobi/.nuget/packages/",
-      "outputPath": "/home/moobi/Divisima/obj/",
+      "projectPath": "D:\\projetos\\Divisima\\divisima.csproj",
+      "packagesPath": "C:\\Users\\Aislan\\.nuget\\packages\\",
+      "outputPath": "D:\\projetos\\Divisima\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/moobi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Aislan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7824,7 +7826,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.100/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   },

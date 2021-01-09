@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/moobi/.dotnet/store/|arch|/|tfm|",
-      "/home/moobi/.nuget/packages"
+      "C:\\Users\\Aislan\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Aislan\\.nuget\\packages"
     ]
   }
 }

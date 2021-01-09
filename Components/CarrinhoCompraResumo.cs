@@ -27,9 +27,9 @@ namespace Divisima.Components
         public IViewComponentResult Invoke()
         {
             try {
-                Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                 var carrinhoVM = new CarrinhoCompraViewModel();
-                if(User.Identity.IsAuthenticated){
+                if(User.Identity.IsAuthenticated) {
+                    Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                     var carrinhoComprasForUser = _carrinhoRepository.GetItemsForUserById(usuario.Id).Result;
                     carrinhoVM.CarrinhoCompraList = carrinhoComprasForUser;
                     carrinhoVM.TotalItems = carrinhoComprasForUser.Count;

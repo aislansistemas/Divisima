@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using divisima.Models;
 using divisima.Repository.Contracts;
@@ -7,6 +8,8 @@ using divisima.ViewModels;
 using Divisima.Enums.StatusMensageEnums;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
+using Divisima.Services.CarrinhoCompra;
+using Divisima.Services.Exceptions;
 using Divisima.Services.ResponseMensageService;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -54,6 +57,13 @@ namespace Divisima.Controllers
                 var produtoResult = await _produtoRepository.GetById(produtoId);
                 if(produtoResult != null) {
                     Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
+                    var produtosDoUsuario = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
+                    var isProdutoAdicionado = CarrinhoCompraService.VerificarProdutoAdicionadoAoCarrinho(produtosDoUsuario, produtoId);
+                    
+                    if(isProdutoAdicionado) {
+                        throw new InvalidArgumentException("Este produto ja foi adicionado em seu carrinho.");
+                    }
+
                     var carrinhoMontado = _carrinhoCompraRepository.CreateObject(produtoId, quantidade, usuario.Id);
                     await _carrinhoCompraRepository.Adicionar(carrinhoMontado);
                     return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "Produto Adicionado ao carrinho!"));
@@ -61,8 +71,8 @@ namespace Divisima.Controllers
 
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
                      
-            } catch(Exception) {
-                return Json(ResponseMensage.GetMensage(StatusMensageEnum.error, "Desculpe ocorreu um erro no servidor"));
+            } catch(Exception e) {
+                return Json(ResponseMensage.GetMensage(StatusMensageEnum.error, e.Message));
             }
         } 
 
