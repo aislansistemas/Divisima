@@ -7,7 +7,6 @@ var limit = 4;
 function getProducts(){
 
     $.get('/Produto/ListProductsAjax', {numberPage, limit}, (dados) => {
-        //adicionaExibicaoProdutos(dados.produtos);
         $('.row-all-products').html(dados);
         getTituloPagina(dados.produtos);
     })
@@ -23,13 +22,13 @@ function getProdutoById(){
 }
 
 function carregaMaisProdutos(){
-    numberPage++;
+    limit += limit;
     let imgLoading = setGifLoading();
     $.get('/Produto/ListProductsAjax', {numberPage, limit}, (dados) => {
         setTimeout(() => {
             imgLoading.remove();
             $(".btn-close-modal").click();
-            adicionaExibicaoProdutos(dados.produtos);
+            $(".row-all-products").html(dados);
         }, 1200);
     })
     
