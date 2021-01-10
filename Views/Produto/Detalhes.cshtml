@@ -37,7 +37,7 @@
 				</div>
 				<div class="col-lg-6 product-details">
 					<h2 class="p-title">@Model.Produto.Nome</h2>
-					<h3 class="p-price">R$ @Model.Produto.Valor.ToString("N2")</h3>
+					<h3 class="p-price">R$ @Model.Produto.Valor.ToString("N2").Replace(".", ",")</h3>
 					<h4 class="p-stock">Disponível: <span>Em estoque</span></h4>
 					<!------------------ implementação futura
 					<div class="p-rating">
@@ -162,7 +162,7 @@
 							</div>
 						</div>
 						<div class="pi-text">
-							<h6>R$@produto.Valor.ToString("N2")</h6>
+							<h6>R$@produto.Valor.ToString("N2").Replace(".", ",")</h6>
 							<p>@produto.Nome</p>
 						</div>
 					</div>
