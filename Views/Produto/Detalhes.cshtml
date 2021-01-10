@@ -1,5 +1,6 @@
 @model ProdutoViewModel
-<!-- Page info -->
+
+	<!-- Page info -->
 	<div class="page-top-info">
 		<div class="container">
 		</div>
@@ -142,19 +143,18 @@
 	</section>
 	<!-- product section end -->
 
-
 	<!-- RELATED PRODUCTS section -->
 	<section class="related-product-section">
 		<div class="container">
 			<div class="section-title">
-				<h2>Mais Produtos</h2>
+				<h2>Produtos Similares</h2>
 			</div>
-			<div class="product-slider owl-carousel">
-				@foreach (var produto in @Model.LastProducts)
+			<div class="product-slider owl-carousel carousel-produtos-por-categoria">
+				@foreach (var produto in @Model.Produtos)
 				{
 					<div class="product-item">
 						<div class="pi-pic">
-							<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="">
+							<img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto[0].Foto" alt="">
 							<div class="pi-links">
 								<a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
 									<i class="fa fa-eye icone-ver-detalhes"></i>

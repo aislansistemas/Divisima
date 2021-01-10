@@ -61,8 +61,22 @@ using Divisima.Enums.PerfilUsuarioEnums;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "D:\projetos\Divisima\Areas\Admin\Views\_ViewImports.cshtml"
+using Divisima.Enums.ProdutoEnums;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "D:\projetos\Divisima\Areas\Admin\Views\_ViewImports.cshtml"
+using divisima.Enums.ProdutoEnums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"da0760dad359741b3313ff9ae1589e3a10a82dd6", @"/Areas/Admin/Views/Usuario/CadastrarUsuario.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fae8bc49843a62694a5e62b186b7fa8a12c4ee6f", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cca8b39603b5bf9ef6ed969afff0fd9b5b20e8b9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Usuario_CadastrarUsuario : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-area", "Admin", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -104,7 +118,7 @@ using Divisima.Enums.PerfilUsuarioEnums;
                 </div>
                 <div class=""card-body"">
                     ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da0760dad359741b3313ff9ae1589e3a10a82dd65775", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da0760dad359741b3313ff9ae1589e3a10a82dd66125", async() => {
                 WriteLiteral(@"
                         <div class=""row"">
                         <div class=""col-md-6"">
@@ -146,7 +160,7 @@ using Divisima.Enums.PerfilUsuarioEnums;
 #line hidden
 #nullable disable
                 WriteLiteral("                                    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da0760dad359741b3313ff9ae1589e3a10a82dd68115", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "da0760dad359741b3313ff9ae1589e3a10a82dd68465", async() => {
 #nullable restore
 #line 41 "D:\projetos\Divisima\Areas\Admin\Views\Usuario\CadastrarUsuario.cshtml"
                                                               Write(perfilUsuario);

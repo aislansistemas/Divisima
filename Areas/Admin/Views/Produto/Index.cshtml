@@ -1,3 +1,5 @@
+
+
 <div class="row">
   <div class="col-md-12">
     <div class="card ">
@@ -77,12 +79,10 @@
               <div class="form-group">
                 <label for="descricao-produto">Tamanho<span class="text-danger">*</span></label>
                 <select class="form-control text-dark" name="Tamanho">
-                  <option value="0" class="text-dark">PP</option>
-                  <option value="1"class="text-dark">P</option>
-                  <option value="2"class="text-dark">M</option>
-                  <option value="3"class="text-dark">G</option>
-                  <option value="4"class="text-dark">GG</option>
-                  <option value="5"class="text-dark">Extra G</option>
+                  @foreach (var item in ProdutoTamanhoEnumClass.GetComboEnum())
+                  {
+                      <option value="@item.Key" class="text-dark">@item.Value</option>
+                  }
                 </select>
                 <span class="text-danger validate-tamanho"></span>
               </div>

@@ -61,8 +61,22 @@ using Divisima.Enums.PerfilUsuarioEnums;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 8 "D:\projetos\Divisima\Areas\Admin\Views\_ViewImports.cshtml"
+using Divisima.Enums.ProdutoEnums;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 9 "D:\projetos\Divisima\Areas\Admin\Views\_ViewImports.cshtml"
+using divisima.Enums.ProdutoEnums;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"afc9a6b4932ec73d1ce4e8939c91528d2fea8ebb", @"/Areas/Admin/Views/Usuario/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fae8bc49843a62694a5e62b186b7fa8a12c4ee6f", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cca8b39603b5bf9ef6ed969afff0fd9b5b20e8b9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Usuario_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-info"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -94,7 +108,7 @@ using Divisima.Enums.PerfilUsuarioEnums;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"row\">\r\n  <div class=\"col-md-12\">\r\n    <div class=\"card \">\r\n      <div class=\"card-header\">\r\n        <h2 class=\"card-title\">Usuarios</h2>\r\n      </div>\r\n      <div class=\"card-body\"></div>\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afc9a6b4932ec73d1ce4e8939c91528d2fea8ebb5418", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "afc9a6b4932ec73d1ce4e8939c91528d2fea8ebb5768", async() => {
                 WriteLiteral("\r\n          <i class=\"tim-icons icon-simple-add\"></i> Novo \r\n        ");
             }
             );
