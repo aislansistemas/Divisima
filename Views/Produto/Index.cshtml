@@ -110,7 +110,7 @@
 						</div>
 					</div>
 					<div class="pi-text">
-						<h6>R$ @produto.Valor.ToString("N2")</h6>
+						<h6>@Functions.GetValorMoedaFormatado(@produto.Valor)</h6>
 						<p>@produto.Nome</p>
 					</div>
 				</div>

@@ -12,5 +12,10 @@ namespace divisima.Services
         {
             return "/" + PathFotoFiliado + "/" + nomeImagem;
         }
+
+        public static string GetValorMoedaFormatado(decimal valor)
+        {
+            return "R$ " + valor.ToString("N2").Replace(".", ",");
+        }
     }
 }
