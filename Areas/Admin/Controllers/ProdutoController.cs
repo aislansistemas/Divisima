@@ -5,6 +5,7 @@ using divisima.Models;
 using divisima.Repository.Contracts;
 using divisima.Services;
 using divisima.ViewModels;
+using Divisima.Enums.PerfilUsuarioEnums;
 using Divisima.Models;
 using Divisima.Repository.Contracts;
 using Microsoft.AspNetCore.Authorization;
@@ -14,7 +15,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace divisima.Areas.Admin.Controllers
 {
     [Area("Admin")]
-    [Authorize(Roles = "Admin")]
+    [Authorize(Roles = PerfilUsuarioEnum.Admin)]
     public class ProdutoController: Controller
     {   
         private readonly IProdutoRepository _produtoRepository;

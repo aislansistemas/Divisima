@@ -1,3 +1,5 @@
+using Divisima.Controllers;
+
 namespace divisima.ViewModels
 {
     public abstract class AbstractFeedbackViewModel

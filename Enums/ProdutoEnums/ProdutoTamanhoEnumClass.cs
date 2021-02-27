@@ -18,7 +18,7 @@ namespace Divisima.Enums.ProdutoEnums
             produtoTamanhoEnum.Add((int)ProdutoTamanhoEnum.G, "G");
             produtoTamanhoEnum.Add((int)ProdutoTamanhoEnum.GG, "GG");
             produtoTamanhoEnum.Add((int)ProdutoTamanhoEnum.EG, "Extra G");
-            
+
             return produtoTamanhoEnum.ToList();
         }
     }

@@ -836,3 +836,7 @@ D:\projetos\Divisima\obj\Debug\net5.0\divisima.dll
 D:\projetos\Divisima\obj\Debug\net5.0\ref\divisima.dll
 D:\projetos\Divisima\obj\Debug\net5.0\divisima.pdb
 D:\projetos\Divisima\obj\Debug\net5.0\divisima.genruntimeconfig.cache
+d:\projetos\Divisima\bin\Debug\net5.0\xunit.abstractions.dll
+d:\projetos\Divisima\bin\Debug\net5.0\xunit.assert.dll
+d:\projetos\Divisima\bin\Debug\net5.0\xunit.core.dll
+d:\projetos\Divisima\bin\Debug\net5.0\xunit.execution.dotnet.dll

@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\Controllers",
-    "\\Services",
-    "\\Services\\Exceptions"
+    ""
   ],
-  "SelectedNode": "\\Services\\Exceptions",
+  "SelectedNode": "\\Program.cs",
   "PreviewInSolutionExplorer": false
 }
