@@ -9,7 +9,7 @@ namespace divisima.Repository.Contracts
         Task<List<Categoria>> GetAll();
         Task<List<Categoria>> GetAllAtiva(); 
         Task Cadastrar(Categoria categoria);
-        Task<Categoria> GetById(int id);
+        Task<Categoria> GetById(long id);
         Task Editar(Categoria categoria);
         Task Inativar(Categoria categoria);
         Task Ativar(Categoria categoria);

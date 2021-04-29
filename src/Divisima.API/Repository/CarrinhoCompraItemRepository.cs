@@ -30,7 +30,7 @@ namespace Divisima.Repository
             }
         }
 
-        public CarrinhoCompraItem CreateObject(int produtoId, int quantidade, string usuarioId)
+        public CarrinhoCompraItem CreateObject(long produtoId, int quantidade, string usuarioId)
         {
             var carrinhoCompraItem = new CarrinhoCompraItem(){
                 Quantidade = quantidade,
@@ -40,7 +40,7 @@ namespace Divisima.Repository
             return carrinhoCompraItem;
         }
 
-        public async Task<CarrinhoCompraItem> GetCarrinhoItemById(int id)
+        public async Task<CarrinhoCompraItem> GetCarrinhoItemById(long id)
         {
             try {
                 return await _context.CarrinhoCompraItems.AsNoTrackingWithIdentityResolution().FirstOrDefaultAsync(x => x.CarrinhoCompraId == id);

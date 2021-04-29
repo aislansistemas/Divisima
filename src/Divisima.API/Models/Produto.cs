@@ -10,8 +10,8 @@ namespace divisima.Models
 {
     public class Produto
     {
-        public int ProdutoId { get; set; }
-        public int CategoriaId { get; set; }
+        public long ProdutoId { get; set; }
+        public long CategoriaId { get; set; }
         public virtual Categoria Categoria { get; set; }
         [Required(ErrorMessage = "Nome deve ser preenchido*")]
         public string Nome { get; set; }

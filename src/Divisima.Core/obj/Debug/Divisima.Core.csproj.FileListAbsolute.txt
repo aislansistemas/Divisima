@@ -1,0 +1,9 @@
+D:\projetos\Divisima\src\Divisima.Core\bin\Debug\Divisima.Core.dll
+D:\projetos\Divisima\src\Divisima.Core\bin\Debug\Divisima.Core.pdb
+D:\projetos\Divisima\src\Divisima.Core\bin\Debug\Microsoft.Analytics.Interfaces.dll
+D:\projetos\Divisima\src\Divisima.Core\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+D:\projetos\Divisima\src\Divisima.Core\bin\Debug\Microsoft.Analytics.Types.dll
+D:\projetos\Divisima\src\Divisima.Core\obj\Debug\Divisima.Core.csproj.CoreCompileInputs.cache
+D:\projetos\Divisima\src\Divisima.Core\obj\Debug\Divisima.Core.csproj.CopyComplete
+D:\projetos\Divisima\src\Divisima.Core\obj\Debug\Divisima.Core.dll
+D:\projetos\Divisima\src\Divisima.Core\obj\Debug\Divisima.Core.pdb

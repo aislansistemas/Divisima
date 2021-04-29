@@ -5,7 +5,7 @@ namespace divisima.Models
 {
     public class Categoria
     {
-        public int CategoriaId { get; set; }
+        public long CategoriaId { get; set; }
         [Required(ErrorMessage="Nome deve ser preenchido*")]
         public string Nome { get; set; }
         public int Ativo { get; set; }

@@ -18,7 +18,7 @@ namespace divisima.Repository
             this._context = context;
         }
 
-        public async Task BaixarQuantidadeProduto(int produtoId, int quantidade)
+        public async Task BaixarQuantidadeProduto(long produtoId, int quantidade)
         {
             try {
                 var produtoResult = await _context.Produtos.FirstOrDefaultAsync(x => x.ProdutoId == produtoId);
@@ -98,7 +98,7 @@ namespace divisima.Repository
             
         }
 
-        public async Task<Produto> GetById(int id)
+        public async Task<Produto> GetById(long id)
         {   
             try{
                 return await _context.Produtos
@@ -143,7 +143,7 @@ namespace divisima.Repository
             }
         }
 
-        public async Task<List<Produto>> GetProdutosByCatergoriaId(int categoriaId, int numberPage = 1, int limit = 5)
+        public async Task<List<Produto>> GetProdutosByCatergoriaId(long categoriaId, int numberPage = 1, int limit = 5)
         {
             try {
                 var produtosPorCategoria = await _context.Produtos.AsNoTracking()

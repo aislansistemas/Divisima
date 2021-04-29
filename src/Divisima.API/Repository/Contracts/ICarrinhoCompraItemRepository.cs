@@ -8,10 +8,10 @@ namespace Divisima.Repository.Contracts
     public interface ICarrinhoCompraItemRepository
     {
         Task Adicionar(CarrinhoCompraItem carrinhoCompraItem);
-        Task<CarrinhoCompraItem> GetCarrinhoItemById(int id);
+        Task<CarrinhoCompraItem> GetCarrinhoItemById(long id);
         Task<List<CarrinhoCompraItem>> GetItemsForUserById(string id);
         Task Remover(CarrinhoCompraItem carrinhoCompraItem);
-        CarrinhoCompraItem CreateObject(int produtoId, int quantidade, string usuarioId);
+        CarrinhoCompraItem CreateObject(long produtoId, int quantidade, string usuarioId);
         decimal GetValorTotalDeItems(List<CarrinhoCompraItem> carrinhoCompraItems);
     }
 }

@@ -9,7 +9,7 @@ namespace Divisima.Models
     public class Pedido
     {
         [Key]
-        public int PedidoId { get; set; }
+        public long PedidoId { get; set; }
         public string UsuarioId { get; set; }
 
         [Required(ErrorMessage="O cep deve ser preenchido!")]

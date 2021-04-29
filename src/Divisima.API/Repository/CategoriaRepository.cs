@@ -41,7 +41,7 @@ namespace divisima.Repository
             }
         }
 
-        public async Task<Categoria> GetById(int id)
+        public async Task<Categoria> GetById(long id)
         {
             try{
                 var categoria = await _dbContext.Categorias

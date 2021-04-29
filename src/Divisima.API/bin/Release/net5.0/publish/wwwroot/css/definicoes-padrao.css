@@ -1,0 +1,17 @@
+.btn-estilizado {
+    border-radius: 25px;
+    padding: 3px 10px 3px 10px;
+    line-height: normal;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.btn-cinza {
+    background: linear-gradient(#e5e5e5, #ccc);
+}
+.btn-roza {
+    background: linear-gradient(#f51167,#FF0080);
+}

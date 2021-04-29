@@ -42,7 +42,7 @@ namespace Divisima.Services.Pedidos
             }
         }
 
-        private async Task InserirPedidoItens(int pedidoId, List<CarrinhoCompraItem> carrinhoCompraItens)
+        private async Task InserirPedidoItens(long pedidoId, List<CarrinhoCompraItem> carrinhoCompraItens)
         {
             foreach(CarrinhoCompraItem carrinhoItem in carrinhoCompraItens) {
                 var pedidoItem = new PedidoItem(){

@@ -27,7 +27,7 @@ namespace Divisima.Repository
             }    
         }
 
-        public async Task<List<PedidoItem>> GetByPedido(int pedidoId)
+        public async Task<List<PedidoItem>> GetByPedido(long pedidoId)
         {
             try{ 
                 var pedido = await _context.PedidoItem

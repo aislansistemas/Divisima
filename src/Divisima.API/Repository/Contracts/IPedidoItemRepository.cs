@@ -7,6 +7,6 @@ namespace Divisima.Repository.Contracts
     public interface IPedidoItemRepository
     {
          Task Cadastrar(PedidoItem pedidoItem);
-         Task<List<PedidoItem>> GetByPedido(int pedidoId);
+         Task<List<PedidoItem>> GetByPedido(long pedidoId);
     }
 }
