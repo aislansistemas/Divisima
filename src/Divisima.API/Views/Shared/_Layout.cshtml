@@ -73,6 +73,7 @@
 				<!-- menu -->
 				<ul class="main-menu">
 					<li><a asp-action="Index" asp-controller="Produto">Produtos</a></li>
+					@await Component.InvokeAsync("ItensMenuComponent")
 					<!---<li><a href="#">Women</a></li>
 					<li><a href="#">Men</a></li>
 					<li><a href="#">Jewelry

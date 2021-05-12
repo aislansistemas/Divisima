@@ -1,0 +1,13 @@
+﻿@model IEnumerable<divisima.Models.Categoria>
+
+<li>
+    <a href="#">Categorias</a>
+    <ul class="sub-menu">
+        @foreach (var categoria in Model) 
+        {
+            <li>
+                <a asp-action="ProdutosPorCategoria" asp-controller="Produto" asp-route-id="@categoria.CategoriaId">@categoria.Nome</a>
+            </li>
+        }
+    </ul>
+</li>

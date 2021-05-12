@@ -13,11 +13,8 @@
                         <div class="col-lg-3 col-sm-6">
                             <div class="product-item">
                                 <div class="pi-pic">
-                                    <img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto" alt="">
+                                    <img src="~/@Functions.GetPathUploadProdutos()/@produto.Foto[0].Foto" alt="">
                                     <div class="pi-links">
-                                    <a href="#" class="add-card" data-id="1">
-                                            <i class="flaticon-bag"></i><span>Adicionar</span>
-                                        </a>
                                         <a class="prod-id" asp-action="Detalhes" asp-route-id="@produto.ProdutoId" asp-controller="Produto" title="Ver Detalhes do Produto">
                                             <i class="fa fa-eye icone-ver-detalhes"></i>
                                         </a>

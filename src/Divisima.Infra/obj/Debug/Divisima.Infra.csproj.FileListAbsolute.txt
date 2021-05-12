@@ -3,6 +3,7 @@ D:\projetos\Divisima\src\Divisima.Infra\bin\Debug\Divisima.Infra.pdb
 D:\projetos\Divisima\src\Divisima.Infra\bin\Debug\Microsoft.Analytics.Interfaces.dll
 D:\projetos\Divisima\src\Divisima.Infra\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
 D:\projetos\Divisima\src\Divisima.Infra\bin\Debug\Microsoft.Analytics.Types.dll
+D:\projetos\Divisima\src\Divisima.Infra\obj\Debug\Divisima.Infra.csprojAssemblyReference.cache
 D:\projetos\Divisima\src\Divisima.Infra\obj\Debug\Divisima.Infra.csproj.CoreCompileInputs.cache
 D:\projetos\Divisima\src\Divisima.Infra\obj\Debug\Divisima.Infra.csproj.CopyComplete
 D:\projetos\Divisima\src\Divisima.Infra\obj\Debug\Divisima.Infra.dll

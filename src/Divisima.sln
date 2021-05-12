@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisima.Infra", "Divisima.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisima.Core", "Divisima.Core\Divisima.Core.csproj", "{D2D3E347-9184-40DE-8085-1C15641F9ABF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Divisima.Tests", "Divisima.Tests\Divisima.Tests.csproj", "{079A9F89-04A0-4776-8C60-CA143B637D36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Divisima.Tests", "Divisima.Tests\Divisima.Tests.csproj", "{079A9F89-04A0-4776-8C60-CA143B637D36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
