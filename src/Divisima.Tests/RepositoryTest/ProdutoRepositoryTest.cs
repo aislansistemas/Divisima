@@ -70,7 +70,7 @@ namespace Divisima.Tests.RepositoryTest
                     Descricao = Faker.Lorem.Paragraph(),
                     Valor = Faker.RandomNumber.Next(),
                     Quantidade = Faker.RandomNumber.Next(),
-                    Tamanho = (int)ProdutoTamanhoEnum.P,
+                    Tamanho = (int) ProdutoTamanhoEnum.P,
                     DataCadastro = Faker.DateOfBirth.Next(),
                     Genero = GeneroEnum.Masculino
                 };
