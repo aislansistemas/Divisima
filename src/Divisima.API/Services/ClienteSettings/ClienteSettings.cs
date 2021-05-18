@@ -11,12 +11,11 @@ namespace divisima.API.Services.ClienteSettings
 {
     public static class ClienteSettings
     {
-
-        private const string clienteSettingfileInfo = @"cliente.settings.json";
+        private const string CLIENTE_SETTINGS_FILE_INFO = @"cliente.settings.json";
 
         public static ClienteConfigurationHelper GetClienteSettings()
         {
-            var settings = File.ReadAllText(clienteSettingfileInfo);
+            var settings = File.ReadAllText(CLIENTE_SETTINGS_FILE_INFO);
 
             return JsonSerializer.Deserialize<ClienteConfigurationHelper>(settings);
         }
