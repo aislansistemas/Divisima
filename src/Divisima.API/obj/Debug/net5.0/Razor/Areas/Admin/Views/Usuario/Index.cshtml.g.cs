@@ -75,8 +75,15 @@ using divisima.Enums.ProdutoEnums;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\projetos\Divisima\src\Divisima.API\Areas\Admin\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3aa3f39d65511939b823daa7db09e172ad65ff84", @"/Areas/Admin/Views/Usuario/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cca8b39603b5bf9ef6ed969afff0fd9b5b20e8b9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9afd060ef62c8df5c48fff0bbbd9fb5e3280ec4c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Usuario_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-info"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -108,7 +115,7 @@ using divisima.Enums.ProdutoEnums;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<div class=\"row\">\r\n  <div class=\"col-md-12\">\r\n    <div class=\"card \">\r\n      <div class=\"card-header\">\r\n        <h2 class=\"card-title\">Usuarios</h2>\r\n      </div>\r\n      <div class=\"card-body\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aa3f39d65511939b823daa7db09e172ad65ff845932", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3aa3f39d65511939b823daa7db09e172ad65ff846135", async() => {
                 WriteLiteral("\r\n          <i class=\"tim-icons icon-simple-add\"></i> Novo \r\n        ");
             }
             );

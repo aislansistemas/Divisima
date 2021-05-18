@@ -1,4 +1,4 @@
-function montaTabelaCategoria(dados){
+function montaTabelaCategoria(dados) {
     for(let i = 0; i < dados.length; i++){
         let categoria = dados[i];
         let tr = $('<tr>');

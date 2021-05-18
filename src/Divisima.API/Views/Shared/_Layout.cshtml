@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     
-    <title>@ViewData["Title"] - divisima</title>
+    <title>@ViewData["Title"] - @ClienteSettings.GetClienteSettings().Nome</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Divisima">
@@ -48,7 +48,7 @@
 						<!-- logo -->
                         <a asp-action="Index" asp-controller="Produto" class="site-logo">
                             <!---<img src="~/img/logo.png" alt="">-->
-							<strong>Celulares-BR</strong>
+							<strong>@ClienteSettings.GetClienteSettings().Nome</strong>
                         </a>
 					</div>
 					<div class="col-xl-6 col-lg-5">

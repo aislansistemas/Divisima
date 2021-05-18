@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - Divisima</title>
+    <title>@ViewData["Title"] - @ClienteSettings.GetClienteSettings().Nome</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="apple-touch-icon" sizes="76x76" href="~/css/dash-admin/img/apple-icon.png">
@@ -29,10 +29,10 @@
       <div class="sidebar-wrapper" >
         <div class="logo">
           <a href="javascript:void(0)" class="simple-text logo-mini">
-            Divisima
+            @ClienteSettings.GetClienteSettings().Nome
           </a>
           <a href="javascript:void(0)" class="simple-text logo-normal">
-            Divisima
+            @ClienteSettings.GetClienteSettings().Nome
           </a>
         </div>
         <ul class="nav">

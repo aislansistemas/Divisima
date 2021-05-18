@@ -75,8 +75,15 @@ using divisima.Enums.ProdutoEnums;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\projetos\Divisima\src\Divisima.API\Areas\Admin\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc2", @"/Areas/Admin/Views/Produto/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cca8b39603b5bf9ef6ed969afff0fd9b5b20e8b9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9afd060ef62c8df5c48fff0bbbd9fb5e3280ec4c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Produto_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("text-dark"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -163,7 +170,7 @@ using divisima.Enums.ProdutoEnums;
         <button type=""button"" class=""close"" data-dismiss=""modal"" aria-label=""Fechar"">
           <span aria-hidden=""true"">&times;<");
             WriteLiteral("/span>\r\n        </button>\r\n      </div>\r\n      <div class=\"modal-body\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc29537", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc29740", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -208,7 +215,7 @@ using divisima.Enums.ProdutoEnums;
 #line hidden
 #nullable disable
                 WriteLiteral("                      ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc212026", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc212229", async() => {
 #nullable restore
 #line 82 "D:\projetos\Divisima\src\Divisima.API\Areas\Admin\Views\Produto\Index.cshtml"
                                                              Write(item.Value);
@@ -352,7 +359,7 @@ using divisima.Enums.ProdutoEnums;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc219610", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc219813", async() => {
                 WriteLiteral(@"
           <div class=""row"">
             <div class=""col-md-6"">
@@ -390,7 +397,7 @@ using divisima.Enums.ProdutoEnums;
                 <label for=""descricao-produto"">Tamanho</label>
                 <select class=""form-control tamanho-produto text-dark"" name=""Tamanho"">
                   ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc221854", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc222057", async() => {
                     WriteLiteral("PP");
                 }
                 );
@@ -407,7 +414,7 @@ using divisima.Enums.ProdutoEnums;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc223179", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc223382", async() => {
                     WriteLiteral("P");
                 }
                 );
@@ -424,7 +431,7 @@ using divisima.Enums.ProdutoEnums;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc224503", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc224706", async() => {
                     WriteLiteral("M");
                 }
                 );
@@ -441,7 +448,7 @@ using divisima.Enums.ProdutoEnums;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc225827", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc226030", async() => {
                     WriteLiteral("G");
                 }
                 );
@@ -458,7 +465,7 @@ using divisima.Enums.ProdutoEnums;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc227151", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc227354", async() => {
                     WriteLiteral("GG");
                 }
                 );
@@ -475,7 +482,7 @@ using divisima.Enums.ProdutoEnums;
                 Write(__tagHelperExecutionContext.Output);
                 __tagHelperExecutionContext = __tagHelperScopeManager.End();
                 WriteLiteral("\r\n                  ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc228476", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc228679", async() => {
                     WriteLiteral("Extra G");
                 }
                 );
@@ -546,7 +553,7 @@ using divisima.Enums.ProdutoEnums;
       </div>
       <div class=""modal-body"">
         ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc232589", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1a5297fa2df1e067dd61d3a3ef1f47a7cea67fc232792", async() => {
                 WriteLiteral("\r\n          <input type=\"hidden\" class=\"id-produto\">\r\n        ");
             }
             );

@@ -28,7 +28,10 @@ function cadastrarProduto(){
                 validateInputs(response);
             } else {
                 $('.close-modal-cadastro').click();
-                $.toaster({ title : 'Atenção', priority : response.status, message : response.mensagem });
+                toastr.success(response.mensagem, {
+                    iconClass:'toast-success',
+                    timeOut: 5000,
+                });
                 procedimentoPadrao(response);
             }
         },
@@ -42,7 +45,10 @@ function deletarProduto(){
     data = {id : $('.id-produto').val()}
     $.post('/Admin/Produto/Deletar', data, (response) => {
         $('.close-modal-delete').click();
-        $.toaster({ title : 'Atenção', priority : response.status, message : response.mensagem });
+        toastr.success(response.mensagem, {
+            iconClass:'toast-success',
+            timeOut: 5000,
+        });
         procedimentoPadrao(response);
     })
 }
@@ -61,6 +67,10 @@ function editarProduto(){
                 console.log(response);
                 validateInputs(response);
             } else {
+                toastr.success(response.mensagem, {
+                    iconClass:'toast-success',
+                    timeOut: 5000,
+                });
                 procedimentoPadrao(response);
             }
         },

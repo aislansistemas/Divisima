@@ -75,8 +75,15 @@ using divisima.Enums.ProdutoEnums;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 10 "D:\projetos\Divisima\src\Divisima.API\Areas\Admin\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e9351254920aa28d9a8444c46b49b6472b43d2e2", @"/Areas/Admin/Views/Shared/Components/NotificacaoComponent/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cca8b39603b5bf9ef6ed969afff0fd9b5b20e8b9", @"/Areas/Admin/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"9afd060ef62c8df5c48fff0bbbd9fb5e3280ec4c", @"/Areas/Admin/Views/_ViewImports.cshtml")]
     public class Areas_Admin_Views_Shared_Components_NotificacaoComponent_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PedidoViewModel>
     {
         #pragma warning disable 1998
