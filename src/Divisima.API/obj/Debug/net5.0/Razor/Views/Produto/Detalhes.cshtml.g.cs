@@ -40,8 +40,15 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed9", @"/Views/Produto/Detalhes.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81329903b06ff0ef882dbb34bb0d186757576cd8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e3107d2c14399d7671e6697e54e9c2adacbce7e", @"/Views/_ViewImports.cshtml")]
     public class Views_Produto_Detalhes : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ProdutoViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("product-big-img"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -99,7 +106,7 @@ using divisima.Services;
 				<div class=""col-lg-6"">
 					<div class=""product-pic-zoom"">
 						");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed96347", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed96537", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -157,7 +164,7 @@ AddHtmlAttributeValue("", 854, Model.Produto.Foto[0].Foto, 854, 27, false);
 #line hidden
 #nullable disable
             WriteLiteral("\">\r\n\t\t\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed99457", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed99647", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -374,7 +381,7 @@ WriteAttributeValue("", 3513, User.Identity.Name, 3513, 19, false);
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t\t<div class=\"product-item\">\r\n\t\t\t\t\t\t<div class=\"pi-pic\">\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed919410", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed919600", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -406,7 +413,7 @@ AddHtmlAttributeValue("", 6766, produto.Foto[0].Foto, 6766, 21, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t\t\t\t<div class=\"pi-links\">\r\n\t\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed921326", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a0e6e69d2a700bb47ef5d6feea47d8ea27f74ed921516", async() => {
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t\t<i class=\"fa fa-eye icone-ver-detalhes\"></i>\r\n\t\t\t\t\t\t\t\t");
             }
             );

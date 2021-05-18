@@ -13566,6 +13566,40 @@
         }
       },
       {
+        "HashCode": -540078878,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__NotificacaoComponentViewComponentTagHelper",
+        "AssemblyName": "Divisima.API",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:notificacao-component"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__NotificacaoComponentViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "NotificacaoComponent"
+        }
+      },
+      {
+        "HashCode": -334396385,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__ItensMenuComponentViewComponentTagHelper",
+        "AssemblyName": "Divisima.API",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:itens-menu-component"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__ItensMenuComponentViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "ItensMenuComponent"
+        }
+      },
+      {
         "HashCode": -1600562612,
         "Kind": "MVC.ViewComponent",
         "Name": "__Generated__CarrinhoCompraResumoViewComponentTagHelper",
@@ -15703,6 +15737,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Areas\\Admin\\Views\\Shared\\Components\\NotificacaoComponent\\Default.cshtml",
+      "TargetPath": "Areas\\Admin\\Views\\Shared\\Components\\NotificacaoComponent\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -15753,6 +15792,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Views\\Cliente\\Index.cshtml",
+      "TargetPath": "Views\\Cliente\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Areas\\Admin\\Views\\Shared\\PartialViews\\_loading.cshtml",
       "TargetPath": "Areas\\Admin\\Views\\Shared\\PartialViews\\_loading.cshtml",
       "FileKind": "mvc"
@@ -15800,6 +15844,11 @@
     {
       "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Views\\Produto\\BuscarProdutos.cshtml",
       "TargetPath": "Views\\Produto\\BuscarProdutos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\projetos\\Divisima\\src\\Divisima.API\\Views\\Shared\\Components\\ItensMenuComponent\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\ItensMenuComponent\\Default.cshtml",
       "FileKind": "mvc"
     },
     {

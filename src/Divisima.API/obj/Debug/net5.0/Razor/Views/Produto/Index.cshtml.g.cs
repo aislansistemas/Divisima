@@ -40,8 +40,15 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4ab5d44056f10efcf93a5b9c73be08d3866d8007", @"/Views/Produto/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81329903b06ff0ef882dbb34bb0d186757576cd8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e3107d2c14399d7671e6697e54e9c2adacbce7e", @"/Views/_ViewImports.cshtml")]
     public class Views_Produto_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ProdutoViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("src", new global::Microsoft.AspNetCore.Html.HtmlString("~/img/icons/1.png"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -172,7 +179,7 @@ using divisima.Services;
 					<div class=""feature-inner"">
 						<div class=""feature-icon"">
 							");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800710560", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800710750", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -187,7 +194,7 @@ using divisima.Services;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<h2>Pagamentos rápidos e seguros</h2>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-md-4 p-0 feature\">\r\n\t\t\t\t\t<div class=\"feature-inner\">\r\n\t\t\t\t\t\t<div class=\"feature-icon\">\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800711937", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800712127", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -202,7 +209,7 @@ using divisima.Services;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t\t\t</div>\r\n\t\t\t\t\t\t<h2>Produtos prêmios</h2>\r\n\t\t\t\t\t</div>\r\n\t\t\t\t</div>\r\n\t\t\t\t<div class=\"col-md-4 p-0 feature\">\r\n\t\t\t\t\t<div class=\"feature-inner\">\r\n\t\t\t\t\t\t<div class=\"feature-icon\">\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800713302", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800713492", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -242,7 +249,7 @@ using divisima.Services;
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t<div class=\"product-item\">\r\n\t\t\t\t\t<div class=\"pi-pic\">\r\n\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800715128", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "4ab5d44056f10efcf93a5b9c73be08d3866d800715318", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -275,7 +282,7 @@ AddHtmlAttributeValue("", 3518, produto.Foto[0].Foto, 3518, 21, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n\t\t\t\t\t\t<div class=\"pi-links\">\r\n\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ab5d44056f10efcf93a5b9c73be08d3866d800717117", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ab5d44056f10efcf93a5b9c73be08d3866d800717307", async() => {
                 WriteLiteral("\r\n\t\t\t\t\t\t\t\t<i class=\"fa fa-eye icone-ver-detalhes\"></i>\r\n\t\t\t\t\t\t\t");
             }
             );
@@ -355,7 +362,7 @@ AddHtmlAttributeValue("", 3518, produto.Foto[0].Foto, 3518, 21, false);
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t\t<li>\r\n\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ab5d44056f10efcf93a5b9c73be08d3866d800721163", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4ab5d44056f10efcf93a5b9c73be08d3866d800721353", async() => {
 #nullable restore
 #line 133 "D:\projetos\Divisima\src\Divisima.API\Views\Produto\Index.cshtml"
                                                                                                                        Write(categoria.Nome);

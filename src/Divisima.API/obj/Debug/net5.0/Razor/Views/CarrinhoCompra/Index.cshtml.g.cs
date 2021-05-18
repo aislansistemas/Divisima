@@ -40,8 +40,15 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"16620cfd150fe1b00a9001bba3fe4848b41297dd", @"/Views/CarrinhoCompra/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81329903b06ff0ef882dbb34bb0d186757576cd8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e3107d2c14399d7671e6697e54e9c2adacbce7e", @"/Views/_ViewImports.cshtml")]
     public class Views_CarrinhoCompra_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CarrinhoCompraViewModel>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("alt", new global::Microsoft.AspNetCore.Html.HtmlString(""), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -118,7 +125,7 @@ using divisima.Services;
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t\t\t\t\t\t\t<tr>\r\n\t\t\t\t\t\t\t\t\t\t\t<td class=\"product-col\">\r\n\t\t\t\t\t\t\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "16620cfd150fe1b00a9001bba3fe4848b41297dd8112", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "16620cfd150fe1b00a9001bba3fe4848b41297dd8302", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -235,7 +242,7 @@ WriteAttributeValue(" ", 1608, item.CarrinhoCompraId, 1609, 22, false);
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd14391", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd14581", async() => {
                 WriteLiteral("continuar a compra");
             }
             );
@@ -262,7 +269,7 @@ WriteAttributeValue(" ", 1608, item.CarrinhoCompraId, 1609, 22, false);
 #line hidden
 #nullable disable
             WriteLiteral("\t\t\t\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd16050", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd16240", async() => {
                 WriteLiteral("continue comprando");
             }
             );
@@ -327,7 +334,7 @@ WriteAttributeValue(" ", 1608, item.CarrinhoCompraId, 1609, 22, false);
 					<span aria-hidden=""true"">&times;</span>
 					</button>
 					");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd19111", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "16620cfd150fe1b00a9001bba3fe4848b41297dd19301", async() => {
                 WriteLiteral("\r\n\t\t\t\t\t\t<input type=\"hidden\" name=\"carrinho-id\" class=\"carrinho-id\">\r\n\t\t\t\t\t");
             }
             );

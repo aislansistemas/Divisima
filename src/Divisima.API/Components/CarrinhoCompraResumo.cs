@@ -19,7 +19,8 @@ namespace Divisima.Components
         public CarrinhoCompraResumo(
             ICarrinhoCompraItemRepository carrinhoRepository,
             UserManager<Usuario> userManager
-        ){
+        )
+        {
             this._carrinhoRepository = carrinhoRepository;
             this._userManager = userManager;
         }
@@ -28,7 +29,8 @@ namespace Divisima.Components
         {
             try {
                 var carrinhoVM = new CarrinhoCompraViewModel();
-                if(User.Identity.IsAuthenticated) {
+                if(User.Identity.IsAuthenticated) 
+                {
                     Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                     var carrinhoComprasForUser = _carrinhoRepository.GetItemsForUserById(usuario.Id).Result;
                     carrinhoVM.CarrinhoCompraList = carrinhoComprasForUser;
@@ -37,7 +39,9 @@ namespace Divisima.Components
                     return View(carrinhoVM);
                 }
                 return View(carrinhoVM);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 return View();
             }
         }

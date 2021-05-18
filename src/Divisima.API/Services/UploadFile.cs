@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Threading.Tasks;
 using Divisima.Services.Exceptions;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,5 +32,23 @@ namespace divisima.Services
                 throw new InvalidArgumentException("Não foi possível salvar o arquivo.");
             }    
         }
+
+        public async Task DeleteFileAsync(string fileName, string directory)
+        {
+            try 
+            {
+                var pastaArquivos = Path.Combine(_hostingEnvironment.WebRootPath, directory);
+                var arquivoComPath = Path.Combine(pastaArquivos, fileName);
+
+                await Task.Run(() => {
+                    File.Delete(arquivoComPath);
+                });  
+            }
+            catch 
+            {
+                throw new InvalidArgumentException("Não foi possível apagar o arquivo.");
+            }
+        }
+
     }
 }

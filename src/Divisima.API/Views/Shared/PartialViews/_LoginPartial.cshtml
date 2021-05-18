@@ -11,9 +11,11 @@
             <i class="flaticon-profile"></i>
             <li><a class="link-user-autenticado" href="#">@User.Identity.Name</a>
                 <ul class="sub-menu-superior">
-                    @if(User.IsInRole("Admin")){
+                    @if (User.IsInRole("Admin"))
+                    {
                         <li><a class="link-dropdown" asp-area="Admin" asp-action="Index" asp-controller="Admin">Area Adiministrativa</a></li>
                     }
+                    <li><a class="link-dropdown" asp-action="Index" asp-controller="Cliente">Meus dados</a></li>
                     <li><a class="link-dropdown" asp-action="Index" asp-controller="CarrinhoCompra">Carrinho de compras</a></li>
                     <li><a class="link-dropdown" asp-action="Checkout" asp-controller="Pedido">Pagina de compra</a></li>
                     <hr class="ml-3 mr-3 text-secondary" style="margin-bottom: 0px; margin-top: 0px">

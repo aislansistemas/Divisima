@@ -30,7 +30,8 @@ namespace divisima.Areas.Admin.Controllers
             IHttpContextAccessor httpContextAccessor,
             IUploadFile uploadSystem,
             IFotoProdutoRepository fotoProdutoRepository
-        ) {
+        ) 
+        {
             this._produtoRepository = produtoRepository;
             this._categoriaRepository = categoriaRepository;
             this._httpContextAccessor = httpContextAccessor;
@@ -44,13 +45,18 @@ namespace divisima.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> GetProdutos(int numberPage, int limit)
         {
-            try {
-                var ProdutoVm = new ProdutoViewModel(){
+            try 
+            {
+                var ProdutoVm = new ProdutoViewModel()
+                {
                     Produtos = await _produtoRepository.GetAll(numberPage, limit),
                     CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
                 };
+
                 return Json(ProdutoVm);
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json(e.Message);
             }
         }
@@ -59,7 +65,9 @@ namespace divisima.Areas.Admin.Controllers
         public async Task<IActionResult> Cadastrar(Produto produto)
         {
             try{
-                if(ModelState.IsValid){
+
+                if(ModelState.IsValid)
+                {
                     await _produtoRepository.Cadastrar(produto);
                     var ProdutoCadastrado = await _produtoRepository.GetLastProdutoCadastrado();
                     var formFileList = _httpContextAccessor.HttpContext.Request.Form.Files;
@@ -81,7 +89,9 @@ namespace divisima.Areas.Admin.Controllers
                 var errors = new ErroViewModel(){Erros = ModelState};
 
                 return Json(errors);
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json("error", e.Message);
             }
         }
@@ -89,9 +99,11 @@ namespace divisima.Areas.Admin.Controllers
         [HttpPost, ActionName("Editar")]
         public async Task<IActionResult> Editar(Produto produto)
         {
-            try{
+            try
+            {
                 var produtoResult = await _produtoRepository.GetById(produto.ProdutoId);
-                if(produtoResult != null){
+                if(produtoResult != null)
+                {
                     var formFile = _httpContextAccessor.HttpContext.Request.Form.Files["Foto"];
                    // produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, Functions.GetPathUploadProdutos()) : produtoResult.Foto;
                     await _produtoRepository.Editar(produto);
@@ -106,7 +118,9 @@ namespace divisima.Areas.Admin.Controllers
 
                 var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
                 return Json(errors);
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json("error", e.Message);
             }
         }
@@ -114,19 +128,32 @@ namespace divisima.Areas.Admin.Controllers
         [HttpPost, ActionName("Deletar")]
         public async Task<IActionResult> Deletar(int id)
         {
-            try{
+            try
+            {
                 var produtoResult = await _produtoRepository.GetById(id);
-                if(produtoResult != null){
+                if(produtoResult != null)
+                {
+                    foreach(var foto in produtoResult.Foto)
+                    {
+                        _uploadSystem.DeleteFileAsync(foto.Foto, Functions.GetPathUploadProdutos());
+                    }
                     await _produtoRepository.Deletar(produtoResult);
-                    var produtoVm = new ProdutoViewModel(){
+
+                    var produtoVm = new ProdutoViewModel()
+                    {
                         Produtos = await _produtoRepository.GetAll(1, 6),
-                        Mensagem = "Produto Cadastrado com sucesso!"
+                        Mensagem = "Produto Deletado com sucesso!"
                     };
+
                     return Json(produtoVm);
                 }
-                var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
+
+                var errors = new ErroViewModel{Erros = "Produto não encontrado"};
+
                 return Json(errors);
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json("error", e.Message);
             }
         }

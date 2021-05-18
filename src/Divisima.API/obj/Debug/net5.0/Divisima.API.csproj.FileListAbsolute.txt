@@ -446,3 +446,6 @@ D:\projetos\Divisima\src\Divisima.API\obj\Debug\net5.0\Divisima.API.dll
 D:\projetos\Divisima\src\Divisima.API\obj\Debug\net5.0\ref\Divisima.API.dll
 D:\projetos\Divisima\src\Divisima.API\obj\Debug\net5.0\Divisima.API.pdb
 D:\projetos\Divisima\src\Divisima.API\obj\Debug\net5.0\Divisima.API.genruntimeconfig.cache
+D:\projetos\Divisima\src\Divisima.API\obj\Debug\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
+D:\projetos\Divisima\src\Divisima.Api\obj\Debug\net5.0\Razor\Areas\Admin\Views\Shared\Components\NotificacaoComponent\Default.cshtml.g.cs
+D:\projetos\Divisima\src\Divisima.API\bin\Debug\net5.0\cliente.settings.json

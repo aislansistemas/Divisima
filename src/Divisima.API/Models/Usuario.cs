@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using divisima.Models;
+using Divisima.Enums.PerfilUsuarioEnums;
 using Microsoft.AspNetCore.Identity;
 
 namespace Divisima.Models
@@ -18,6 +19,7 @@ namespace Divisima.Models
         public string Complemento { get; set; }
         public string Telefone { get; set; }
         public string Foto { get; set; }
+        public string PerfilUsuario { get; set; }
         public virtual List<Produto> Produtos { get; set; }
         public virtual List<Pedido> Pedidos { get; set; }
     }

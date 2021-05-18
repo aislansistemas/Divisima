@@ -37,15 +37,20 @@ namespace Divisima.Areas.Admin.Controllers
         public IActionResult CadastrarUsuario() => View();
 
         [HttpPost]
-        public async Task<IActionResult> CadastrarUsuario(CadastroUsuarioViewModel usuarioVm) {
-            try {
-                if(!ModelState.IsValid){
+        public async Task<IActionResult> CadastrarUsuario(CadastroUsuarioViewModel usuarioVm) 
+        {
+            try 
+            {
+                if(!ModelState.IsValid)
+                {
                     throw new InvalidModelStateException("Por favor preencha os dados corretamente!");
                 }
                 await _accountRepository.CadastrarUsuario(usuarioVm, usuarioVm.Perfil);
                 
                 return RedirectToAction(nameof(Index));
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 return View();
             }
         }

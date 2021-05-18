@@ -24,18 +24,24 @@ namespace Divisima.Repository
             UserManager<Usuario> userManager,
             RoleManager<IdentityRole> roleManeger,
             AppDbContext context
-        ){
+        )
+        {
             _userManager = userManager;
             _roleManeger = roleManeger;
             _context = context;
         } 
+        
         public async Task CadastraRoles(string roleName)
         {
-            try {
-                if(roleName != null){
+            try 
+            {
+                if(roleName != null)
+                {
                     await _roleManeger.CreateAsync(new IdentityRole(roleName));
                 }
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new CreatedException("Não foi possível realizar o cadastro.");
             }
         }
@@ -43,37 +49,49 @@ namespace Divisima.Repository
         public async Task<Usuario> CadastrarUsuario(
             CadastroUsuarioViewModel cadastroUsuarioVm, 
             string roleName
-        ) {
-            try {
-                var user = new Usuario() { 
+        ) 
+        {
+            try 
+            {
+                var user = new Usuario
+                { 
                     UserName = cadastroUsuarioVm.UserName, 
                     Nome = cadastroUsuarioVm.Nome,
                     Sobrenome = cadastroUsuarioVm.Sobrenome,
                     Cpf = cadastroUsuarioVm.Cpf,
+                    PerfilUsuario = roleName
                 };
 
                 var result = await _userManager.CreateAsync(user, cadastroUsuarioVm.Password);
 
-                if(!result.Succeeded){
+                if(!result.Succeeded)
+                {
                     throw new CreatedException("Erro ao tentar cadastrar um novo usuario");
                 }
 
                 await this.SetRoleForUsuario(user, roleName);
                 return user;
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 throw new CreatedException(e.Message);
             }
         }
     
         private async Task SetRoleForUsuario(Usuario usuario, string roleName) 
         {
-            try {
+            try 
+            {
                 var roleResult = await _roleManeger.FindByNameAsync(roleName);
-                if(roleResult == null){
+                if(roleResult == null)
+                {
                     await _roleManeger.CreateAsync(new IdentityRole(roleName));
                 }
+
                 await _userManager.AddToRoleAsync(usuario, roleName);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new CreatedException("Erro ao tentar cadastrar um novo usuario");
             }
         }   
@@ -86,16 +104,20 @@ namespace Divisima.Repository
 
         public async Task<Usuario> GetUserByEmail(string email)
         {
-            try{
+            try
+            {
                 return await _userManager.FindByNameAsync(email);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new NotFoundException("Erro ao procurar email");
             }
         }
 
         public async Task<List<Usuario>> GetAll(int numberPage, int limit)
         {
-            try {
+            try 
+            {
                 var usuarios = await _context.Users
                 .AsNoTrackingWithIdentityResolution()
                 .OrderByDescending(x => x.Id)
@@ -104,7 +126,9 @@ namespace Divisima.Repository
                 .ToListAsync();
 
                 return usuarios;
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new NotFoundException("Nenhum usuario encontrado.");
             }
             
@@ -112,8 +136,10 @@ namespace Divisima.Repository
 
         public async Task Atualizar(Usuario usuario)
         {
-            try{
-                Usuario user = new Usuario(){
+            try
+            {
+                var user = new Usuario
+                {
                     UserName = usuario.UserName, 
                     Nome = usuario.Nome,
                     Sobrenome = usuario.Sobrenome,
@@ -126,9 +152,13 @@ namespace Divisima.Repository
                     Complemento = usuario.Complemento,
                     Telefone = usuario.Telefone,
                     Foto = usuario.Foto,
+                    PerfilUsuario = usuario.PerfilUsuario
                 };
+
                 await _userManager.UpdateAsync(usuario);
-            } catch (DbUpdateConcurrencyException) {
+            } 
+            catch (DbUpdateConcurrencyException) 
+            {
                 throw new DbConcurrencyException("Não foi possível atualizar o Usuário.");
             }   
         }
