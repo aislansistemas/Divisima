@@ -83,18 +83,22 @@ namespace divisima.Controllers
         [HttpGet]
         public async Task<IActionResult> ProdutosPorCategoria(int id) 
         { 
-            var categoriaVm = new CategoriaViewModel(){
+            var categoriaVm = new CategoriaViewModel
+            {
                 Categoria = await _categoriaRepository.GetById(id)
             };
+            
             return View(categoriaVm);
         }
 
         [HttpGet]
         public async Task<IActionResult> ProdutosPorCategoriaAjax(int id, int numberPage, int limit)
         {
-            var produtoVm = new ProdutoViewModel(){
+            var produtoVm = new ProdutoViewModel
+            {
                 Produtos = await _produtoRepository.GetProdutosByCatergoriaId(id, numberPage, limit)
             };
+
             return Json(produtoVm);
         }
 

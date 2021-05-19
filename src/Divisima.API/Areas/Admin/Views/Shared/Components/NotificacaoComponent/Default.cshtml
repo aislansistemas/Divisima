@@ -14,7 +14,7 @@
             @foreach (var pedidos in Model.PedidosList)
             {
                 <li class="nav-link">
-                    <a href="#" class="nav-item dropdown-item">Pedido: @pedidos.ValorTotal.ToString("N2") - @pedidos.Data.ToString("dd/MM/yyyy")</a>
+                    <a href="#" class="nav-item dropdown-item">Pedido: R$@pedidos.ValorTotal.ToString("N2") - @pedidos.Data.ToString("dd/MM/yyyy")</a>
                 </li>
             }
         } 

@@ -57,7 +57,7 @@ namespace Divisima.Repository
                 .Include(x => x.Produto)
                 .Include(x => x.Produto.Foto)
                 .Include(x => x.Usuario)
-                .Where(x => x.UsuarioId == id)
+                .Where(x => x.UsuarioId == id && x.Quantidade > 0)
                 .OrderByDescending(x => x.CarrinhoCompraId) 
                 .ToListAsync();
 
