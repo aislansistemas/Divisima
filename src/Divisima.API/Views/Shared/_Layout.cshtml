@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="~/css/site.css" />
 
 	<!-- Favicon -->
-	<link href="img/favicon.ico" rel="shortcut icon"/>
+	<link href="@ClienteSettings.GetClienteSettings().Logo" rel="shortcut icon"/>
 
 	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -47,8 +47,7 @@
 					<div class="col-lg-2 text-center text-lg-left">
 						<!-- logo -->
                         <a asp-action="Index" asp-controller="Produto" class="site-logo">
-                            <!---<img src="~/img/logo.png" alt="">-->
-							<strong>@ClienteSettings.GetClienteSettings().Nome</strong>
+                            <img src="@ClienteSettings.GetClienteSettings().Logo" alt="Logo Marca">
                         </a>
 					</div>
 					<div class="col-xl-6 col-lg-5">

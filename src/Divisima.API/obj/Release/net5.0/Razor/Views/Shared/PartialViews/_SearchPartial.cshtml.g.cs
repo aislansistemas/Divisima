@@ -40,8 +40,22 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using Divisima.API.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"33b8a3abfead61aa5650ea97bc10daa20b62631f", @"/Views/Shared/PartialViews/_SearchPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81329903b06ff0ef882dbb34bb0d186757576cd8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74b8c7faf229841eb4f7e780745e9518078dfe9e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_PartialViews__SearchPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-action", "BuscarProdutos", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -74,7 +88,7 @@ using divisima.Services;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33b8a3abfead61aa5650ea97bc10daa20b62631f4888", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "33b8a3abfead61aa5650ea97bc10daa20b62631f5254", async() => {
                 WriteLiteral("\r\n\t<input type=\"text\" name=\"produto\" placeholder=\"Pesquisar ....\">\r\n\t<button type=\"submit\"><i class=\"flaticon-search\"></i></button>\r\n");
             }
             );

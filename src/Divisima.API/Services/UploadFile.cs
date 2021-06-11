@@ -18,7 +18,8 @@ namespace divisima.Services
 
         public string Upload(IFormFile formFile, string directory)
         {
-            try{
+            try
+            {
                 var nomeArquivo = formFile.FileName;
                 var novoNomeArquivo = nomeArquivo.Replace(" ", "_");
                 string pastaArquivos = Path.Combine(_hostingEnvironment.WebRootPath, directory);
@@ -27,8 +28,12 @@ namespace divisima.Services
                 {
                     formFile.CopyTo(fileStream);
                 }
+
                 return novoNomeArquivo;
-            } catch(Exception) {
+
+            }
+            catch(Exception) 
+            {
                 throw new InvalidArgumentException("Não foi possível salvar o arquivo.");
             }    
         }

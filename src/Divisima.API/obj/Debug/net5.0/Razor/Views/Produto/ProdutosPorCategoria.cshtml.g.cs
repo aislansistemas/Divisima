@@ -47,8 +47,15 @@ using divisima.API.Services.ClienteSettings;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using Divisima.API.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"744982421a243cab18083a77933e7b28e323669e", @"/Views/Produto/ProdutosPorCategoria.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e3107d2c14399d7671e6697e54e9c2adacbce7e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74b8c7faf229841eb4f7e780745e9518078dfe9e", @"/Views/_ViewImports.cshtml")]
     public class Views_Produto_ProdutosPorCategoria : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<CategoriaViewModel>
     {
         #pragma warning disable 1998

@@ -55,8 +55,9 @@
             </div> 
             <div class="col-md-6">   
               <div class="form-group">
-                <label for="descricao-produto">Descrição</label>
-                <input class="form-control text-dark nome-categoria" type="text" name="Descricao" autocomplete="false">
+                <label for="descricao-cadastro">Descrição</label>
+                <textarea id="descricao-cadastro" class="form-control text-dark nome-categoria" name="Descricao" autocomplete="false" rows="3">
+                </textarea>
               </div>
             </div>
             <div class="col-md-2">
@@ -69,10 +70,18 @@
             <div class="col-md-2">
               <div class="form-group">
                 <label for="descricao-produto">Quantidade<span class="text-danger">*</span></label>
-                <input class="form-control text-dark nome-categoria" type="number" name="Quantidade" autocomplete="false">
+                <input class="form-control text-dark nome-categoria" type="number" name="Quantidade" autocomplete="false" value="1">
                 <span class="text-danger validate-quantidade"></span>
               </div>
-            </div> 
+            </div>
+            <div class="col-md-3">
+              <div class="form-group">
+                <label for="descricao-produto">Link Mercado Pago</label>
+                <input class="form-control text-dark nome-categoria" type="text" name="LinkMercadoPago" autocomplete="false">
+                <span class="text-danger validate-quantidade"></span>
+              </div>
+            </div>  
+            <!--
             <div class="col-md-2"> 
               <div class="form-group">
                 <label for="descricao-produto">Tamanho<span class="text-danger">*</span></label>
@@ -84,7 +93,7 @@
                 </select>
                 <span class="text-danger validate-tamanho"></span>
               </div>
-            </div>
+            </div>-->
             <div class="col-md-3"> 
               <label>Categoria<span class="text-danger">*</span></label>
               <span class="text-danger validate-categoria"></span>
@@ -141,11 +150,16 @@
             <div class="col-md-12">
               <h5 class="text-dark">Valor: <span class="text-valor-produto text-info"></span></h5>
             </div>
+            <!--
             <div class="col-md-12">
               <h5 class="text-dark">Tamanho: <span class="text-tamanho-produto text-info"></span></h5>
             </div>
+            --->
             <div class="col-md-12">
               <h5 class="text-dark">Categoria: <span class="text-categoria-produto text-info"></span></h5>
+            </div>
+            <div class="col-md-12">
+              <h5 class="text-dark">Link Mercado Pago: <a class="text-link-mercado-pago-produto text-info" href=""></a></h5>
             </div>
           </div>
           <div class="col-md-5">

@@ -40,8 +40,22 @@ using divisima.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using divisima.API.Services.ClienteSettings;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 6 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using Divisima.API.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d6a5625cc8fb4476f348b0fe9041c550465d8bf9", @"/Views/Shared/Error.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"81329903b06ff0ef882dbb34bb0d186757576cd8", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74b8c7faf229841eb4f7e780745e9518078dfe9e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Error : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ErrorViewModel>
     {
         #pragma warning disable 1998

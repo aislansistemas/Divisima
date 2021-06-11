@@ -8,7 +8,7 @@ function carregarCarrinhoIntensResumo() {
 }
 
 function montarHtmlCarrinhoItens(response) {
-    $('.total-itens-carrinho').text('Intens no carrinho (' + response.carrinhoCompraList.length + ')');
+    $('.total-itens-carrinho').text('Itens no carrinho (' + response.carrinhoCompraList.length + ')');
     $('.valor-total-itens').text( getValorFormatado(response.valorTotalItems) );
     $('#input-valor-total').val(response.valorTotalItems);
 
@@ -32,7 +32,7 @@ function montarHtmlCarrinhoItens(response) {
     });
 }
 
-function getValorFormatado(valor){
+function getValorFormatado(valor) {
     let valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     return valorFormatado; 
 }

@@ -4,8 +4,8 @@ $(getCategorias());
 function cadastrarCategoriaAjax(nome){
     let data = {nome : nome};
     $.post("/Admin/Categoria/Cadastrar", data, (response) => {
-
-        procedimentoPadrao(response.mensagem, response.categorias)
+        $('.close-modal-cadastrar').click();
+        procedimentoPadraoCategoria(response.mensagem, response.categorias)
     })
     .fail();
 }
@@ -23,28 +23,29 @@ function editarCategorias(id, nome){
         nome : nome
     };
     $.post("/Admin/Categoria/Editar", data, (response) => {
-        procedimentoPadrao(response.mensagem, response.categorias)
+        $('.close-modal-editar').click();
+        procedimentoPadraoCategoria(response.mensagem, response.categorias)
     })
     .fail().always();
 }
 
 function inativarCategoria(id){
     $.post("/Admin/Categoria/Inativar", {id}, (response) => {
-
-        procedimentoPadrao(response.mensagem, response.categorias);
+        $('.close-modal-inativar').click();
+        procedimentoPadraoCategoria(response.mensagem, response.categorias);
     })
     .fail().always();
 }
 
 function ativarCategoria(id){
     $.post("/Admin/Categoria/Ativar", {id}, (response) => {
-
-        procedimentoPadrao(response.mensagem, response.categorias);
+        $('.close-modal-ativar').click();
+        procedimentoPadraoCategoria(response.mensagem, response.categorias);
     })
     .fail().always();
 }
 
-function procedimentoPadrao(msg, categorias){
+function procedimentoPadraoCategoria(msg, categorias){
     toastr.success(msg,{
         iconClass:'toast-success',
         timeOut: 5000,

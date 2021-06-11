@@ -423,6 +423,9 @@ namespace Divisima.API.Migrations
                     b.Property<int>("Genero")
                         .HasColumnType("int");
 
+                    b.Property<string>("LinkMercadoPago")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

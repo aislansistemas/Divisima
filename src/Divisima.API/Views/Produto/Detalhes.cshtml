@@ -37,7 +37,7 @@
 				</div>
 				<div class="col-lg-6 product-details">
 					<h2 class="p-title">@Model.Produto.Nome</h2>
-					<h3 class="p-price">@Functions.GetValorMoedaFormatado(@Model.Produto.Valor)</h3>
+					<h3 class="p-price">R$@Model.Produto.Valor.ToString("N2")</h3>
 					<h4 class="p-stock">Disponível: <span>Em estoque</span></h4>
 					<!------------------ implementação futura
 					<div class="p-rating">
@@ -90,7 +90,16 @@
 					<!---- implementação futura 
 					<a href="#" class="site-btn">COMPRAR</a> ------>
 					<input type="hidden" id="input-usuario-logado" value="@User.Identity.Name">
-					<button data-id="@Model.Produto.ProdutoId" class="site-btn btn-primary add-cart">Adicionar ao carrinho</button>
+
+					@if(Model.Produto.LinkMercadoPago == null)
+					{
+						<button data-id="@Model.Produto.ProdutoId" class="site-btn btn-primary add-cart">Adicionar ao carrinho</button>
+					} 
+					else 
+					{
+						<a class="site-btn btn-primary" asp-action="CheckoutMercadoPago" asp-controller="Pedido" asp-route-id="@Model.Produto.ProdutoId">Compre Agora</a>
+					}
+
 					<div id="accordion" class="accordion-area">
 						<div class="panel">
 							<div class="panel-header" id="headingOne">
@@ -162,7 +171,7 @@
 							</div>
 						</div>
 						<div class="pi-text">
-							<h6>@Functions.GetValorMoedaFormatado(@produto.Valor)</h6>
+							<h6>R$@produto.Valor.ToString("N2")</h6>
 							<p>@produto.Nome</p>
 						</div>
 					</div>

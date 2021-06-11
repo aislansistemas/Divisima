@@ -47,7 +47,7 @@ namespace divisima.Areas.Admin.Controllers
         {
             try 
             {
-                var ProdutoVm = new ProdutoViewModel()
+                var ProdutoVm = new ProdutoViewModel
                 {
                     Produtos = await _produtoRepository.GetAll(numberPage, limit),
                     CategoriasAtivas = await _categoriaRepository.GetAllAtiva()
@@ -68,10 +68,12 @@ namespace divisima.Areas.Admin.Controllers
 
                 if(ModelState.IsValid)
                 {
+                    produto.Quantidade = produto.Quantidade == 0 ? 1 : produto.Quantidade;
                     await _produtoRepository.Cadastrar(produto);
                     var ProdutoCadastrado = await _produtoRepository.GetLastProdutoCadastrado();
                     var formFileList = _httpContextAccessor.HttpContext.Request.Form.Files;
-                    foreach(FormFile formFile in formFileList) {
+                    foreach(FormFile formFile in formFileList) 
+                    {
                         var nomeArquivo = _uploadSystem.Upload(formFile, Functions.GetPathUploadProdutos());
                         var fotoProduto = new FotoProduto();
                         fotoProduto.Foto = nomeArquivo;
@@ -79,10 +81,12 @@ namespace divisima.Areas.Admin.Controllers
                         await _fotoProdutoRepository.Cadastrar(fotoProduto);
                     }
             
-                    var produtoVm = new ProdutoViewModel(){
+                    var produtoVm = new ProdutoViewModel
+                    {
                         Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
+
                     return Json(produtoVm);
                 }
 
@@ -108,7 +112,8 @@ namespace divisima.Areas.Admin.Controllers
                    // produto.Foto = formFile != null ? _uploadSystem.Upload(formFile, Functions.GetPathUploadProdutos()) : produtoResult.Foto;
                     await _produtoRepository.Editar(produto);
 
-                    var produtoVm = new ProdutoViewModel(){
+                    var produtoVm = new ProdutoViewModel
+                    {
                         Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Cadastrado com sucesso!"
                     };
@@ -116,7 +121,7 @@ namespace divisima.Areas.Admin.Controllers
                     return Json(produtoVm);
                 }
 
-                var errors = new ErroViewModel(){Erros = "Produto não encontrado"};
+                var errors = new ErroViewModel{Erros = "Produto não encontrado"};
                 return Json(errors);
             } 
             catch(Exception e) 
@@ -139,7 +144,7 @@ namespace divisima.Areas.Admin.Controllers
                     }
                     await _produtoRepository.Deletar(produtoResult);
 
-                    var produtoVm = new ProdutoViewModel()
+                    var produtoVm = new ProdutoViewModel
                     {
                         Produtos = await _produtoRepository.GetAll(1, 6),
                         Mensagem = "Produto Deletado com sucesso!"

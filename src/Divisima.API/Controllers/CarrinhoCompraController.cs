@@ -29,7 +29,8 @@ namespace Divisima.Controllers
             IProdutoRepository produtoRepository,
             ICarrinhoCompraItemRepository carrinhoCompraItemRepository,
             UserManager<Usuario> userManager
-        ){
+        )
+        {
             this._produtoRepository = produtoRepository;
             this._carrinhoCompraRepository = carrinhoCompraItemRepository;
             this._userManager = userManager;
@@ -40,12 +41,14 @@ namespace Divisima.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            Usuario usuario = await _userManager.GetUserAsync(HttpContext.User);
+            var usuario = await _userManager.GetUserAsync(HttpContext.User);
             var produtosAdicionados = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
-            var carrinhoVm = new CarrinhoCompraViewModel(){ 
+            var carrinhoVm = new CarrinhoCompraViewModel
+            { 
                 CarrinhoCompraList = produtosAdicionados,
                 ValorTotalItems = _carrinhoCompraRepository.GetValorTotalDeItems(produtosAdicionados)
             };
+
             return View(carrinhoVm);
         }
 
@@ -53,14 +56,17 @@ namespace Divisima.Controllers
         [HttpPost]
         public async Task<IActionResult> Adicionar(int produtoId, int quantidade)
         {
-            try{
+            try
+            {
                 var produtoResult = await _produtoRepository.GetById(produtoId);
-                if(produtoResult != null) {
-                    Usuario usuario = _userManager.GetUserAsync(HttpContext.User).Result;
+                if(produtoResult != null) 
+                {
+                    var usuario = _userManager.GetUserAsync(HttpContext.User).Result;
                     var produtosDoUsuario = await _carrinhoCompraRepository.GetItemsForUserById(usuario.Id);
                     var isProdutoAdicionado = CarrinhoCompraService.VerificarProdutoAdicionadoAoCarrinho(produtosDoUsuario, produtoId);
                     
-                    if(isProdutoAdicionado) {
+                    if(isProdutoAdicionado) 
+                    {
                         throw new InvalidArgumentException("Este produto ja foi adicionado em seu carrinho.");
                     }
 
@@ -71,7 +77,9 @@ namespace Divisima.Controllers
 
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
                      
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.error, e.Message));
             }
         } 
@@ -80,20 +88,25 @@ namespace Divisima.Controllers
         [HttpPost]
         public async Task<IActionResult> Remover(int carrinhoId)
         {
-            try{
-                if(carrinhoId < 1){
+            try
+            {
+                if(carrinhoId < 1)
+                {
                     return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
                 }
 
                 var carrinhoResult = await _carrinhoCompraRepository.GetCarrinhoItemById(carrinhoId);
 
-                if(carrinhoResult == null){
+                if(carrinhoResult == null)
+                {
                     return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, "O produto não foi encontrado!"));
                 }
                 
                 await _carrinhoCompraRepository.Remover(carrinhoResult);
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "Item removido com sucesso"));
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.error, "Desculpe ocorreu um erro no servidor"));
             }
 

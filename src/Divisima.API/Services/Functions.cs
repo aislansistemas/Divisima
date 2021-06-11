@@ -18,5 +18,10 @@ namespace divisima.Services
             return "R$ " + valor.ToString("N2").Replace(".", ",");
         }
 
+        public static string GetStringLimitada(string text, int limitCaracters) 
+        {
+            return text.Length > limitCaracters ? $"{text.Substring(0, limitCaracters)}..." : text;
+        }
+
     }
 }

@@ -33,7 +33,7 @@
 												<img src="~/arquivos/@item.Produto.Foto[0].Foto" alt="">
 												<div class="pc-title">
 													<h4>@item.Produto.Nome</h4>
-													<p>@Functions.GetValorMoedaFormatado(@item.Produto.Valor)</p>
+													<p>R$@item.Produto.Valor.ToString("N2")</p>
 												</div>
 											</td>
 											<td class="quy-col">
@@ -42,7 +42,7 @@
 												</div>
 											</td>
 											<!---<td class="size-col"><h4>Size M</h4></td>--->
-											<td class="total-col"><h4>@Functions.GetValorMoedaFormatado(@item.Produto.Valor)</h4></td>
+											<td class="total-col"><h4>R$@item.Produto.Valor.ToString("N2")</h4></td>
 											<td class="total-col">
 												<button data-toggle="modal" data-target="#modalDelete" onclick="abrirModalRemoveItem(this, @item.CarrinhoCompraId)" data-carrinho-id="@item.CarrinhoCompraId" class="btn text-danger abrir-modal-delete" title="Remover item">
 													<i class="fa fa-times-circle fa-2x"></i>
@@ -55,7 +55,7 @@
 							</table>
 							</div>
 							<div class="total-cost">
-								<h6>Total <span>@Functions.GetValorMoedaFormatado(@Model.ValorTotalItems)</span></h6>
+								<h6>Total <span>R$@Model.ValorTotalItems.ToString("N2")</span></h6>
 							</div>
 						</div>
 					}else {
@@ -69,7 +69,8 @@
 						<button>Submit</button>
 					</form>--->
 					@if(@Model.CarrinhoCompraList.Count > 0){
-						<a asp-action="Checkout" asp-controller="Pedido" class="site-btn">continuar a compra</a>
+						<!---<a asp-action="Checkout" asp-controller="Pedido" class="site-btn">continuar a compra</a>--->
+						<a class="site-btn btn-primary" asp-action="CheckoutMercadoPago" asp-controller="Pedido" asp-route-id="@Model.CarrinhoCompraList[0].ProdutoId">continuar a compra</a>
 					}
 					<a asp-action="Index" asp-controller="Produto" class="site-btn sb-dark">continue comprando</a>
 				</div>
@@ -112,7 +113,7 @@
 		<div class="modal-dialog modal-md" role="document">
 			<div class="modal-content">
 				<div class="modal-header">
-					<h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja Deletar este produto?</h5>
+					<h5 class="modal-title" id="exampleModalLabel">Tem certeza que deseja remover este produto?</h5>
 					<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
 					<span aria-hidden="true">&times;</span>
 					</button>

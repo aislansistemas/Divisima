@@ -8,7 +8,7 @@ function montaTabelaProduto(dados){
         let valorFormatado = getValorFormatado(produtos.valor);
         let tdValor = setElement('td', 'td-valor', valorFormatado);
         let tdBtnDetalhe = setElement('td', 'td-btn-detalhe');
-        let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto[0].foto, produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome);
+        let btnDetalhes = getElementButtonProducts('detalhe', produtos.produtoId, produtos.foto[0].foto, produtos.nome, produtos.descricao, produtos.quantidade, valorFormatado, produtos.tamanho, produtos.categoria.nome, produtos.linkMercadoPago);
         let tdBtnDelete = setElement('td', 'td-btn-delete');
         let btnDelete = getElementButtonProducts('delete', produtos.produtoId);
         //let tdBtnEdit = setElement('td', 'td-btn-edit');
@@ -36,7 +36,8 @@ function getElementButtonProducts(
     quantidade = null, 
     valor = null, 
     tamanho = null, 
-    categoria = null
+    categoria = null,
+    linkMercadoPago
 ){
     btn = $('<button>');
     switch(acao){
@@ -47,7 +48,7 @@ function getElementButtonProducts(
             .addClass('btn btn-warning btn-sm btn-detalhe')
             .text('Detalhes')
             .on('click', () => {   
-                setTextForDatailsProducts(foto, nome, descricao, quantidade, valor, tamanho, categoria);
+                setTextForDatailsProducts(foto, nome, descricao, quantidade, valor, tamanho, categoria, linkMercadoPago);
             });
         case "edit" :
             return btn.attr('data-id', id)
@@ -89,7 +90,8 @@ function setTextForDatailsProducts(
     quantidade = null, 
     valor = null, 
     tamanho = null, 
-    categoria = null
+    categoria = null,
+    linkMercadoPago = null
 ){
     let tamanhoFormatado = getTamanhoFormatado(tamanho);
     $('.foto-detalhe-produto').attr('src', '../arquivos/' + foto);
@@ -99,6 +101,7 @@ function setTextForDatailsProducts(
     $('.text-valor-produto').text(valor);
     $('.text-tamanho-produto').text(tamanhoFormatado);
     $('.text-categoria-produto').text(categoria);
+    $('.text-link-mercado-pago-produto').attr('href', linkMercadoPago).text(linkMercadoPago);
 }
 
 function setValureForInputs(

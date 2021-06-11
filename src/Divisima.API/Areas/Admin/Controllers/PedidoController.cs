@@ -16,7 +16,8 @@ namespace divisima.Areas.Admin.Controllers
         public PedidoController(
             IPedidoRepository pedidoRepository,
             IPedidoItemRepository pedidoItemRepository
-        ) {
+        ) 
+        {
             _pedidoRepository = pedidoRepository;
             _pedidoItemRepository = pedidoItemRepository;
         }
@@ -26,26 +27,36 @@ namespace divisima.Areas.Admin.Controllers
 
         public async Task<IActionResult> CarregarPedidoAjax() 
         {
-            try {
+            try 
+            {
                 var pedidos = await _pedidoRepository.GetAll(1, 10);
-                var pedidoVm = new PedidoViewModel() {
+                var pedidoVm = new PedidoViewModel
+                {
                     PedidosList = pedidos
                 };
+
                 return PartialView("PartialViews/_carregar-pedidos", pedidoVm);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 return PartialView("PartialViews/_carregar-pedidos");
             }
         }
 
         public async Task<IActionResult> DetalhesPedidoAjax(int pedidoId) 
         {
-            try {
+            try 
+            {
                 var pedidoItens = await _pedidoItemRepository.GetByPedido(pedidoId);
-                var pedidoVm = new PedidoViewModel() {
+                var pedidoVm = new PedidoViewModel 
+                {
                     PedidoItemList = pedidoItens
                 };
+
                 return PartialView("PartialViews/_detalhe", pedidoVm);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 return View();
             }
         }

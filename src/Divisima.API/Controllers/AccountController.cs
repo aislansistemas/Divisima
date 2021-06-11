@@ -22,7 +22,8 @@ namespace divisima.Controllers
         public AccountController(
             SignInManager<Usuario> signManager,
             IAccountRepository accRepository
-        ){
+        )
+        {
             _signInManager = signManager;
             _accRepository = accRepository;
         }
@@ -35,7 +36,8 @@ namespace divisima.Controllers
         [HttpPost, ActionName("LoginAjax")]
         public async Task<IActionResult> LoginAjax(LoginViewModel loginVM)
         {
-            try{
+            try
+            {
                 if (!ModelState.IsValid)
                     throw new InvalidModelStateException("Por favor preencha os dados corretamente !");
                     
@@ -51,9 +53,12 @@ namespace divisima.Controllers
                 {
                     return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, "sucesso"));
                 }
+
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.success, loginVM.ReturnUrl)); 
             
-            } catch (Exception e) {
+            } 
+            catch (Exception e) 
+            {
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, e.Message));
             }
         }
@@ -63,7 +68,8 @@ namespace divisima.Controllers
         [HttpPost, ActionName("CadastroAjax")]
         public async Task<IActionResult> CadastroAjax(CadastroUsuarioViewModel usuarioVm)
         {
-            try{
+            try
+            {
                 if (!ModelState.IsValid) 
                     return Json(usuarioVm);
                 
@@ -74,8 +80,11 @@ namespace divisima.Controllers
 
                 var usuarioCadastrado = await _accRepository.CadastrarUsuario(usuarioVm, PerfilUsuarioEnum.Comun);
                 await _signInManager.SignInAsync(usuarioCadastrado, isPersistent: false);
+
                 return Json("sucesso");      
-            } catch(Exception e) {
+            } 
+            catch(Exception e) 
+            {
                 return Json(ResponseMensage.GetMensage(StatusMensageEnum.warning, e.Message));
             }
             

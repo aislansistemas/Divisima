@@ -67,7 +67,7 @@
 
 			if (settings.donotdismiss.indexOf(priority) === -1)
 			{
-				var timeout = (typeof settings.timeout === 'number') ? settings.timeout : ((typeof settings.timeout === 'object') && (priority in settings.timeout)) ? settings.timeout[priority] : 1500;
+				var timeout = (typeof settings.timeout === 'number') ? settings.timeout : ((typeof settings.timeout === 'object') && (priority in settings.timeout)) ? settings.timeout[priority] : 4000;
 				setTimeout(function()
 				{
 					settings.toast.remove($toast, function()
@@ -137,7 +137,7 @@
 		},
 
 		'debug'        : false,
-		'timeout'      : 1500,
+		'timeout'      : 4000,
 		'stylesheet'   : null,
 		'donotdismiss' : []
 	};

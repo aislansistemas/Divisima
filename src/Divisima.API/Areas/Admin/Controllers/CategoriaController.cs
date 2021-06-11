@@ -48,7 +48,8 @@ namespace divisima.Areas.Admin.Controllers
                 {
                     await _categoriaRepository.Cadastrar(categoria);
 
-                    var CategoriaVm = new CategoriaViewModel(){
+                    var CategoriaVm = new CategoriaViewModel
+                    {
                         Categorias = await _categoriaRepository.GetAll(),
                         Mensagem = "Cadastro feito com sucesso!"
                     };
@@ -76,7 +77,8 @@ namespace divisima.Areas.Admin.Controllers
                 }
 
                 await _categoriaRepository.Editar(categoriaResult);
-                var CategoriaVm = new CategoriaViewModel(){
+                var CategoriaVm = new CategoriaViewModel
+                {
                     Categorias = await _categoriaRepository.GetAll(),
                     Mensagem = "Categoria editada com sucesso!"
                 };
@@ -129,7 +131,8 @@ namespace divisima.Areas.Admin.Controllers
                 }
                 await _categoriaRepository.Ativar(categoriaResult);
 
-                var CategoriaVm = new CategoriaViewModel(){
+                var CategoriaVm = new CategoriaViewModel
+                {
                     Categorias = await _categoriaRepository.GetAll(),
                     Mensagem = "Categoria ativada com sucesso!"
                 };

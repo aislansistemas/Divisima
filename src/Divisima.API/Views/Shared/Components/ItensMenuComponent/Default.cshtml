@@ -6,7 +6,7 @@
         @foreach (var categoria in Model) 
         {
             <li>
-                <a asp-action="ProdutosPorCategoria" asp-controller="Produto" asp-route-id="@categoria.CategoriaId">@categoria.Nome</a>
+                <a style="color: #111111;" asp-action="ProdutosPorCategoria" asp-controller="Produto" asp-route-id="@categoria.CategoriaId">@categoria.Nome</a>
             </li>
         }
     </ul>

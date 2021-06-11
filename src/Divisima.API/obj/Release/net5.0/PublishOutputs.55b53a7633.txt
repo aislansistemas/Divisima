@@ -1,4 +1,7 @@
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\Divisima.API.exe
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\arquivos\WhatsApp_Image_2021-06-05_at_6.20.47_PM.jpeg
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\arquivos\WhatsApp_Image_2021-06-05_at_6.20.50_PM.jpeg
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\arquivos\WhatsApp_Image_2021-06-05_at_6.20.50_PM_(2).jpeg
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\css\animate.css
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\css\bootstrap.min.css
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\css\dash-admin\css\black-dashboard.css
@@ -333,6 +336,8 @@ D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\lib\jqu
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\lib\jquery\dist\jquery.min.map
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\lib\jquery\LICENSE.txt
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\lib\toastr.js
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\logo\celulares-br\logo(outra-opcao).jpeg
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\logo\celulares-br\logo.jpeg
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\scss\black-dashboard.scss
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\scss\black-dashboard\bootstrap\bootstrap-grid.scss
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\scss\black-dashboard\bootstrap\bootstrap-reboot.scss
@@ -481,6 +486,7 @@ D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\scss\bl
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\wwwroot\scss\black-dashboard\_typography.scss
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\appsettings.Development.json
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\appsettings.json
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\cliente.settings.json
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\refs\Microsoft.AspNetCore.Antiforgery.dll
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\publish\refs\Microsoft.AspNetCore.Authentication.Cookies.dll

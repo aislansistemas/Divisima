@@ -27,7 +27,8 @@ namespace Divisima.Components
 
         public IViewComponentResult Invoke()
         {
-            try {
+            try 
+            {
                 var carrinhoVM = new CarrinhoCompraViewModel();
                 if(User.Identity.IsAuthenticated) 
                 {
@@ -38,6 +39,7 @@ namespace Divisima.Components
         
                     return View(carrinhoVM);
                 }
+                
                 return View(carrinhoVM);
             } 
             catch(Exception) 

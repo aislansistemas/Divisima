@@ -48,6 +48,13 @@ using divisima.API.Services.ClienteSettings;
 #line hidden
 #nullable disable
 #nullable restore
+#line 6 "D:\projetos\Divisima\src\Divisima.API\Views\_ViewImports.cshtml"
+using Divisima.API.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "D:\projetos\Divisima\src\Divisima.API\Views\Shared\PartialViews\_LoginPartial.cshtml"
 using Microsoft.AspNetCore.Identity;
 
@@ -69,7 +76,7 @@ using Divisima.Models;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"01dba678b8313b636f612b36e0a9134fab99c634", @"/Views/Shared/PartialViews/_LoginPartial.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3e3107d2c14399d7671e6697e54e9c2adacbce7e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74b8c7faf229841eb4f7e780745e9518078dfe9e", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_PartialViews__LoginPartial : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("link-dropdown"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -138,7 +145,7 @@ using Divisima.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                        <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c6349760", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c6349936", async() => {
                 WriteLiteral("Area Adiministrativa");
             }
             );
@@ -167,7 +174,7 @@ using Divisima.Models;
 #line hidden
 #nullable disable
             WriteLiteral("                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63411667", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63411843", async() => {
                 WriteLiteral("Meus dados");
             }
             );
@@ -186,7 +193,7 @@ using Divisima.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63413145", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63413321", async() => {
                 WriteLiteral("Carrinho de compras");
             }
             );
@@ -205,7 +212,7 @@ using Divisima.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63414632", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63414808", async() => {
                 WriteLiteral("Pagina de compra");
             }
             );
@@ -224,7 +231,7 @@ using Divisima.Models;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("</li>\r\n                    <hr class=\"ml-3 mr-3 text-secondary\" style=\"margin-bottom: 0px; margin-top: 0px\">\r\n                    <li>");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63416225", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63416401", async() => {
                 WriteLiteral("Sair");
             }
             );
@@ -253,7 +260,7 @@ else
 #line hidden
 #nullable disable
             WriteLiteral("    <div class=\"up-item\">\r\n\t\t<i class=\"flaticon-profile\"></i>\r\n\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63418036", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63418212", async() => {
                 WriteLiteral("Login");
             }
             );
@@ -272,7 +279,7 @@ else
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral(" \r\n\t\t\tOu \r\n\t\t");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63419501", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "01dba678b8313b636f612b36e0a9134fab99c63419677", async() => {
                 WriteLiteral("Cadastre-se");
             }
             );

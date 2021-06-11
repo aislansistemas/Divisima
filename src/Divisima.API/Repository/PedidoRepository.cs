@@ -20,31 +20,37 @@ namespace Divisima.Repository
 
         public async Task<List<Pedido>> GetAll(int numberPage = 0, int limit = 5)
         {
-            try {
+            try 
+            {
                 var pedidos = await _context.Pedido
-                .AsNoTrackingWithIdentityResolution()
-                .Include(x => x.PedidoItem)
-                .Include(u => u.Usuario)
-                .OrderByDescending(x => x.PedidoId)
-                .Skip((numberPage - 1) * limit)
-                .Take(limit)
-                .ToListAsync();
+                                    .AsNoTrackingWithIdentityResolution()
+                                    .Include(x => x.PedidoItem)
+                                    .Include(u => u.Usuario)
+                                    .OrderByDescending(x => x.PedidoId)
+                                    .Skip((numberPage - 1) * limit)
+                                    .Take(limit)
+                                    .ToListAsync();
                 
                 return pedidos;
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new NotFoundException("Nenhum pedido encontrado.");
             }
         }
 
         public async Task<Pedido> Cadastrar(Pedido pedido)
         {
-            try {
+            try 
+            {
                 _context.Pedido.Add(pedido);
                 await _context.SaveChangesAsync();
 
                 return pedido;
-            } catch(Exception) {
-                 throw new CreatedException("Não foi possível cadastrar o pedido.");
+            } 
+            catch(Exception) 
+            {
+                throw new CreatedException("Não foi possível cadastrar o pedido.");
             }
         }
 

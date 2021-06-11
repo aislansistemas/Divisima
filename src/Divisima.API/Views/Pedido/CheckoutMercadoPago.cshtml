@@ -1,0 +1,147 @@
+@model CheckoutMercadoPagoViewModel
+
+	<!-- checkout section  -->
+	<section class="checkout-section spad">
+		<div class="container">
+			<div class="row">
+                <div class="col-lg-8 order-2 order-lg-1 mb-4">
+                    <h1 class="text-center">Informe o endereço para entrega</h1>
+                </div>
+				<div class="col-lg-8 order-2 order-lg-1">
+					<form id="form-pedido-mercado-pago" class="checkout-form">
+						<!----<div class="cf-title">Endereço para entraga </div>
+						<div class="row">
+							<div class="col-md-7">
+								<p>Informações de pagamento</p>
+							</div>
+							<div class="col-md-5">
+								<div class="cf-radio-btns address-rb">
+									<div class="cfr-item">
+										<input type="radio" name="pm" id="one">
+										<label for="one">Use my regular address</label>
+									</div>
+									<div class="cfr-item">
+										<input type="radio" name="pm" id="two">
+										<label for="two">Use a different address</label>
+									</div>
+								</div>
+							</div>
+						</div> ---->
+						<input type="hidden" id="carrinho-compra-id" value="@Model.CarrinhoCompraItem.CarrinhoCompraId">
+						<input type="hidden" id="produto-id" value="@Model.Produto.ProdutoId">
+						<div class="row address-inputs">
+                            <div class="col-md-6">
+								<span style="position: absolute; top: -25px;" class="text-danger" id="feed-valida-cep"></span>
+								<input type="text" name="Cep" data-mask="00000-000" id="consultar-cep" placeholder="CEP">		
+							</div>
+							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" class="text-danger"></span>
+								<input type="text" name="Cidade" id="cidade" placeholder="Cidade">
+							</div>
+							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" class="text-danger"></span>
+								<input type="text" name="Estado" id="estado" placeholder="Estado">
+							</div>
+							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" class="text-danger"></span>
+								<input type="text" name="Bairro" id="bairro" placeholder="Bairro">
+							</div>
+							<div class="col-md-6">
+								<span style="position: absolute; top: -25px;" class="text-danger"></span>
+								<input type="text" name="Endereco" id="endereco" placeholder="Endereco/Rua/Avenida">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="Numero" id="numero" placeholder="Numero">
+							</div>
+							<div class="col-md-6">
+								<input type="text" name="Complemento" id="complemento" placeholder="Complemento">
+							</div>
+							<div class="col-md-6">
+								<input type="hidden" id="input-valor-total" value="@Model.Produto.Valor" placeholder="Valor Total">
+							</div>
+						</div>
+						<!---
+						<div class="cf-title">Delievery Info</div>
+						<div class="cf-title">Payment</div>--->
+						<button type="button" id="finaliza-checkout-mercado-pago" class="site-btn submit-order-btn">
+							<div class="spinner-border text-light div-spinner-loading" role="status">
+								<span class="sr-only">Enviando...</span>
+							</div>
+							<span class="text-btn-post">Finalizar Compra</span>
+						</button>
+						<!---<div id="container-buttons-paypal"></div>--->
+					</form>
+				</div>
+				<div class="col-lg-4 order-1 order-lg-2">
+					<div class="checkout-cart">
+						<h3>Itens (1)</h3>
+						<ul>
+							<!----conteudo carregado dinâmicamente via ajax -->
+                            <li>
+                                <div class="pl-thumb">
+                                    <img src="~/@Functions.GetPathUploadProdutos()/@Model.Produto.Foto[0].Foto">
+                                </div>
+                                <h6>@Model.Produto.Nome</h6>
+                                <p>R$@Model.Produto.Valor.ToString("N2")</p>
+                            </li>
+						</ul>
+						<ul class="price-list">
+							<li class="total">
+								Total<span class="mr-5">R$@Model.Produto.Valor.ToString("N2")</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- checkout section end -->
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script>
+
+	var divSpinnerLoading = $('.div-spinner-loading');
+	const timeCarregamentoPadrao = 700;
+
+	$(divSpinnerLoading.hide());
+
+	$('#finaliza-checkout-mercado-pago').on('click', (e) => {
+		e.preventDefault();
+		
+		let dados = {
+			produtoId: $('#produto-id').val(),
+			carrinhoCompraId: $('#carrinho-compra-id').val(),
+			cep: $('#consultar-cep').val(),
+			cidade: $('#cidade').val(),
+			estado: $('#estado').val(),
+			bairro: $('#bairro').val(),
+			endereco: $('#endereco').val(),
+			numero: $('#numero').val(),
+			complemento: $('#complemento').val(),
+			valorTotal: $('#input-valor-total').val() 
+		};
+
+		if(dados.cep != "" && dados.cidade != "") {
+			executaSpinner();
+		}
+
+		$.post("/Pedido/CheckoutMercadoPago", dados, (response) => {
+        	console.log(response);
+        	window.location.href = response.mensagem;
+		})
+		.fail().always();
+	});
+
+	function executaSpinner() {
+    	$('.text-btn-post').text('');
+    	divSpinnerLoading.show();
+	}
+
+	function removeSpinner(text) {
+		setTimeout(() => {
+			divSpinnerLoading.hide();
+			$('.text-btn-post').text(text);
+		}, timeCarregamentoPadrao);
+	}
+</script>
+

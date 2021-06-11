@@ -133,7 +133,7 @@ ol {
 	padding: 18px 47px 14px;
 	border-radius: 50px;
 	text-transform: uppercase;
-	background: #f51167;
+	background: #f0560f/*#f51167*/;
 	color: #fff;
 	line-height: normal;
 	cursor: pointer;
@@ -339,6 +339,11 @@ ol {
 
 .site-logo {
 	display: inline-block;
+}
+
+.site-logo img {
+	width: 55px !important;
+	height: 55px !important;
 }
 
 .header-search-form {
@@ -629,7 +634,7 @@ ol {
 	width: 162px;
 	height: 162px;
 	border-radius: 50%;
-	background: #f51167;
+	background: #f0560f/*#f51167*/;
 	text-align: center;
 	padding-top: 20px;
 	-webkit-transform: rotate(45deg);
@@ -809,7 +814,7 @@ ol {
 }
 
 .feature:nth-child(2) {
-	background: #f51167;
+	background: #f0560f/*#f51167*/;
 }
 
 .feature:nth-child(2) h2 {
@@ -1908,7 +1913,7 @@ ol {
 }
 
 .cart-table .total-cost {
-	background: #f51167;
+	background: #f0560f/*#f51167*/;
 	margin: 0 -34px;
 	text-align: right;
 	padding: 22px 0;

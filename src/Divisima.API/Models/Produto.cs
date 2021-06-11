@@ -24,6 +24,7 @@ namespace divisima.Models
         public int Tamanho { get; set; }
         public DateTime DataCadastro { get; set; }
         public GeneroEnum Genero { get; set; }
+        public string LinkMercadoPago { get; set; }
         public virtual List<PedidoItem> PedidoItem { get; set; }
         public virtual List<FotoProduto> Foto { get; set; }
     }

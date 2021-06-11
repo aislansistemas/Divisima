@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>@ViewData["Title"] - @ClienteSettings.GetClienteSettings().Nome</title>
+    <title>@ViewData["Title"] @ClienteSettings.GetClienteSettings().Nome</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
     <link rel="apple-touch-icon" sizes="76x76" href="~/css/dash-admin/img/apple-icon.png">
-    <link rel="icon" type="image/png" href="~/css/dash-admin/img/favicon.png">
+    <link rel="icon" type="image/png" href="@ClienteSettings.GetClienteSettings().Logo">
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,600,700,800" rel="stylesheet" />
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
@@ -28,10 +28,7 @@
     -->
       <div class="sidebar-wrapper" >
         <div class="logo">
-          <a href="javascript:void(0)" class="simple-text logo-mini">
-            @ClienteSettings.GetClienteSettings().Nome
-          </a>
-          <a href="javascript:void(0)" class="simple-text logo-normal">
+          <a href="javascript:void(0)" class="simple-text logo-normal text-center">
             @ClienteSettings.GetClienteSettings().Nome
           </a>
         </div>

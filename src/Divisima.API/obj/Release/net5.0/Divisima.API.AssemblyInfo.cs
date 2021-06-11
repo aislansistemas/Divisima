@@ -12,7 +12,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("761eb8da-91e7-4b09-8408-0b9d6c47a073")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Divisima.API")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("release")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Divisima.API")]

@@ -21,7 +21,8 @@ namespace Divisima.Services.Pedidos
             IPedidoItemRepository pedidoItemRepository,
             ICarrinhoCompraItemRepository carrinhoCompraRepository,
             IProdutoRepository produtoRepository
-        ) {
+        ) 
+        {
             _pedidoRepository = pedidoRepository;
             _pedidoItemRepository = pedidoItemRepository;
             _carrinhoCompraRepository = carrinhoCompraRepository;
@@ -30,26 +31,32 @@ namespace Divisima.Services.Pedidos
 
         public async Task ExecutarPedido(Pedido pedido, List<CarrinhoCompraItem> carrinhoCompraItens)
         {
-            try {
+            try
+            {
                 pedido.ValorTotal = _carrinhoCompraRepository.GetValorTotalDeItems(carrinhoCompraItens);
                 pedido.Status = PagamentoStatusEnum.Pago;
                 pedido.Entregue = BooleanoEnum.Nao;
                 pedido.Data = DateTime.Now;
                 var pedidoCadastrado = await _pedidoRepository.Cadastrar(pedido);
                 await this.InserirPedidoItens(pedidoCadastrado.PedidoId, carrinhoCompraItens);
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new CreatedException("Não por possível cadastrar o pedido no momento, Por favor tente novamente mais tarde.");
             }
         }
 
         private async Task InserirPedidoItens(long pedidoId, List<CarrinhoCompraItem> carrinhoCompraItens)
         {
-            foreach(CarrinhoCompraItem carrinhoItem in carrinhoCompraItens) {
-                var pedidoItem = new PedidoItem(){
+            foreach(CarrinhoCompraItem carrinhoItem in carrinhoCompraItens) 
+            {
+                var pedidoItem = new PedidoItem
+                {
                     PedidoId = pedidoId,
                     ProdutoId = carrinhoItem.ProdutoId,
                     Quantidade = carrinhoItem.Quantidade
                 };
+
                 await _produtoRepository.BaixarQuantidadeProduto(carrinhoItem.ProdutoId, carrinhoItem.Quantidade);
                 await _pedidoItemRepository.Cadastrar(pedidoItem);
                 var carrinhoResult = await _carrinhoCompraRepository.GetCarrinhoItemById(carrinhoItem.CarrinhoCompraId);

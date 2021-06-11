@@ -2,8 +2,8 @@
 $('#consultar-cep').on('blur', () => {
     $.get("https://viacep.com.br/ws/" + $('#consultar-cep').val() + "/json/", (response) => {
         if(!response.erro) {
-            $('#cidade').val(response.localidade);
-            $('#estado').val(response.uf);
+            $('#cidade').attr('disabled', 'true').val(response.localidade);
+            $('#estado').attr('disabled', 'true').val(response.uf);
             exibirFeedCepInvalido(false);
         } else {
             $('#consultar-cep').val('');

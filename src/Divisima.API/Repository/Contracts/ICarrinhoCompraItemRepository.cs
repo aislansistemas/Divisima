@@ -7,7 +7,7 @@ namespace Divisima.Repository.Contracts
 {
     public interface ICarrinhoCompraItemRepository
     {
-        Task Adicionar(CarrinhoCompraItem carrinhoCompraItem);
+        Task<CarrinhoCompraItem> Adicionar(CarrinhoCompraItem carrinhoCompraItem);
         Task<CarrinhoCompraItem> GetCarrinhoItemById(long id);
         Task<List<CarrinhoCompraItem>> GetItemsForUserById(string id);
         Task Remover(CarrinhoCompraItem carrinhoCompraItem);

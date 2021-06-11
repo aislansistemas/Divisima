@@ -446,3 +446,7 @@ D:\projetos\Divisima\src\Divisima.API\bin\release\net5.0\runtimes\win-x86\native
 D:\projetos\Divisima\src\Divisima.API\bin\release\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\projetos\Divisima\src\Divisima.API\bin\release\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\projetos\Divisima\src\Divisima.API\obj\release\net5.0\Razor\Views\Shared\Components\ItensMenuComponent\Default.cshtml.g.cs
+D:\projetos\Divisima\src\Divisima.API\bin\Release\net5.0\cliente.settings.json
+D:\projetos\Divisima\src\Divisima.API\obj\Release\net5.0\Razor\Areas\Admin\Views\Shared\Components\NotificacaoComponent\Default.cshtml.g.cs
+D:\projetos\Divisima\src\Divisima.API\obj\Release\net5.0\Razor\Views\Cliente\Index.cshtml.g.cs
+D:\projetos\Divisima\src\Divisima.API\obj\Release\net5.0\Razor\Views\Pedido\CheckoutMercadoPago.cshtml.g.cs

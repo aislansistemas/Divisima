@@ -98,7 +98,7 @@ namespace Divisima.Repository
 
         public async Task<bool> PasswordIsValid(Usuario usuario, string password) 
         {
-            bool result = await _userManager.CheckPasswordAsync(usuario, password);
+            var result = await _userManager.CheckPasswordAsync(usuario, password);
             return result;
         }
 
@@ -119,11 +119,11 @@ namespace Divisima.Repository
             try 
             {
                 var usuarios = await _context.Users
-                .AsNoTrackingWithIdentityResolution()
-                .OrderByDescending(x => x.Id)
-                .Skip((numberPage - 1) * limit)
-                .Take(limit)
-                .ToListAsync();
+                                    .AsNoTrackingWithIdentityResolution()
+                                    .OrderByDescending(x => x.Id)
+                                    .Skip((numberPage - 1) * limit)
+                                    .Take(limit)
+                                    .ToListAsync();
 
                 return usuarios;
             } 

@@ -17,10 +17,13 @@ namespace Divisima.Repository
 
         public async Task Cadastrar(FotoProduto fotoProduto)
         {
-            try {
+            try 
+            {
                 _context.FotoProduto.Add(fotoProduto);
                 await _context.SaveChangesAsync();
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new CreatedException("Não foi possível cadastrara as fotos do produto!");
             }
         }

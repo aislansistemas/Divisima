@@ -19,27 +19,33 @@ namespace Divisima.Repository
         }
         public async Task Cadastrar(PedidoItem pedidoItem)
         {
-            try {
+            try 
+            {
                 _context.PedidoItem.Add(pedidoItem);
                 await _context.SaveChangesAsync();
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new CreatedException("Não foi possível cadastrar o item do pedido.");
             }    
         }
 
         public async Task<List<PedidoItem>> GetByPedido(long pedidoId)
         {
-            try{ 
+            try
+            { 
                 var pedido = await _context.PedidoItem
-                .AsNoTrackingWithIdentityResolution()
-                .Include(x => x.Pedido)
-                .Include(p => p.Produto)
-                .Include(p => p.Pedido.Usuario)
-                .Where(x => x.PedidoId == pedidoId)
-                .ToListAsync();
+                                .AsNoTrackingWithIdentityResolution()
+                                .Include(x => x.Pedido)
+                                .Include(p => p.Produto)
+                                .Include(p => p.Pedido.Usuario)
+                                .Where(x => x.PedidoId == pedidoId)
+                                .ToListAsync();
         
                 return pedido;
-            } catch(Exception) {
+            } 
+            catch(Exception) 
+            {
                 throw new NotFoundException("Nenhum pedido encontrado.");
             }  
         }
