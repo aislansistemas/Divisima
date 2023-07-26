@@ -1,0 +1,153 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Divisima.API
+build_property.RootNamespace = Divisima.API
+build_property.ProjectDir = C:\Meu Projetos\Divisima\src\Divisima.API\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Meu Projetos\Divisima\src\Divisima.API
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Categoria/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Pedido/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVkaWRvXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Pedido/PartialViews/_carregar-pedidos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVkaWRvXFBhcnRpYWxWaWV3c1xfY2FycmVnYXItcGVkaWRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Pedido/PartialViews/_detalhe.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUGVkaWRvXFBhcnRpYWxWaWV3c1xfZGV0YWxoZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Produto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Shared/Components/NotificacaoComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXENvbXBvbmVudHNcTm90aWZpY2FjYW9Db21wb25lbnRcRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Shared/PartialViews/_loading.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xfbG9hZGluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Usuario/CadastrarUsuario.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXN1YXJpb1xDYWRhc3RyYXJVc3VhcmlvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Account/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/CarrinhoCompra/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FycmluaG9Db21wcmFcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Cliente/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Error/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Pedido/Checkout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Pedido/CheckoutMercadoPago.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVkaWRvXENoZWNrb3V0TWVyY2Fkb1BhZ28uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Produto/BuscarProdutos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xCdXNjYXJQcm9kdXRvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Produto/Detalhes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xEZXRhbGhlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Produto/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Produto/PartialViews/_Carregar-produtos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQYXJ0aWFsVmlld3NcX0NhcnJlZ2FyLXByb2R1dG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Produto/ProdutosPorCategoria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b1xQcm9kdXRvc1BvckNhdGVnb3JpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/Components/CarrinhoCompraResumo/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcQ2FycmluaG9Db21wcmFSZXN1bW9cRGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/Components/ItensMenuComponent/Default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcSXRlbnNNZW51Q29tcG9uZW50XERlZmF1bHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/PartialViews/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xfTG9naW5QYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/PartialViews/_SearchPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFBhcnRpYWxWaWV3c1xfU2VhcmNoUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Meu Projetos/Divisima/src/Divisima.API/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

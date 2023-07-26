@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <DisableImplicitComponentsAnalyzers>true</DisableImplicitComponentsAnalyzers>
     <UserSecretsId>761eb8da-91e7-4b09-8408-0b9d6c47a073</UserSecretsId>
   </PropertyGroup>

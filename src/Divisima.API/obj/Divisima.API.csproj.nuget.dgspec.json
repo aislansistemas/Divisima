@@ -1,36 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj": {}
+    "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj": {}
   },
   "projects": {
-    "D:\\projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj": {
+    "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj",
+        "projectUniqueName": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj",
         "projectName": "Divisima.API",
-        "projectPath": "D:\\projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj",
-        "packagesPath": "C:\\Users\\Aislan\\.nuget\\packages\\",
-        "outputPath": "D:\\projetos\\Divisima\\src\\Divisima.API\\obj\\",
+        "projectPath": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\Divisima.API.csproj",
+        "packagesPath": "C:\\Users\\bliza\\.nuget\\packages\\",
+        "outputPath": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Aislan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\bliza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net5.0": {
-            "targetAlias": "net5.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -41,8 +38,8 @@
         }
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.AspNetCore.Authentication.Cookies": {
               "target": "Package",
@@ -119,7 +116,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -131,7 +129,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -85,7 +85,7 @@ namespace Divisima.Repository
 
         public decimal GetValorTotalDeItems(List<CarrinhoCompraItem> carrinhoCompraItems)
         {
-            var valorTotalDeItems = carrinhoCompraItems.Sum(x => x.Produto.Valor);
+            var valorTotalDeItems = carrinhoCompraItems.Sum(x => x.Produto.Valor * x.Quantidade);
             return valorTotalDeItems;
         }
 

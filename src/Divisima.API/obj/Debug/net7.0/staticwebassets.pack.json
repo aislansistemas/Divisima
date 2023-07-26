@@ -1,0 +1,1961 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.47_PM.jpeg",
+      "PackagePath": "staticwebassets\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.47_PM.jpeg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.50_PM.jpeg",
+      "PackagePath": "staticwebassets\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.50_PM.jpeg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.50_PM_(2).jpeg",
+      "PackagePath": "staticwebassets\\arquivos\\WhatsApp_Image_2021-06-05_at_6.20.50_PM_(2).jpeg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\animate.css",
+      "PackagePath": "staticwebassets\\css\\animate.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\css\\black-dashboard.css",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\css\\black-dashboard.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\css\\black-dashboard.css.map",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\css\\black-dashboard.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\css\\black-dashboard.min.css",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\css\\black-dashboard.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\css\\nucleo-icons.css",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\css\\nucleo-icons.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\demo\\demo.css",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\demo\\demo.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\demo\\demo.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\demo\\demo.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\fonts\\nucleo.eot",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\fonts\\nucleo.eot"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\fonts\\nucleo.ttf",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\fonts\\nucleo.ttf"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\fonts\\nucleo.woff",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\fonts\\nucleo.woff"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\fonts\\nucleo.woff2",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\fonts\\nucleo.woff2"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\12345.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\12345.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\anime3.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\anime3.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\anime6.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\anime6.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\apple-icon.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\apple-icon.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\bg5.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\bg5.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\default-avatar.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\default-avatar.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\emilyz.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\emilyz.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\header.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\header.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\img_3115.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\img_3115.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\james.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\james.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\mike.jpg",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\mike.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\img\\now-logo.png",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\img\\now-logo.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\black-dashboard.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\black-dashboard.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\black-dashboard.js.map",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\black-dashboard.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\black-dashboard.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\black-dashboard.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\core\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\core\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\core\\jquery.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\core\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\core\\popper.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\core\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\plugins\\bootstrap-notify.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\plugins\\bootstrap-notify.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\plugins\\chartjs.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\plugins\\chartjs.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\js\\plugins\\perfect-scrollbar.jquery.min.js",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\js\\plugins\\perfect-scrollbar.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\_buttons.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\_typography.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_alerts.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_alerts.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_buttons.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_card.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_card.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_checkboxes-radio.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_checkboxes-radio.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_example-pages.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_example-pages.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_footer.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_forms.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_functions.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_images.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_images.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_input-group.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_misc.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_mixins.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_modal.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_navbar.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_rtl.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_sidebar-and-main-panel.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_sidebar-and-main-panel.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_tables.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_type.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_type.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_utilities.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_variables.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\_white-content.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\_white-content.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-chart.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-chart.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-map.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-map.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-plain.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-plain.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-task.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-task.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-user.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\cards\\_card-user.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_badges.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_icon.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_icon.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_inputs.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_inputs.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_modals.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_modals.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_page-header.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_page-header.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_popovers.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_popovers.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_vendor-prefixes.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_vendor-prefixes.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_wizard.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\_wizard.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\opacity.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\mixins\\opacity.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_backgrounds.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_backgrounds.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_floating.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_floating.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_helper.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_helper.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_transform.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\utilities\\_transform.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\vendor\\_plugin-animate-bootstrap-notify.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\vendor\\_plugin-animate-bootstrap-notify.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\custom\\vendor\\_plugin-perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\custom\\vendor\\_plugin-perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\dash-admin\\scss\\black-dashboard\\plugins\\_plugin-perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\css\\dash-admin\\scss\\black-dashboard\\plugins\\_plugin-perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\definicoes-padrao.css",
+      "PackagePath": "staticwebassets\\css\\definicoes-padrao.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\jquery-ui.min.css",
+      "PackagePath": "staticwebassets\\css\\jquery-ui.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\css\\toastr.css",
+      "PackagePath": "staticwebassets\\css\\toastr.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\fonts\\nucleo.eot",
+      "PackagePath": "staticwebassets\\fonts\\nucleo.eot"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\fonts\\nucleo.ttf",
+      "PackagePath": "staticwebassets\\fonts\\nucleo.ttf"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\fonts\\nucleo.woff",
+      "PackagePath": "staticwebassets\\fonts\\nucleo.woff"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\fonts\\nucleo.woff2",
+      "PackagePath": "staticwebassets\\fonts\\nucleo.woff2"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\icon-fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\icon-fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\icon-fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\icon-fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\icon-fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\icon-fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\12345.png",
+      "PackagePath": "staticwebassets\\img\\12345.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\anime3.png",
+      "PackagePath": "staticwebassets\\img\\anime3.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\anime6.png",
+      "PackagePath": "staticwebassets\\img\\anime6.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\apple-icon.png",
+      "PackagePath": "staticwebassets\\img\\apple-icon.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\arrow-down.png",
+      "PackagePath": "staticwebassets\\img\\arrow-down.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\arrow-up.png",
+      "PackagePath": "staticwebassets\\img\\arrow-up.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\img\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\bg-2.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\bg-login.jpg",
+      "PackagePath": "staticwebassets\\img\\bg-login.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\img\\bg.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\bg5.jpg",
+      "PackagePath": "staticwebassets\\img\\bg5.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\blog-thumbs\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-thumbs\\1.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\blog-thumbs\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\blog-thumbs\\2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\cards.png",
+      "PackagePath": "staticwebassets\\img\\cards.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\carregamento.gif",
+      "PackagePath": "staticwebassets\\img\\carregamento.gif"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\cart\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\cart\\1.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\cart\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\cart\\2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\cart\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\cart\\3.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\celulares-banner1.png",
+      "PackagePath": "staticwebassets\\img\\celulares-banner1.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\celulares-banner2.jpg",
+      "PackagePath": "staticwebassets\\img\\celulares-banner2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\default-avatar.png",
+      "PackagePath": "staticwebassets\\img\\default-avatar.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\emilyz.jpg",
+      "PackagePath": "staticwebassets\\img\\emilyz.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\favicon.ico",
+      "PackagePath": "staticwebassets\\img\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\img\\favicon.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\header.jpg",
+      "PackagePath": "staticwebassets\\img\\header.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\icons\\1.png",
+      "PackagePath": "staticwebassets\\img\\icons\\1.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\icons\\2.png",
+      "PackagePath": "staticwebassets\\img\\icons\\2.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\icons\\3.png",
+      "PackagePath": "staticwebassets\\img\\icons\\3.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\img_3115.jpg",
+      "PackagePath": "staticwebassets\\img\\img_3115.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\james.jpg",
+      "PackagePath": "staticwebassets\\img\\james.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\logo-light.png",
+      "PackagePath": "staticwebassets\\img\\logo-light.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\logo.png",
+      "PackagePath": "staticwebassets\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\mastercart.png",
+      "PackagePath": "staticwebassets\\img\\mastercart.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\mike.jpg",
+      "PackagePath": "staticwebassets\\img\\mike.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\now-logo.png",
+      "PackagePath": "staticwebassets\\img\\now-logo.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\paypal.png",
+      "PackagePath": "staticwebassets\\img\\paypal.png"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\1.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\10.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\10.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\11.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\11.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\12.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\12.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\3.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\4.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\5.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\5.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\6.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\6.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\7.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\7.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\8.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\8.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\product\\9.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\9.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\1.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\1.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\2.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\3.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\3.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\4.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\4.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\thumb-1.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\thumb-1.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\thumb-2.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\thumb-2.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\thumb-3.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\thumb-3.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\img\\single-product\\thumb-4.jpg",
+      "PackagePath": "staticwebassets\\img\\single-product\\thumb-4.jpg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Account\\account-service.js",
+      "PackagePath": "staticwebassets\\js\\Account\\account-service.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Account\\cadastro-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Account\\cadastro-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Account\\login-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Account\\login-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Categoria\\categoria-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Categoria\\categoria-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Categoria\\categoria-form.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Categoria\\categoria-form.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Categoria\\monta-html.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Categoria\\monta-html.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Pedido\\pedidos.ajax.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Pedido\\pedidos.ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Produto\\monta-html.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Produto\\monta-html.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Produto\\produto-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Produto\\produto-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Produto\\produto-form.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Produto\\produto-form.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Produto\\produto-service.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Produto\\produto-service.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Usuario\\monta-html.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Usuario\\monta-html.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Admin-area\\Usuario\\usuario-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Admin-area\\Usuario\\usuario-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Carrinho-Compra\\carrinho-service.js",
+      "PackagePath": "staticwebassets\\js\\Carrinho-Compra\\carrinho-service.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Pedido\\pedido-ajax.js",
+      "PackagePath": "staticwebassets\\js\\Pedido\\pedido-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\Pedido\\pedido-integracao.js",
+      "PackagePath": "staticwebassets\\js\\Pedido\\pedido-integracao.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\black-dashboard.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\black-dashboard.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\black-dashboard.js.map",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\black-dashboard.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\black-dashboard.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\black-dashboard.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\core\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\core\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\core\\jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\core\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\core\\popper.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\core\\popper.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\demo.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\demo.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\plugins\\bootstrap-notify.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\plugins\\bootstrap-notify.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\plugins\\chartjs.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\plugins\\chartjs.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\dash-admin\\plugins\\perfect-scrollbar.jquery.min.js",
+      "PackagePath": "staticwebassets\\js\\dash-admin\\plugins\\perfect-scrollbar.jquery.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\jquery-ui.min.js",
+      "PackagePath": "staticwebassets\\js\\produto\\jquery-ui.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\jquery.nicescroll.min.js",
+      "PackagePath": "staticwebassets\\js\\produto\\jquery.nicescroll.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\jquery.slicknav.min.js",
+      "PackagePath": "staticwebassets\\js\\produto\\jquery.slicknav.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\jquery.zoom.min.js",
+      "PackagePath": "staticwebassets\\js\\produto\\jquery.zoom.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\main.js",
+      "PackagePath": "staticwebassets\\js\\produto\\main.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\map.js",
+      "PackagePath": "staticwebassets\\js\\produto\\map.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\monta-produto.js",
+      "PackagePath": "staticwebassets\\js\\produto\\monta-produto.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\js\\produto\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\produto-ajax.js",
+      "PackagePath": "staticwebassets\\js\\produto\\produto-ajax.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\produto-por-categoria\\monta-produtos-categoria.js",
+      "PackagePath": "staticwebassets\\js\\produto\\produto-por-categoria\\monta-produtos-categoria.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\produto\\produto-por-categoria\\produto-categoria.js",
+      "PackagePath": "staticwebassets\\js\\produto\\produto-por-categoria\\produto-categoria.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\js\\spinner.js",
+      "PackagePath": "staticwebassets\\js\\spinner.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery.mask.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.mask.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery.toaster.js",
+      "PackagePath": "staticwebassets\\lib\\jquery.toaster.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\lib\\toastr.js",
+      "PackagePath": "staticwebassets\\lib\\toastr.js"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\logo\\celulares-br\\logo(outra-opcao).jpeg",
+      "PackagePath": "staticwebassets\\logo\\celulares-br\\logo(outra-opcao).jpeg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\logo\\celulares-br\\logo.jpeg",
+      "PackagePath": "staticwebassets\\logo\\celulares-br\\logo.jpeg"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\_typography.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\_typography.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_spinners.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_toasts.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_overflow.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_overflow.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\bootstrap\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\bootstrap\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_alerts.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_alerts.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_card.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_card.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_checkboxes-radio.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_checkboxes-radio.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_example-pages.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_example-pages.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_fixed-plugin.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_fixed-plugin.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_footer.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_forms.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_functions.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_images.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_images.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_input-group.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_misc.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_misc.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_mixins.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_modal.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_navbar.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_rtl.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_rtl.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_sidebar-and-main-panel.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_sidebar-and-main-panel.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_tables.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_type.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_type.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_utilities.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_variables.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\_white-content.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\_white-content.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\cards\\_card-chart.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\cards\\_card-chart.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\cards\\_card-map.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\cards\\_card-map.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\cards\\_card-plain.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\cards\\_card-plain.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\cards\\_card-task.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\cards\\_card-task.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\cards\\_card-user.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\cards\\_card-user.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_badges.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_badges.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_icon.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_icon.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_inputs.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_inputs.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_modals.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_modals.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_page-header.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_page-header.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_popovers.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_popovers.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_vendor-prefixes.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_vendor-prefixes.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\_wizard.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\_wizard.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\mixins\\opacity.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\mixins\\opacity.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_backgrounds.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_backgrounds.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_floating.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_floating.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_helper.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_helper.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_shadows.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_shadows.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\utilities\\_transform.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\utilities\\_transform.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\vendor\\_plugin-animate-bootstrap-notify.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\vendor\\_plugin-animate-bootstrap-notify.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\custom\\vendor\\_plugin-perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\custom\\vendor\\_plugin-perfect-scrollbar.scss"
+    },
+    {
+      "Id": "C:\\Meu Projetos\\Divisima\\src\\Divisima.API\\wwwroot\\scss\\black-dashboard\\plugins\\_plugin-perfect-scrollbar.scss",
+      "PackagePath": "staticwebassets\\scss\\black-dashboard\\plugins\\_plugin-perfect-scrollbar.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Divisima.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.Divisima.API.props",
+      "PackagePath": "build\\Divisima.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.Divisima.API.props",
+      "PackagePath": "buildMultiTargeting\\Divisima.API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.Divisima.API.props",
+      "PackagePath": "buildTransitive\\Divisima.API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

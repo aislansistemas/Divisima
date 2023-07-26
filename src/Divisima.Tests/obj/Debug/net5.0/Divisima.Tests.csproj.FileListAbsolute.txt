@@ -487,3 +487,5 @@ D:\projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\Divisima.Tests.dll
 D:\projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\ref\Divisima.Tests.dll
 D:\projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\Divisima.Tests.pdb
 D:\projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\Divisima.Tests.genruntimeconfig.cache
+C:\Meu Projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\Divisima.Tests.dll
+C:\Meu Projetos\Divisima\src\Divisima.Tests\obj\Debug\net5.0\Divisima.Tests.pdb
